@@ -4,7 +4,7 @@ import os.path
 
 import conf
 
-from projectdir import ProjectDirectory, MissingProjectFile
+from ..projectdir import ProjectDirectory, MissingProjectFile
 
 class ProjectDirectoryTest( unittest.TestCase ):
     def test_init( self ):
@@ -19,7 +19,7 @@ class ProjectDirectoryTest( unittest.TestCase ):
             pd.get_file( file )
 
     def test_files( self ):
-        filecounts = [28,20,36,22]
+        filecounts = [29,20,36,22]
         for i, d in enumerate( conf.all_projects ):
             self.assertEqual( len( ProjectDirectory( os.path.join( conf.examples_dir, d ) ).files ), filecounts[i] )
 

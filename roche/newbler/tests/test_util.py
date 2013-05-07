@@ -1,7 +1,7 @@
 from unittest import TestCase
 import os.path
 
-from util import *
+from ..util import *
 import conf
 
 class UtilTest( TestCase ):

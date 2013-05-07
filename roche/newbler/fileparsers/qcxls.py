@@ -11,7 +11,9 @@
 from optparse import OptionParser
 import os.path
 import re
-from wrairlib.exceptions1 import UnknownFormatException
+
+class UnkownFormatException( Exception ):
+    pass
 
 class QCXLS:
     filename = None

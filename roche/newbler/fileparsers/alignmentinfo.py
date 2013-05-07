@@ -1,5 +1,11 @@
 import sys
 
+from descriptors import (GreaterThanZeroFloat,
+    GreaterThanZeroInt,
+    GreaterThanEqualZeroFloat,
+    GreaterThanEqualZeroInt,
+    Nucleotide)
+
 class BadFormatException( Exception ):
     def __init__( self, error ):
         self.error = error
@@ -410,6 +416,15 @@ class CoverageRegion( object ):
 
 class BaseInfo( object ):
     _gapTypes = {'Gap': -1, 'LowCoverage': 0, 'Normal': 1}
+    pos = GreaterThanZeroInt( 'pos' )
+    qual = GreaterThanEqualZeroInt( 'qual' )
+    udepth = GreaterThanEqualZeroInt( 'udepth' )
+    adepth = GreaterThanEqualZeroInt( 'adepth' )
+    tdepth = GreaterThanEqualZeroInt( 'tdepth' )
+    signal = GreaterThanEqualZeroFloat( 'signal' )
+    stddev = GreaterThanEqualZeroFloat( 'stddev' )
+    refb = Nucleotide( 'refb' )
+    consb = Nucleotide( 'consb' )
 
     @staticmethod
     def gapBase( pos ):
@@ -421,42 +436,39 @@ class BaseInfo( object ):
     def __init__( self, seqalignline, lowcovcalc = None ):
         """
             Can feed whole line split up or just the line as a whole
-
-            >>> lines = [\
-            '689\tA\tA\t18\t1\t1\t1\t1.16\t1.16',\
-            '734\tC\tC\t24\t1\t1\t1\t0.73\t0.73',\
-            '1\t2'\
-            ]
-            >>> for line in lines:
-            ...   try:
-            ...     b = BaseInfo( line )
-            ...     b.pos
-            ...   except BadFormatException:
-            ...     print 'Exception'
-            689
-            734
-            Exception
         """
         if lowcovcalc is None:
             self.lcc = LowCoverageCalc
 
-        cols = seqalignline.split( )
-        alen = len( cols )
-        if alen == 9:
-            self.pos, self.refb, self.consb, \
-            self.qual, self.udepth, self.adepth, \
-            self.tdepth, self.signal, self.stddev = cols
-        elif alen == 7:
-            self.pos, self.consb, \
-            self.qual, self.udepth, self.adepth, \
-            self.signal, self.stddev = cols
-        else:
-            raise BadFormatException( "Incorrect amount of columns in %s" % seqalignline )
+        self.parse_line( seqalignline )
 
         # Determine type of base
         self.gapType = 'Normal'
         if self.lcc.isLowCoverage( self ):
             self.gapType = 'LowCoverage'
+
+    def parse_line( self, line ):
+        ''' Parse tab separated line '''
+        cols = line.rstrip( '\n' ).split( '\t' )
+        alen = len( cols )
+        if alen == 9:
+            self._set_mapping( cols )
+        elif alen == 7:
+            self._set_assembly( cols )
+        else:
+            raise BadFormatException( "Incorrect amount of columns in %s" % line )
+
+    def _set_mapping( self, mapping_cols ):
+        ''' Setup mapping attributes '''
+        self.pos, self.refb, self.consb, \
+        self.qual, self.udepth, self.adepth, \
+        self.tdepth, self.signal, self.stddev = mapping_cols
+
+    def _set_assembly( self, assembly_cols ):
+        ''' Setup assembly attributes '''
+        self.pos, self.consb, \
+        self.qual, self.udepth, self.adepth, \
+        self.signal, self.stddev = assembly_cols
 
     @property
     def gapType( self ):
@@ -470,19 +482,12 @@ class BaseInfo( object ):
         except KeyError:
             raise ValueError( "Unknown gapType value given: %s" % value )
 
-    def __getattr__( self, obj, type = None ):
-        return object.__getattr__( self, obj, type )
-
-    def __setattr__( self, name, value ):
-        """ Do some python magic to auto determine value type """
-        try:
-            if type( value ) == str and '.' in value:
-                storeval = float( value )
-            else:
-                storeval = int( value )
-        except (TypeError, ValueError):
-            storeval = value
-        object.__setattr__( self, name, storeval )
+    def __str__( self ):
+        if hasattr( self, 'refb' ):
+            out = '{_pos}\t{_refb}\t{_consb}\t{_qual}\t{_udepth}\t{_adepth}\t{_tdepth}\t{_signal}\t{_stddev}'
+        else:
+            out = '{_pos}\t{_consb}\t{_qual}\t{_udepth}\t{_adepth}\t{_signal}\t{_stddev}'
+        return out.format( **self.__dict__ )
 
 class LowCoverageCalc( object ):
     # Less than these numbers
