@@ -503,7 +503,7 @@ class LowCoverageCalc( object ):
             >>> print LowCoverageCalc.isLowCoverage( bi )
             True
         """
-        if LowCoverageCalc.lowReadThreshold > baseinfo.udepth:
+        if LowCoverageCalc.lowReadThreshold > baseinfo.adepth:
             return True
         else:
             return False
