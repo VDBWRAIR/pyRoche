@@ -1,7 +1,5 @@
 from descriptors import *
-
-from StringIO import StringIO
-from itertools import izip_longest
+from variantfileparser import VarFile
 
 class RefPos( GreaterThanZeroInt ):
     ''' Allow a question mark as a valid input '''
@@ -19,83 +17,17 @@ class DevLength( GreaterThanZeroInt ):
         else:
             super( DevLength, self ).__set__( inst, value )
 
-class StructVars( object ):
-    def __init__( self, fh_or_filepath ):
-        ''' Init the class '''
-        # Store all the variants in a list
-        self._variant_list = []
-        # Also key the variants by the refaccno1
-        self._variant_by_ref = {}
-        self.parse( fh_or_filepath )
+class StructVars( VarFile ):
+    def parse_header( self ):
+        super( StructVars, self ).parse_header()
+        self.headers = self.headers + ['Var ID']
 
-    def parse( self, fh_or_filepath ):
-        self.fh = fh_or_filepath
-        if isinstance( fh_or_filepath, str ):
-            self.fh = open( self.fh )
-        if isinstance( self.fh, StringIO ):
-            self.filepath = 'Memory'
-        else:
-            self.filepath = self.fh.name
-        self.lines = self.all_lines()
-        self.parse_header()
-        self.parse_struct_variants()
-
-    @property
-    def variants( self ):
-        return self._variant_list
-
-    def __getitem__( self, refaccno ):
-        return self._variant_by_ref[refaccno]
-
-    def keys( self ):
-        return self._variant_by_ref.keys()
-
-    def parse_struct_variants( self ):
+    def parse_variants( self ):
         for varlines in self.read_until_next_variant():
             sl = self.parse_summary_line( varlines[0] )
             sl['lines'] = varlines[1:]
-            self._variant_list.append( StructVariant( **sl ) )
             refaccno = sl['Ref Accno1']
-            if refaccno not in self._variant_by_ref:
-                self._variant_by_ref[refaccno] = []
-            self._variant_by_ref[refaccno].append( self._variant_list[-1] )
-
-    def read_until_next_variant( self ):
-        ''' Generator to loop through all variant sections '''
-        var_lines = []
-        for cur_line in self.lines:
-            # Read until break is found
-            if cur_line != '-----------------------------':
-                var_lines.append( cur_line )
-            else:
-                yield var_lines
-                var_lines = []
-
-    def all_lines( self ):
-        ''' Yield all non-blank lines '''
-        for line in self.fh:
-            line = line.rstrip( '\n' )
-            if line == '':
-                continue
-            yield line
-
-    def parse_header( self ):
-        ''' Chomp off top two lines and parse into list of headers '''
-        line1 = next( self.lines ).split( '\t' )
-        line2 = next( self.lines ).split( '\t' )
-        self.headers = [" ".join( hdr ).rstrip() for hdr in izip_longest( line1, line2, fillvalue='' )] + ['Var ID']
-
-    def parse_summary_line( self, line ):
-        ''' Parse a summary line(starts with >) '''
-        cols = line.split( '\t' )
-        clen = len( cols )
-        hlen = len( self.headers )
-        if clen != hlen:
-            raise ValueError( "Summary line({}) does not have same amount of columns({}) as headers({}).".format( self.headers, clen, hlen ) )
-        return dict( zip( self.headers, cols ) )
-
-    def __del__( self ):
-        self.fh.close()
+            self.add_variant( refaccno, StructVariant( **sl ) )
 
 class StructVariant( object ):
     ''' Represents an instance of a variant in the StructVariants '''
@@ -142,3 +74,6 @@ class StructVariant( object ):
             self.revtotal = kwargs['Rev Total']
 
         self.lines = kwargs['lines']
+
+    def __str__( self ):
+        return "Ref:{refaccno1}\tPos:({_refpos1},{_refpos2})\tTotal Depth:{_totaldepth}\tVar Freq:{_varfreq}\tDeviationLength:{_deviationlength}".format( **self.__dict__ )

@@ -3,7 +3,7 @@ import nose
 from StringIO import StringIO
 import string
 
-from ..structvars import StructVars, RefPos, DevLength
+from ..structvars import StructVars, RefPos, DevLength, StructVariant
 
 class MockRefPos( object ):
     rp = RefPos( 'rp' )
@@ -133,3 +133,25 @@ H52E4QC02H1NF7               28+ GGG-AGTTGAA-C-CTATCGACAATGTGAT-GGGAATGATTGGGA--
         assert len( sv.variants ) == 2
         assert len( sv['>H3N2/EPI353903/Victoria361_E3E3/2011/PB2'] ) == 1
         assert len( sv['>H3N2/EPI353903/Victoria361_E3E3/2011/PB1'] ) == 1
+
+class TestStructVariant( object ):
+    def test_tostring( self ):
+        parts = {
+            'Ref Accno1': 'testref',
+            'Ref Pos1': '1',
+            'Var Side1': '-->',
+            'Region Name1': 'regname1',
+            'Ref Accno2': '',
+            'Ref Pos2': '?',
+            'Var Side2': '?',
+            'Region Name2': '?',
+            'Total Depth': '1',
+            'Var Freq': '100.0',
+            'Deviation Length': '-',
+            'Type': 'Point',
+            'Var ID': 'var1x',
+            'lines': ''
+        }
+        sv = StructVariant( **parts )
+        print sv.__dict__
+        sv.__str__()
