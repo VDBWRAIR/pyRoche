@@ -59,6 +59,9 @@ class AlignmentInfo(object):
     def seqs( self ):
         return self._seqs
 
+    def __getitem__( self, key ):
+        return self._refs[key]
+
     def add_seq( self, seqalign ):
         self.seqs.append( seqalign )
         name = self.seqs[-1].name
@@ -66,7 +69,7 @@ class AlignmentInfo(object):
         # Keep track of which SeqAlignments are for what reference
         if name not in self._refs:
             self._refs[name] = []
-        self._refs[name].append( len( self.seqs ) - 1 )
+        self._refs[name].append( self.seqs[-1] )
 
     def merge_regions( self ):
         """
@@ -190,6 +193,8 @@ class SeqAlignment( object ):
         if len( seqalignment ) == 0:
             raise ValueError( "No sequence alignment given" )
         self.bases = []
+        # Store the bases at their actual position
+        self._actual_bases = {}
         self.regions = []
         self.name, self.astart = seqalignment[0].split()
         self.name = self.name[1:]
@@ -197,13 +202,23 @@ class SeqAlignment( object ):
         if len( seqalignment ) > 1:
             self._parse( seqalignment[1:] )
 
+    def __getitem__( self, key ):
+        return self._actual_bases[key]
+
+    def add_base( self, base ):
+        ''' Add a base to alignment '''
+        self.bases.append( base )
+        if self._actual_bases.get( base.pos, None ) is None:
+            self._actual_bases[base.pos] = []
+        self._actual_bases[base.pos].append( base )
+
     def _parse( self, seqalignment ):
         lastPos = self.astart - 1
         # Create coverage region for beginning
         # and add gap bases
         if lastPos != 0:
             for i in range( 1, self.astart ):
-                self.bases.append( BaseInfo.gapBase( i ) )
+                self.add_base( BaseInfo.gapBase( i ) )
             self.regions.append( CoverageRegion( 1, lastPos, 'Gap' ) )
 
         # Start a new region beginning with the first base
@@ -235,7 +250,7 @@ class SeqAlignment( object ):
                 self.regions[-1].end = lastPos
                 self.regions.append( CoverageRegion( basei.pos, basei.pos, basei.gapType ) )
 
-            self.bases.append( basei )
+            self.add_base( basei )
             lastPos = basei.pos
 
         # end current region

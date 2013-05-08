@@ -17,7 +17,8 @@ import os.path
 import pprint
 
 from roche.newbler.fileparsers import (refstatus, alignmentinfo, mappingproject, 
-                    newblerprogress, mappingqc, allstructvars, hcstructvars)
+                    newblerprogress, mappingqc, allstructvars, hcstructvars,
+                    alldiffs, hcdiffs)
 
 from Bio import SeqIO
 
