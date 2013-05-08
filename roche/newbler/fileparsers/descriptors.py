@@ -61,6 +61,13 @@ class GreaterThanZeroFloat( GreaterThanZero ):
     def __set__( self, inst, value ):
         super( GreaterThanZeroFloat, self ).__set__( inst, float( value ) )
 
+class GreaterThanZeroPercent( GreaterThanZeroFloat ):
+    ''' Force value to be a float '''
+    def __set__( self, inst, value ):
+        super( GreaterThanZeroFloat, self ).__set__( inst, float( value.replace( '%','' ) ) )
+    def __get__( self, inst, value ):
+        return '{}%'.format( super( GreaterThanZeroPercent, self ).__get__( inst, value ) )
+
 class GreaterThanZeroInt( GreaterThanZero ):
     ''' Force value to be a Int '''
     def __set__( self, inst, value ):
@@ -70,6 +77,13 @@ class GreaterThanEqualZeroFloat( GreaterThanEqualZero ):
     ''' Force value to be a float '''
     def __set__( self, inst, value ):
         super( GreaterThanEqualZeroFloat, self ).__set__( inst, float( value ) )
+
+class GreaterThanEqualZeroPercent( GreaterThanEqualZeroFloat ):
+    ''' Force value to be a float '''
+    def __set__( self, inst, value ):
+        super( GreaterThanEqualZeroFloat, self ).__set__( inst, float( value.replace( '%','' ) ) )
+    def __get__( self, inst, value ):
+        return '{}%'.format( super( GreaterThanEqualZeroPercent, self ).__get__( inst, value ) )
 
 class GreaterThanEqualZeroInt( GreaterThanEqualZero ):
     ''' Force value to be a Int '''

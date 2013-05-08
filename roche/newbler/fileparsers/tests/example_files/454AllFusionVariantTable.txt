@@ -1,0 +1,1 @@
+VarID	Accno	RefChr1	RefPos1	RegionName1	QueryStart1	QueryEnd1	RefChr2	RefPos2	RegionName2	QueryStart2	QueryEnd2	Sequence

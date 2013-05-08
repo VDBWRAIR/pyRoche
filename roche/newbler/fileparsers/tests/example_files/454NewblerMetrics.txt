@@ -1,0 +1,178 @@
+/***************************************************************************
+**
+**      454 Life Sciences Corporation
+**         Newbler Metrics Results
+**
+**      Date of Mapping: 2013/04/30 12:14:58
+**      Project Directory: /home/EIDRUdata/Analysis/PipelineRuns/03_12_2013/cpt_lin_samples/PR_3080__RL49__H3N2
+**      Software Release: 2.8 (20120726_1306)
+**
+***************************************************************************/
+
+/*
+**  Input information.
+*/
+
+referenceSequenceData
+{
+	file
+	{
+		path = "/home/EIDRUdata/NGSData/RawData/Roche454/2013_03_12/meta/Ref/All/H3N2__Victoria361__2011.fasta";
+		numberOfReads = 8;
+		numberOfBases = 13138;
+	}
+
+}
+
+runData
+{
+	file
+	{
+		path = "/home/EIDRUdata/NGSData/ReadData/Roche454/D_2013_03_13_13_56_26_vnode_signalProcessing/demultiplexed/2/PR_3080__RL49__2013_03_12__H3N2.sff";
+
+		numberOfReads = 11332, 11327;
+		numberOfBases = 8424488, 8102117;
+	}
+
+}
+
+/*
+**  Operation metrics.
+*/
+
+runMetrics
+{
+	numberOfReferenceSequences  = 8; 
+	totalReferenceNumberOfBases = 13138; 
+
+	inputFileNumReads  = 11332; 
+	inputFileNumBases  = 8424488; 
+
+	totalNumberOfReads = 11327; 
+	totalNumberOfBases = 8102117; 
+
+	numberSearches   = 11179;
+	seedHitsFound    = 164866, 14.75;
+	overlapsFound    = 24288, 2.17, 14.73%;
+	overlapsReported = 16935, 1.51, 69.73%;
+	overlapsUsed     = 10741, 0.96, 63.42%;
+}
+
+readMappingResults
+{
+	file
+	{
+		path = "/home/EIDRUdata/NGSData/ReadData/Roche454/D_2013_03_13_13_56_26_vnode_signalProcessing/demultiplexed/2/PR_3080__RL49__2013_03_12__H3N2.sff";
+
+		numMappedReads     = 10741, 94.83%, 94.78%;
+		numMappedBases     = 5909721, 72.94%, 70.15%;
+		inferredReadError  = 8.11%, 479299;
+	}
+
+}
+
+/*
+** Consensus distribution information.
+*/
+consensusDistribution
+{
+	fullDistribution
+	{
+		signalBin =  0.0, 1078;
+		signalBin =  0.8, 19;
+		signalBin =  0.9, 2169;
+		signalBin =  1.0, 4263;
+		signalBin =  1.1, 197;
+		signalBin =  1.8, 25;
+		signalBin =  1.9, 725;
+		signalBin =  2.0, 1062;
+		signalBin =  2.1, 56;
+		signalBin =  2.2, 1;
+		signalBin =  2.7, 1;
+		signalBin =  2.8, 7;
+		signalBin =  2.9, 220;
+		signalBin =  3.0, 265;
+		signalBin =  3.1, 20;
+		signalBin =  3.2, 1;
+		signalBin =  3.7, 1;
+		signalBin =  3.8, 6;
+		signalBin =  3.9, 57;
+		signalBin =  4.0, 65;
+		signalBin =  4.1, 8;
+		signalBin =  4.2, 2;
+		signalBin =  4.4, 1;
+		signalBin =  4.8, 4;
+		signalBin =  4.9, 13;
+		signalBin =  5.0, 14;
+		signalBin =  5.2, 2;
+		signalBin =  5.8, 1;
+		signalBin =  5.9, 3;
+		signalBin =  6.0, 3;
+		signalBin =  6.4, 1;
+		signalBin =  6.8, 1;
+		signalBin =  7.0, 1;
+	}
+
+	distributionPeaks
+	{
+		signalPeak = 1, 1.00;
+		signalPeak = 2, 2.00;
+		signalPeak = 3, 3.00;
+	}
+
+	thresholdsUsed
+	{
+		threshold = 0, 1, 0.50;
+		threshold = 1, 2, 1.50;
+		threshold = 2, 3, 2.52;
+
+		interpolationAmount = 1.01;
+	}
+}
+
+
+/*
+**  Consensus results.
+*/
+consensusResults
+{
+	readStatus
+	{
+		numMappedReads    = 10741, 94.83%, 94.78%;
+		numMappedBases    = 5909721, 72.94%, 70.15%;
+		inferredReadError = 8.11%, 479299;
+
+		numberFullyMapped     = 613, 5.41%, 5.41%;
+		numberPartiallyMapped = 4325, 38.18%, 38.17%;
+		numberUnmapped        = 438, 3.87%, 3.87%;
+		numberRepeat          = 1, 0.01%, 0.01%;
+		numberChimeric        = 5802, 51.22%, 51.20%;
+		numberTooShort        = 148, 1.31%, 1.31%;
+	}
+
+	largeContigMetrics
+	{
+		numberOfContigs   = 8;
+		numberOfBases     = 13136;
+
+		avgContigSize     = 1642;
+		N50ContigSize     = 2150;
+		largestContigSize = 2279;
+
+		Q40PlusBases      = 12701, 96.69%;
+		Q39MinusBases     = 435, 3.31%;
+
+		numUndercalls     = 45;
+		numOvercalls      = 43;
+		numHCUndercalls   = 30;
+		numHCOvercalls    = 34;
+		consensusAccuracy  = 99.3301%;
+		HCconsensusAccuracy  = 99.4961%;
+	}
+
+	allContigMetrics
+	{
+		numberOfContigs = 8;
+		numberOfBases   = 13136;
+	}
+}

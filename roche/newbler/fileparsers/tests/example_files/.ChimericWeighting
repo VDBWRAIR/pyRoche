@@ -1,0 +1,8 @@
+segmentPenaltyWeight	0.15
+queryIntersectOrSkipWeight	0.10
+alignIdentWeight	0.05
+subjChangeWeight	0.50
+strandChangeWeight	0.30
+subjOrderWeight	0.15
+subjIntersectWeight	0.10
+subjSkippedWeight	0.10

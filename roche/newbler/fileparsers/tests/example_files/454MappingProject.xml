@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FourFiveFourProject>
+
+  <ProjectInformation>
+    <ProjectType>Mapping</ProjectType>
+    <ProjectDirectory>/home/EIDRUdata/Analysis/PipelineRuns/03_12_2013/cpt_lin_samples/PR_3080__RL49__H3N2</ProjectDirectory>
+    <dateCreated>Tue Apr 30 12:14:39 2013</dateCreated>
+    <dateModified>Tue Apr 30 12:14:58 2013</dateModified>
+    <SoftwareVersion>2.8 (20120726_1306)</SoftwareVersion>
+  </ProjectInformation>
+
+  <Config>
+    <minimumReadLength>20</minimumReadLength>
+    <overlapSeedStep>12</overlapSeedStep>
+    <overlapSeedLength>16</overlapSeedLength>
+    <overlapMinSeedCount>1</overlapMinSeedCount>
+    <overlapSeedHitLimit>70</overlapSeedHitLimit>
+    <overlapHitPositionLimit>1000000</overlapHitPositionLimit>
+    <overlapMinMatchLength>40</overlapMinMatchLength>
+    <overlapMinMatchIdentity>90</overlapMinMatchIdentity>
+    <overlapMatchIdentScore>2</overlapMatchIdentScore>
+    <overlapMatchDiffScore>-3</overlapMatchDiffScore>
+    <overlapMatchUniqueThresh>12</overlapMatchUniqueThresh>
+    <isogroupThresh>500</isogroupThresh>
+    <isotigThresh>100</isotigThresh>
+    <isotigContigCountThresh>100</isotigContigCountThresh>
+    <isotigContigLengthThresh>3</isotigContigLengthThresh>
+    <isotigDepthSplit>false</isotigDepthSplit>
+    <aceMode>Auto</aceMode>
+    <aceReadMode>Default</aceReadMode>
+    <pairAlignMode>Text</pairAlignMode>
+    <alignInfoMode>Auto</alignInfoMode>
+    <nucleotideFreqTable>false</nucleotideFreqTable>
+    <mapMinContigDepth>1</mapMinContigDepth>
+    <allContigThresh>100</allContigThresh>
+    <largeContigThresh>500</largeContigThresh>
+    <expectedDepth>0</expectedDepth>
+    <cDNAMode>false</cDNAMode>
+    <referenceMode>Auto</referenceMode>
+    <largeGenome>false</largeGenome>
+    <multiplexMode>false</multiplexMode>
+    <ripMode>false</ripMode>
+    <heterozygoteMode>false</heterozygoteMode>
+    <scaffoldLengthThreshold>2000</scaffoldLengthThreshold>
+    <assemblerBatchSize>0</assemblerBatchSize>
+    <numCPU>2</numCPU>
+    <showSingleReadVariations>false</showSingleReadVariations>
+    <nimblegenMappingMode>false</nimblegenMappingMode>
+    <backwardCompatibleContigging>false</backwardCompatibleContigging>
+    <finishMode>false</finishMode>
+    <autoTrimming>true</autoTrimming>
+    <VectorDatabase>/home/EIDRUdata/NGSData/Primer/Universal/universal001.fna</VectorDatabase>
+    <screeningDatabase/>
+    <haplotypeFile/>
+    <targetedRegionFile/>
+    <annotationFile/>
+    <knownSNPFile/>
+    <accessionRenameFile/>
+    <filterExcludeFile/>
+    <filterIncludeFile/>
+    <UseSerialIO>false</UseSerialIO>
+    <SerialIOMinimizeDisk>false</SerialIOMinimizeDisk>
+    <SerialIOMemLimit>0</SerialIOMemLimit>
+  </Config>
+
+  <ReferenceFiles>
+    <SetRefCount>1</SetRefCount>
+    <File>
+      <Path>/home/EIDRUdata/NGSData/RawData/Roche454/2013_03_12/meta/Ref/All/H3N2__Victoria361__2011.fasta</Path>
+      <Type>Fasta</Type>
+    </File>
+  </ReferenceFiles>
+
+  <ReadFiles>
+    <SetReadCount>1</SetReadCount>
+    <File>
+      <SFFDirFilename>PR_3080__RL49__2013_03_12__H3N2.sff</SFFDirFilename>
+      <Path>/home/EIDRUdata/NGSData/ReadData/Roche454/D_2013_03_13_13_56_26_vnode_signalProcessing/demultiplexed/2/PR_3080__RL49__2013_03_12__H3N2.sff</Path>
+      <Type>SFF</Type>
+      <IsPairedEnd>false</IsPairedEnd>
+      <Rescore>false</Rescore>
+      <removeFlag>false</removeFlag>
+    </File>
+  </ReadFiles>
+
+</FourFiveFourProject>

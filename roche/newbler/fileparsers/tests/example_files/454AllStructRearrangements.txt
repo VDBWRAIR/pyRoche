@@ -1,0 +1,314 @@
+SUBSTITUTION
+SubjAccno	SubjPos1	RegionName1	SubjPos2	RegionName2	Length	Confidence
+H3N2/EPI353903/Victoria361_E3E3/2011/PB2	311		361		49	High
+
+
+Consensus: reference                   273+ ATCACCTTTGGCTGTAACATGGTGGAATAGGAATGGACCCGTGACAAGTACGGTCCATTACCCAAAAGTGTACAAAAC 350
+                                                                               ****
+# supporting shotgun reads, pos 311: 13
+# non-supporting shotgun reads, pos 311: 14
+
+Consensus: reference                   321+ TACGGTCCATTACCCAAAAGTGTACAAAACTTATTTCGACAAAGTCGAAAGGTTAAAACATGGAACCTTTGGCCCTGTC 399
+                                                                                    *
+
+# supporting shotgun reads, pos 361: 14
+# non-supporting shotgun reads, pos 361: 4
+
+
+Individual Variation IDs: 4
+
+======================================================================
+DUPLICATION, INTERSPERSED
+OrigSubjAccno	OrigSubjStart	RegionName1	OrigSubjEnd	RegionName2	ToSubjAccno	ToSubjPos	RegionName3	Length	Confidence
+H3N2/EPI353903/Victoria361_E3E3/2011/PB2	311		503		H3N2/EPI353903/Victoria361_E3E3/2011/PB2	747		193	High
+
+Consensus: reference                   276+ ACCTTTGGCTGTAACATGGTGGAATAGGAATGGACCCGTGACAAGTACGGTCCATTACCCAAAAGTGTACAAAACTTATTTCG 358
+                                                                               *********
+# supporting shotgun reads, pos 311: 31
+# non-supporting shotgun reads, pos 311: 21
+
+Consensus: reference                   463+ AGTGCCAAAGAGGCACAAGATGTAATTATGGAAGTTGTTTTTCCCAATGAAGTGGGAGCCAGAATACTAACATCAGAATCA 543
+                                                                                    *****
+
+# supporting shotgun reads, pos 503: 10
+# non-supporting shotgun reads, pos 503: 10
+
+Consensus: reference                   708+ GGGAACGTGTTGGGAACAAATGTACACTCCAGGTGGAGGAGTGAGGAATGACGATGTTGACCAAAGCCTAATTATT 783
+                                                                                   *
+
+# supporting shotgun reads, pos 747: 16
+# non-supporting shotgun reads, pos 747: 49
+
+Individual Variation IDs: 2, 3, 6
+
+======================================================================
+SUBSTITUTION
+SubjAccno	SubjPos1	RegionName1	SubjPos2	RegionName2	Length	Confidence
+H3N2/EPI353903/Victoria361_E3E3/2011/PB2	503		697		193	High
+
+
+Consensus: reference                   463+ AGTGCCAAAGAGGCACAAGATGTAATTATGGAAGTTGTTTTTCCCAATGAAGTGGGAGCCAGAATACTAACATCAGA 539
+                                                                                    *
+# supporting shotgun reads, pos 503: 6
+# non-supporting shotgun reads, pos 503: 12
+
+Consensus: reference                   657+ AGTTGCTGGCGGAACAAGCAGTATATACATTGAAGTTTTACATTTGACTCAGGGAACGTGTTGGGAACAAATGTACACT 735
+                                                                                    *
+
+# supporting shotgun reads, pos 697: 6
+# non-supporting shotgun reads, pos 697: 2
+
+
+Individual Variation IDs: 7
+
+======================================================================
+SUBSTITUTION
+SubjAccno	SubjPos1	RegionName1	SubjPos2	RegionName2	Length	Confidence
+H3N2/EPI353903/Victoria361_E3E3/2011/PB2	551		747		195	High
+
+
+Consensus: reference                   513+ AGTGGGAGCCAGAATACTAACATCAGAATCACAACTAACAATAACTAAGGAGAAAAAAGAAGAGCTCCGAGATTGCAAAATTT 595
+                                                                                  *******
+# supporting shotgun reads, pos 551: 5
+# non-supporting shotgun reads, pos 551: 4
+
+Consensus: reference                   708+ GGGAACGTGTTGGGAACAAATGTACACTCCAGGTGGAGGAGTGAGGAATGACGATGTTGACCAAAGCCTAATTATT 783
+                                                                                   *
+
+# supporting shotgun reads, pos 747: 4
+# non-supporting shotgun reads, pos 747: 25
+
+
+Individual Variation IDs: 8
+
+======================================================================
+DUPLICATION, INTERSPERSED
+OrigSubjAccno	OrigSubjStart	RegionName1	OrigSubjEnd	RegionName2	ToSubjAccno	ToSubjPos	RegionName3	Length	Confidence
+H3N2/EPI353903/Victoria361_E3E3/2011/PB2	747		777		H3N2/EPI353903/Victoria361_E3E3/2011/PB2	503		31	High
+Consensus: reference                   739+ GGTGGAGGAGTGAGGAATGACGATGTTGACCAAAGCCTAATTATTGCGGCCAGGAACATAGTAAGAAGAGCCGCA 813
+                                                                                  *
+
+# supporting shotgun reads, pos 777: 7
+# non-supporting shotgun reads, pos 777: 49
+
+Consensus: reference                   463+ AGTGCCAAAGAGGCACAAGATGTAATTATGGAAGTTGTTTTTCCCAATGAAGTGGGAGCCAGAATACTAACATCAGA 539
+                                                                                    *
+
+# supporting shotgun reads, pos 503: 7
+# non-supporting shotgun reads, pos 503: 12
+
+Individual Variation IDs: 5
+
+======================================================================
+SUBSTITUTION
+SubjAccno	SubjPos1	RegionName1	SubjPos2	RegionName2	Length	Confidence
+H3N2/EPI353903/Victoria361_E3E3/2011/PB2	1143		1540		396	High
+
+
+Consensus: reference                  1103+ AAAGAGCAACAGCTATACTAAGAAAAGCAACCAGAAGATTGGTTCAACTCATAGTGAGTGGAAGAGACGAACAGTCAATA 1182
+                                                                                    *
+# supporting shotgun reads, pos 1143: 3
+# non-supporting shotgun reads, pos 1143: 4
+
+Consensus: reference                  1495+ GATCGGTTTTTGAGAGTTCGAGACCAACGTGGGAATGTATTATTATCTCCTGAGGAGGTCAGTGAAACACAGGGAACTGA 1574
+                                                                                   *******
+
+# supporting shotgun reads, pos 1540: 3
+# non-supporting shotgun reads, pos 1540: 15
+
+
+Individual Variation IDs: 11
+
+======================================================================
+DUPLICATION, INTERSPERSED
+OrigSubjAccno	OrigSubjStart	RegionName1	OrigSubjEnd	RegionName2	ToSubjAccno	ToSubjPos	RegionName3	Length	Confidence
+H3N2/EPI353903/Victoria361_E3E3/2011/PB2	1396		1528		H3N2/EPI353903/Victoria361_E3E3/2011/PB2	1057		133	Low
+
+Consensus: reference                  1360+ ATCGACAGTGTGATGGGAATGGTTGGAGTATTACCAGACATGACTCCAAGCACAGAGATGTCAATGAGAGGAAT 1433
+                                                                                *
+# supporting shotgun reads, pos 1396: 4
+# non-supporting shotgun reads, pos 1396: 10
+
+Consensus: reference                  1489+ AGCATTGATCGGTTTTTGAGAGTTCGAGACCAACGTGGGAATGTATTATTATCTCCTGAGGAGGTCAGTGAAACACAGGG 1568
+                                                                                   *******
+
+# supporting shotgun reads, pos 1528: 8
+# non-supporting shotgun reads, pos 1528: 18
+
+Consensus: reference                  1019+ AAGAAGAAGAGGTGCTTACAGGCAATCTCCAAACATTGAGAATAAGAGTACATGAGGGGTATGAGGAGTTCACAA 1093
+                                                                                  *
+
+# supporting shotgun reads, pos 1057: 4
+# non-supporting shotgun reads, pos 1057: 17
+
+Individual Variation IDs: 9, 10, 12, 13
+
+======================================================================
+SUBSTITUTION
+SubjAccno	SubjPos1	RegionName1	SubjPos2	RegionName2	Length	Confidence
+H3N2/EPI353903/Victoria361_E3E3/2011/PB2	1832		1987		154	High
+
+
+Consensus: reference                  1797+ ATTCCAACAAATGAGAGACGTACTTGGGACATTTGACACTGCCCAGATAATAAAGCTTCTCCCTTTTGCAGCTGC 1871
+                                                                               ****
+# supporting shotgun reads, pos 1832: 5
+# non-supporting shotgun reads, pos 1832: 34
+
+Consensus: reference                  1949+ GGGGCAATTCTCCTGTATTCAACTACAACAAAACCACTAAAAGGCTAACAATTCTCGGAAAAGATGCCGGCACTTTAATTGAAGACCC 2036
+                                                                                  **************
+
+# supporting shotgun reads, pos 1987: 5
+# non-supporting shotgun reads, pos 1987: 15
+
+
+Individual Variation IDs: 14
+
+======================================================================
+SUBSTITUTION
+SubjAccno	SubjPos1	RegionName1	SubjPos2	RegionName2	Length	Confidence
+H3N2/EPI353903/Victoria361_E3E3/2011/PB2	1979		2092		112	Low
+
+
+Consensus: reference                  1941+ ACTTGTAAGGGGCAATTCTCCTGTATTCAACTACAACAAAACCACTAAAAGGCTAACAATTCTCGGAAAAGATGCC 2016
+                                                                                  *
+# supporting shotgun reads, pos 1979: 4
+# non-supporting shotgun reads, pos 1979: 11
+
+Consensus: reference                  2057+ TGGAGTCCGCCGTCTTGAGAGGGTTCCTCATTATAGGTAAGGAAGACAGAAGATACGGACCAGCATTAA 2125
+                                                                               ****
+
+# supporting shotgun reads, pos 2092: 4
+# non-supporting shotgun reads, pos 2092: 35
+
+
+Individual Variation IDs: 16
+
+======================================================================
+SUBSTITUTION
+SubjAccno	SubjPos1	RegionName1	SubjPos2	RegionName2	Length	Confidence
+H3N2/EPI353904/Victoria361_E3E3/2011/PB1	1088		1184		95	High
+
+
+Consensus: reference                  1052+ TGGGAAAAGGATACATGTTCGAGAGTAAGAGAATGAAGCTCCGGACACAAATACCTGCAGAAATGCTAGCAA 1123
+                                                                                *
+# supporting shotgun reads, pos 1088: 25
+# non-supporting shotgun reads, pos 1088: 23
+
+Consensus: reference                  1145+ ATGAATCAACAAGGAAGAAAATTGAGAAAATAAGGCCTCTTCTAATAGATGGCACAGCATCATTGAGCCCTGGAATGATGA 1225
+                                                                                   ****
+
+# supporting shotgun reads, pos 1184: 27
+# non-supporting shotgun reads, pos 1184: 30
+
+
+Individual Variation IDs: 19, 20, 21
+
+======================================================================
+DUPLICATION, INTERSPERSED
+OrigSubjAccno	OrigSubjStart	RegionName1	OrigSubjEnd	RegionName2	ToSubjAccno	ToSubjPos	RegionName3	Length	Confidence
+H3N2/EPI353904/Victoria361_E3E3/2011/PB1	1963		2162		H3N2/EPI353904/Victoria361_E3E3/2011/PB1	110		200	High
+
+Consensus: reference                  1924+ AATGCTGTAGTAATGCCAGCCCATGGTCCGGCCAAAAGTATGGAATATGATGCCGTTGCAACTACACACTCCTGGA 1999
+                                                                                   *
+# supporting shotgun reads, pos 1963: 3
+# non-supporting shotgun reads, pos 1963: 6
+
+Consensus: reference                  2125+ ATTGGAATTTCTAGCATGGTGGAGGCCATGGTGTCTAGGGCCCGGATTGATGCCAGAATTGACTTCGAGTCTG 2197
+                                                                                **
+
+# supporting shotgun reads, pos 2162: 30
+# non-supporting shotgun reads, pos 2162: 39
+
+Consensus: reference                    74+ CTGGAGATCCTCCATACAGCCATGGAACAGGGACAGGGTACACTATGGACACAGTCAACAGAACACACCAATAT 147
+                                                                                *
+
+# supporting shotgun reads, pos 110: 7
+# non-supporting shotgun reads, pos 110: 28
+
+Individual Variation IDs: 17, 18, 23
+
+======================================================================
+DUPLICATION, INTERSPERSED
+OrigSubjAccno	OrigSubjStart	RegionName1	OrigSubjEnd	RegionName2	ToSubjAccno	ToSubjPos	RegionName3	Length	Confidence
+H3N2/EPI355203/Victoria361_E3E3/2011/PA	1251		1298		H3N2/EPI355203/Victoria361_E3E3/2011/PA	1145		48	High
+
+Consensus: reference                  1211+ CAAGCTGGATGCAGAGTGAGTTCAACAAGGCCTGTGAGCTAACTGATTCAGTCTGGATAGAGCTCGATGAAATTGGAGAGGACGTAGCC 1299
+                                                                                    *************
+# supporting shotgun reads, pos 1251: 23
+# non-supporting shotgun reads, pos 1251: 30
+
+Consensus: reference                  1261+ GTCTGGATAGAGCTCGATGAAATTGGAGAGGACGTAGCCCCAATTGAGCACATTGCAAGCATGAGAAGGA 1330
+                                                                                **
+
+# supporting shotgun reads, pos 1298: 18
+# non-supporting shotgun reads, pos 1298: 140
+
+Consensus: reference                  1099+ AAGTGGGCTCTTGGTGAAAACATGGCACCAGAGAAGGTAGACTTTGAAAACTGCAGAGACATAAGCGATTTGAAGCAATATGATAG 1184
+                                                                                ***********
+
+# supporting shotgun reads, pos 1145: 41
+# non-supporting shotgun reads, pos 1145: 113
+
+Individual Variation IDs: 28, 29, 30
+
+======================================================================
+SUBSTITUTION
+SubjAccno	SubjPos1	RegionName1	SubjPos2	RegionName2	Length	Confidence
+H3N2/EPI358016/Victoria361_E3E3/2011/NP	769		894		124	High
+
+
+Consensus: reference                   730+ GAAAGTCGGAACCCAGGAAACGCTGAGATCGAAGATCTCATATTTTTAGCAAGATCTGCACTGATATTGAGAGGATCAG 808
+                                                                                   *
+# supporting shotgun reads, pos 769: 57
+# non-supporting shotgun reads, pos 769: 8
+
+Consensus: reference                   856+ TCCAGTGGGTACGACTTCGAAAAAGAGGGATATTCCTTGGTGGGAATAGACCCTTTCAAACTACTTCAAAAT 927
+                                                                                  ****
+
+# supporting shotgun reads, pos 894: 65
+# non-supporting shotgun reads, pos 894: 7
+
+
+Individual Variation IDs: 31
+
+======================================================================
+SUBSTITUTION
+SubjAccno	SubjPos1	RegionName1	SubjPos2	RegionName2	Length	Confidence
+H3N2/EPI358016/Victoria361_E3E3/2011/NP	1049		1135		85	High
+
+
+Consensus: reference                  1015+ GAAGATTTAAGATTGTTAAGCTTCATCAGAGGGACAAAAGTATCTCCTCGGGGGAAACTGTCAACTAGAGGAG 1087
+                                                                            *********
+# supporting shotgun reads, pos 1049: 62
+# non-supporting shotgun reads, pos 1049: 52
+
+Consensus: reference                  1087+ GTACAAATTGCTTCAAATGAGAACATGGATAATATGGGATCGAGCACTCTTGAACTGAGAAGCGGGTACTGGGCCATAAGGACCAG 1172
+                                                                                   **************
+
+# supporting shotgun reads, pos 1135: 74
+# non-supporting shotgun reads, pos 1135: 49
+
+
+Individual Variation IDs: 32, 33, 34
+
+======================================================================
+SUBSTITUTION
+SubjAccno	SubjPos1	RegionName1	SubjPos2	RegionName2	Length	Confidence
+H3N2/EPI358016/Victoria361_E3E3/2011/NP	1235		1315		79	High
+
+
+Consensus: reference                  1199+ GGGCCTCCGCAGGCCAAACCAGTGTGCAACCTACGTTTTCTGTACAAAGAAACCTCCCATTTGAAAAGTCAACCATCATGGCAG 1282
+                                                                                **********
+# supporting shotgun reads, pos 1235: 4
+# non-supporting shotgun reads, pos 1235: 6
+
+Consensus: reference                  1275+ CATGGCAGCATTCACTGGAAATACAGAGGGAAGAACTTCAGACATGAGGGCAGAAATCATAAGGATGATGGAAGGTGCG 1353
+                                                                                    *
+
+# supporting shotgun reads, pos 1315: 3
+# non-supporting shotgun reads, pos 1315: 9
+
+
+Individual Variation IDs: 35
+
+======================================================================
