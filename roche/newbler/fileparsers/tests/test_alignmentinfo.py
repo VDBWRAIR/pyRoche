@@ -1,9 +1,28 @@
 import nose
+import os
+import os.path
 
-from ..alignmentinfo import AlignmentInfo, BaseInfo, BadFormatException
+from ..alignmentinfo import AlignmentInfo, CoverageRegion, BaseInfo, BadFormatException
+
+import fixtures
 
 class TestAlignmentInfo( object ):
     pass
+
+class TestMergeRegions( TestAlignmentInfo ):
+    def test_mergeregions_fixedexamples( self ):
+        ''' Test fixed examples. ported from the doctests. Sorry future self for doing this '''
+        ai = AlignmentInfo( os.path.join( fixtures.PATH, '05_11_2012_1_TI-MID10_PR_2357_AH3', 'mapping', '454AlignmentInfo.tsv' ) )
+        merged = ai.merge_regions()
+        assert merged['CY081005_NS_Boston09'] == [CoverageRegion( 1, 459, 'Gap' ), CoverageRegion( 460, 506, 'LowCoverage' )]
+        assert merged['Human/1_(PB2)/H5N1/1/Thailand/2004'] == [CoverageRegion( 1, 134, 'LowCoverage' ), CoverageRegion( 135, 2106, 'Gap' ), CoverageRegion( 2107, 2134, 'LowCoverage' ), CoverageRegion( 2135, 2333, 'Normal' )]
+        assert merged['CY074918_NP_Managua09'] == [CoverageRegion( 1, 1537, 'Normal' )]
+        assert merged['Human/2_(PB1)/H5N1/2/Thailand/2004'] == [CoverageRegion( 1, 17, 'Gap' ), CoverageRegion( 18, 361, 'Normal' ), CoverageRegion( 362, 377, 'LowCoverage' ), CoverageRegion( 378, 1956, 'Gap' ), CoverageRegion( 1957, 2358, 'LowCoverage' )]
+
+        ai = AlignmentInfo( os.path.join( fixtures.PATH, '08_31_2012_3_RL10_600Yu_10_VOID', 'assembly', '454AlignmentInfo.tsv' ) )
+        merged = ai.merge_regions()
+        merged['contig00008'] == [CoverageRegion( 1, 709, 'LowCoverage' )]
+        merged['contig00006'] == [CoverageRegion( 1, 570, 'LowCoverage' ), CoverageRegion( 571, 743, 'Normal' ), CoverageRegion( 744, 773, 'LowCoverage' ), CoverageRegion( 774, 779, 'Normal' ), CoverageRegion( 780, 866, 'LowCoverage' )]
 
 class TestBaseInfo( object ):
     def setUp( self ):

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FourFiveFourProject>
+
+  <ProjectInformation>
+    <ProjectType>Assembly</ProjectType>
+    <ProjectDirectory>/home/EIDRUdata/Data_seq454/2012_08_31/R3R4Rx_combo_Denovo/08_31_2012_3_RL10_600Yu_10_VOID</ProjectDirectory>
+    <dateCreated>Tue Sep  4 16:17:19 2012</dateCreated>
+    <dateModified>Tue Sep  4 16:17:20 2012</dateModified>
+    <SoftwareVersion>2.5.3 (20101207_1124)</SoftwareVersion>
+  </ProjectInformation>
+
+  <Config>
+    <minimumReadLength>20</minimumReadLength>
+    <overlapSeedStep>12</overlapSeedStep>
+    <overlapSeedLength>16</overlapSeedLength>
+    <overlapMinSeedCount>1</overlapMinSeedCount>
+    <overlapSeedHitLimit>70</overlapSeedHitLimit>
+    <overlapHitPositionLimit>1000000</overlapHitPositionLimit>
+    <overlapMinMatchLength>40</overlapMinMatchLength>
+    <overlapMinMatchIdentity>90</overlapMinMatchIdentity>
+    <overlapMatchIdentScore>2</overlapMatchIdentScore>
+    <overlapMatchDiffScore>-3</overlapMatchDiffScore>
+    <overlapMatchUniqueThresh>12</overlapMatchUniqueThresh>
+    <isogroupThresh>500</isogroupThresh>
+    <isotigThresh>100</isotigThresh>
+    <isotigContigCountThresh>100</isotigContigCountThresh>
+    <isotigContigLengthThresh>3</isotigContigLengthThresh>
+    <aceMode>Auto</aceMode>
+    <aceReadMode>Default</aceReadMode>
+    <pairAlignMode>None</pairAlignMode>
+    <alignInfoMode>Auto</alignInfoMode>
+    <mapMinContigDepth>1</mapMinContigDepth>
+    <allContigThresh>100</allContigThresh>
+    <largeContigThresh>500</largeContigThresh>
+    <expectedDepth>0</expectedDepth>
+    <cDNAMode>false</cDNAMode>
+    <referenceMode>Auto</referenceMode>
+    <largeGenome>false</largeGenome>
+    <ripMode>false</ripMode>
+    <heterozygoteMode>false</heterozygoteMode>
+    <assemblerBatchSize>0</assemblerBatchSize>
+    <numCPU>1</numCPU>
+    <showSingleReadVariations>false</showSingleReadVariations>
+    <nimblegenMappingMode>false</nimblegenMappingMode>
+    <backwardCompatibleContigging>false</backwardCompatibleContigging>
+    <finishMode>false</finishMode>
+    <autoTrimming>true</autoTrimming>
+    <VectorDatabase>/home/EIDRUdata/Primers/RandomRT-PCR-termini_JH_Mar2011.fna</VectorDatabase>
+    <screeningDatabase/>
+    <haplotypeFile/>
+    <targetedRegionFile/>
+    <annotationFile/>
+    <knownSNPFile/>
+    <accessionRenameFile/>
+    <filterExcludeFile/>
+    <filterIncludeFile/>
+    <UseSerialIO>false</UseSerialIO>
+    <SerialIOMinimizeDisk>false</SerialIOMinimizeDisk>
+    <SerialIOMemLimit>0</SerialIOMemLimit>
+  </Config>
+
+  <ReferenceFiles>
+    <SetRefCount>0</SetRefCount>
+  </ReferenceFiles>
+
+  <ReadFiles>
+    <SetReadCount>1</SetReadCount>
+    <File>
+      <SFFDirFilename>08_31_2012_3_RL10_600Yu_10_VOID.sff</SFFDirFilename>
+      <Path>/home/EIDRUdata/Data_seq454/2012_08_31/R3R4Rx_combo_Denovo/08_31_2012_3_RL10_600Yu_10_VOID/sff/08_31_2012_3_RL10_600Yu_10_VOID.sff</Path>
+      <Type>SFF</Type>
+      <IsPairedEnd>false</IsPairedEnd>
+      <Rescore>false</Rescore>
+      <removeFlag>false</removeFlag>
+    </File>
+  </ReadFiles>
+
+</FourFiveFourProject>

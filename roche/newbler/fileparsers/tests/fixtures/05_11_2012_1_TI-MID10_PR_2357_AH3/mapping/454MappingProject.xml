@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FourFiveFourProject>
+
+  <ProjectInformation>
+    <ProjectType>Mapping</ProjectType>
+    <ProjectDirectory>/home/EIDRUdata/Data_seq454/2012_05_11/H3N2/05_11_2012_1_TI-MID10_PR_2357_AH3</ProjectDirectory>
+    <dateCreated>Wed May 16 15:12:43 2012</dateCreated>
+    <dateModified>Wed May 16 15:12:44 2012</dateModified>
+    <SoftwareVersion>2.5.3 (20101207_1124)</SoftwareVersion>
+  </ProjectInformation>
+
+  <Config>
+    <minimumReadLength>20</minimumReadLength>
+    <overlapSeedStep>12</overlapSeedStep>
+    <overlapSeedLength>16</overlapSeedLength>
+    <overlapMinSeedCount>1</overlapMinSeedCount>
+    <overlapSeedHitLimit>70</overlapSeedHitLimit>
+    <overlapHitPositionLimit>1000000</overlapHitPositionLimit>
+    <overlapMinMatchLength>40</overlapMinMatchLength>
+    <overlapMinMatchIdentity>90</overlapMinMatchIdentity>
+    <overlapMatchIdentScore>2</overlapMatchIdentScore>
+    <overlapMatchDiffScore>-3</overlapMatchDiffScore>
+    <overlapMatchUniqueThresh>12</overlapMatchUniqueThresh>
+    <isogroupThresh>500</isogroupThresh>
+    <isotigThresh>100</isotigThresh>
+    <isotigContigCountThresh>100</isotigContigCountThresh>
+    <isotigContigLengthThresh>3</isotigContigLengthThresh>
+    <aceMode>Auto</aceMode>
+    <aceReadMode>Default</aceReadMode>
+    <pairAlignMode>Text</pairAlignMode>
+    <alignInfoMode>Auto</alignInfoMode>
+    <mapMinContigDepth>1</mapMinContigDepth>
+    <allContigThresh>100</allContigThresh>
+    <largeContigThresh>500</largeContigThresh>
+    <expectedDepth>0</expectedDepth>
+    <cDNAMode>false</cDNAMode>
+    <referenceMode>Auto</referenceMode>
+    <largeGenome>false</largeGenome>
+    <ripMode>false</ripMode>
+    <heterozygoteMode>false</heterozygoteMode>
+    <assemblerBatchSize>0</assemblerBatchSize>
+    <numCPU>0</numCPU>
+    <showSingleReadVariations>false</showSingleReadVariations>
+    <nimblegenMappingMode>false</nimblegenMappingMode>
+    <backwardCompatibleContigging>false</backwardCompatibleContigging>
+    <finishMode>false</finishMode>
+    <autoTrimming>true</autoTrimming>
+    <VectorDatabase>/home/EIDRUdata/Primers/AH3N2_FD_primer_nodeg20120515.fna</VectorDatabase>
+    <screeningDatabase/>
+    <haplotypeFile/>
+    <targetedRegionFile/>
+    <annotationFile/>
+    <knownSNPFile/>
+    <accessionRenameFile/>
+    <filterExcludeFile/>
+    <filterIncludeFile/>
+    <UseSerialIO>false</UseSerialIO>
+    <SerialIOMinimizeDisk>false</SerialIOMinimizeDisk>
+    <SerialIOMemLimit>0</SerialIOMemLimit>
+  </Config>
+
+  <ReferenceFiles>
+    <SetRefCount>1</SetRefCount>
+    <File>
+      <Path>/home/EIDRUdata/Data_seq454/2012_05_11/H3N2/Ref/infB_Victoria.fasta</Path>
+      <Type>Fasta</Type>
+    </File>
+    <File>
+      <Path>/home/EIDRUdata/Data_seq454/2012_05_11/H3N2/Ref/pdmH1N1_California.fasta</Path>
+      <Type>Fasta</Type>
+    </File>
+    <File>
+      <Path>/home/EIDRUdata/Data_seq454/2012_05_11/H3N2/Ref/H3N2_Managua.fasta</Path>
+      <Type>Fasta</Type>
+    </File>
+    <File>
+      <Path>/home/EIDRUdata/Data_seq454/2012_05_11/H3N2/Ref/H5N1_Thailand.fasta</Path>
+      <Type>Fasta</Type>
+    </File>
+    <File>
+      <Path>/home/EIDRUdata/Data_seq454/2012_05_11/H3N2/Ref/H1N1_boston.fasta</Path>
+      <Type>Fasta</Type>
+    </File>
+  </ReferenceFiles>
+
+  <ReadFiles>
+    <SetReadCount>1</SetReadCount>
+    <File>
+      <SFFDirFilename>05_11_2012_1_TI-MID10_PR_2357_AH3.sff</SFFDirFilename>
+      <Path>/home/EIDRUdata/Data_seq454/2012_05_11/H3N2/05_11_2012_1_TI-MID10_PR_2357_AH3/sff/05_11_2012_1_TI-MID10_PR_2357_AH3.sff</Path>
+      <Type>SFF</Type>
+      <IsPairedEnd>false</IsPairedEnd>
+      <Rescore>false</Rescore>
+      <removeFlag>false</removeFlag>
+    </File>
+  </ReadFiles>
+
+</FourFiveFourProject>

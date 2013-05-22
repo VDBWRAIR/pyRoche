@@ -74,42 +74,17 @@ class AlignmentInfo(object):
     def merge_regions( self ):
         """
             Merge all SeqAlignments with same name and return dictionary of Ref: [merged regions]
-            >>> ai = AlignmentInfo( 'examples/05_11_2012_1_TI-MID10_PR_2357_AH3/mapping/454AlignmentInfo.tsv' )
-            >>> merged = ai.merge_regions()
-            >>> merged['CY081005_NS_Boston09']
-            [CoverageRegion( 1, 459, 'Gap' ), CoverageRegion( 460, 506, 'LowCoverage' )]
-            >>> merged['Human/1_(PB2)/H5N1/1/Thailand/2004']
-            [CoverageRegion( 1, 134, 'LowCoverage' ), CoverageRegion( 135, 2106, 'Gap' ), CoverageRegion( 2107, 2134, 'LowCoverage' ), CoverageRegion( 2135, 2333, 'Normal' )]
-            >>> merged['CY074918_NP_Managua09']
-            [CoverageRegion( 1, 1537, 'Normal' )]
-            >>> merged['Human/2_(PB1)/H5N1/2/Thailand/2004']
-            [CoverageRegion( 1, 17, 'Gap' ), CoverageRegion( 18, 361, 'Normal' ), CoverageRegion( 362, 377, 'LowCoverage' ), CoverageRegion( 378, 1956, 'Gap' ), CoverageRegion( 1957, 2358, 'LowCoverage' )]
-
-            >>> ai = AlignmentInfo( 'examples/08_06_2012_1_Ti-MID30_D84_140_Dengue3/mapping/454AlignmentInfo.tsv' )
-            >>> merged = ai.merge_regions()
-            >>> merged['D3_KDC0070A_Thailand']
-            [CoverageRegion( 1, 2831, 'Normal' ), CoverageRegion( 2832, 2853, 'LowCoverage' ), CoverageRegion( 2854, 2878, 'Gap' ), CoverageRegion( 2879, 10645, 'Normal' ), CoverageRegion( 10646, 10665, 'LowCoverage' )]
-
-            >>> ai = AlignmentInfo( 'examples/08_31_2012_3_RL10_600Yu_10_VOID/assembly/454AlignmentInfo.tsv' )
-            >>> merged = ai.merge_regions()
-            >>> merged['contig00008']
-            [CoverageRegion( 1, 709, 'LowCoverage' )]
-            >>> merged['contig00006']
-            [CoverageRegion( 1, 570, 'LowCoverage' ), CoverageRegion( 571, 743, 'Normal' ), CoverageRegion( 744, 773, 'LowCoverage' ), CoverageRegion( 774, 779, 'Normal' ), CoverageRegion( 780, 866, 'LowCoverage' )]
         """
         # Init the dict
         refregions = {ref: None for ref in self._refs}
 
-        for ref, indexes in self._refs.iteritems():
+        for ref, sas in self._refs.iteritems():
             regionsforref = []
             mergedregions = []
-            for index in indexes:
-                sa = self.seqs[index]
+            for sa in sas:
                 [regionsforref.append( region ) for region in sa.regions]
 
             regionsforref.sort()
-            #print ">>> merged['%s']" % ref
-            #print regionsforref
             if len( regionsforref ) < 2:
                 refregions[ref] = regionsforref
             else:
