@@ -2,6 +2,7 @@ import os
 from distutils.core import setup
 
 from fnmatch import fnmatch
+import subprocess
 
 from roche.__init__ import __version__
 
