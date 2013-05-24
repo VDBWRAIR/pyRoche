@@ -4,8 +4,6 @@ from distutils.core import setup
 from fnmatch import fnmatch
 import subprocess
 
-from roche.__init__ import __version__
-
 # The major.minor version number
 __version__ = 0
 
