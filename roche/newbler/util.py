@@ -2,6 +2,8 @@ from projectdir import ProjectDirectory
 
 from Bio import SeqIO
 
+import sys
+
 def reference_file_for_identifier( identifier, projdir ):
     """
         Arguments:
