@@ -1,0 +1,8 @@
+dist*
+build*
+*.pyc
+*.swp
+*egg*
+*examples*
+_version.py
+requirements.txt

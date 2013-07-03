@@ -1,0 +1,3124 @@
+>Reference     	Start	End	Ref	Var	Total	Var
+>Accno         	 Pos 	Pos	Nuc	Nuc	Depth	Freq
+______________________________
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	156	156	G	T	3	100%
+
+Reads with Difference:
+reference                   136+ CTGTTCATGGCCCTGGTGGCGTTCCTTCGTTTCCTAACAATCCCAC 181
+                                                     *
+IA52U1B01ED5BC  (4)         216+ CTGTTCATGGCCCTGGTGGCTTTCCTTCGTTTCCTAACAATCCCAC 261
+IA52U1B01DRIW6  (4)         208+ CTGTTCATGGCCCTGGTGGCTTTCCTTCGTTTCCTAACAATCCCAC 253
+IA52U1B01D3159  (769)       211+ CTGTTCATGGCCCTGGTGGCTTTCCTTCGTTCCCTAACAATCCCAC 256
+                                                     *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	219	219	G	A	4	100%
+
+Reads with Difference:
+reference                   198+ GAAGAG-ATGGGGAACAATTAAGAAATCAAAAGCCATTAATGTT 240
+                                                       **
+IA52U1B01ED5BC  (4)         278+ GAAGAG-ATGGGGAACAATTAAAAAATCAAAAGCCATTAATGTT 320
+IA52U1B01DRIW6  (4)         270+ GAAGAG-ATGGGGAACAATTAAAAAATCAAAAGCCATTAATGTT 312
+IA52U1B01D3159  (769)       273+ GAAGAG-ATGGGGAACAATTAAAAAATCAAAAGCCATTAATGTT 315
+IA52U1B01E5F3D  (594)       725- GAAGAGGATGGGGAACAATTTAAAAATCAAAAGCCAT-AATGTT 683
+                                                       **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	264	264	T	C	4	100%
+
+Reads with Difference:
+reference                   245+ GAGGGTTCAGGAAA-GAGATTGGAAGAATGCTGAACATCTTGAA 287
+                                                     *
+IA52U1B01ED5BC  (4)         325+ GAGGGTTCAGGAAA-GAGATCGGAAGGATGCTGAACATCTTGAA 367
+IA52U1B01DRIW6  (4)         317+ GAGGGTTCAGGAAA-GAGATCGGAAGGATGCTGAACATCTTGAA 359
+IA52U1B01D3159  (769)       320+ GAGGGTTCAGGAAA-GAGATCGGAAGGATGCTGAACATCTTGAA 362
+IA52U1B01E5F3D  (594)       678- GAGG-TTCAGGAAAAGAGATCGGAAGGATGCTGAACATCTTGAA 636
+                                                     *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	270	270	A	G	4	100%
+
+Reads with Difference:
+reference                   250+ TTCAGGAAA-GAGATTGGAAGAATGCTGAACATCTTGAATAGGA 292
+                                                      *
+IA52U1B01ED5BC  (4)         330+ TTCAGGAAA-GAGATCGGAAGGATGCTGAACATCTTGAATAGGA 372
+IA52U1B01DRIW6  (4)         322+ TTCAGGAAA-GAGATCGGAAGGATGCTGAACATCTTGAATAGGA 364
+IA52U1B01D3159  (769)       325+ TTCAGGAAA-GAGATCGGAAGGATGCTGAACATCTTGAATAGGA 367
+IA52U1B01E5F3D  (594)       674- TTCAGGAAAAGAGATCGGAAGGATGCTGAACATCTTGAATAGGA 631
+                                                      *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	300	300	A	G	4	100%
+
+Reads with Difference:
+reference                   276+ GAACATCTTGAATAGGAGACGCAGATCTGTAGGCATGATCATTATGCTGA 325
+                                                         *
+IA52U1B01ED5BC  (4)         356+ GAACATCTTGAATAGGAGACGCAGGTCTGCAGGCATGATCATTATGCTGA 405
+IA52U1B01DRIW6  (4)         348+ GAACATCTTGAATAGGAGACGCAGGTCTGCAGGCATGATCATTATGCTGA 397
+IA52U1B01D3159  (769)       351+ GAACATCTTGAATAGGAGACGCAGGTCTGCAGGCATGATCATTATGCTGA 400
+IA52U1B01E5F3D  (594)       647- GAACATCTTGAATAGGAGACGCAGGTCTGCAGGCATGATCATTATGCTGA 598
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	305	305	T	C	4	100%
+
+Reads with Difference:
+reference                   280+ ATCTTGAATAGGAGACGCAGATCTGTAGGCATGATCATTATGCTGATTC 328
+                                                          *
+IA52U1B01ED5BC  (4)         360+ ATCTTGAATAGGAGACGCAGGTCTGCAGGCATGATCATTATGCTGATTC 408
+IA52U1B01DRIW6  (4)         352+ ATCTTGAATAGGAGACGCAGGTCTGCAGGCATGATCATTATGCTGATTC 400
+IA52U1B01D3159  (769)       355+ ATCTTGAATAGGAGACGCAGGTCTGCAGGCATGATCATTATGCTGATTC 403
+IA52U1B01E5F3D  (594)       643- ATCTTGAATAGGAGACGCAGGTCTGCAGGCATGATCATTATGCTGATTC 595
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	336	336	A	G	4	100%
+
+Reads with Difference:
+reference                   313+ ATCATTATGCTGATTCCAACAGTAATGGCGTTCC-ATCTAACCACACG 359
+                                                        *
+IA52U1B01ED5BC  (4)         393+ ATCATTATGCTGATTCCAACAGTGATGGCGTTCC-ATCTAACCACACG 439
+IA52U1B01DRIW6  (4)         385+ ATCATTATGCTGATTCCAACAGTGATGGCGTTCC-ATCTAACCACACG 431
+IA52U1B01D3159  (769)       388+ ATCATTATGCTGATTCCAACAGTGATGGCGTTCCCATCTAACCACACG 435
+IA52U1B01E5F3D  (594)       610- ATCATTATGCTGATTCCAACAGTGATGGCGTTCC-ATCTAACCACACG 564
+                                                        *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	385	385	A	G	4	100%
+
+Reads with Difference:
+reference                   362+ ACGGAGAACCACACATG-ATCGTCAGTATACAAGAGAAA-GG--AAAAA- 406
+                                                         **
+IA52U1B01ED5BC  (4)         442+ ACGGAGAACCACACATG-ATCGTCGGTATACAGGAGAAA-GGG-AAAA-- 486
+IA52U1B01DRIW6  (4)         434+ ACGGAGAACCACACATG-ATCGTCGGTATACAGGAGAAA-GGG-AAAA-- 478
+IA52U1B01D3159  (769)       438+ ACGGAGAACCGCACATG-ATCGTCGGTATACAGGAGAAA-GGGGAAAAA- 484
+IA52U1B01E5F3D  (594)       561- ACGGAGAACCACACATGGATCGTCGGTATACAGGAGAAAAGGGGAAAAAA 512
+                                                         **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	393	393	A	G	4	100%
+
+Reads with Difference:
+reference                   372+ ACACATG-ATCGTCAGTATACAAGAGAAA-GG--AAAAA-GCC-TTC 412
+                                                       **
+IA52U1B01ED5BC  (4)         452+ ACACATG-ATCGTCGGTATACAGGAGAAA-GGG-AAAA--GTC-TTC 492
+IA52U1B01DRIW6  (4)         444+ ACACATG-ATCGTCGGTATACAGGAGAAA-GGG-AAAA--GTC-TTC 484
+IA52U1B01D3159  (769)       448+ GCACATG-ATCGTCGGTATACAGGAGAAA-GGGGAAAAA-GTCATTC 491
+IA52U1B01E5F3D  (594)       551- ACACATGGATCGTCGGTATACAGGAGAAAAGGGGAAAAAAGTC-TTC 506
+                                                       **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	408	408	C	T	4	100%
+
+Reads with Difference:
+reference                   388+ ATACAAGAGAAA-GG--AAAAA-GCC-TTCTGTTT-AAAA-CA-G 424
+                                                         *
+IA52U1B01ED5BC  (4)         468+ ATACAGGAGAAA-GGG-AAAA--GTC-TTCTGTTC-AAAAACA-G 505
+IA52U1B01DRIW6  (4)         460+ ATACAGGAGAAA-GGG-AAAA--GTC-TTCTGTTC-AAAAACA-G 497
+IA52U1B01D3159  (769)       464+ ATACAGGAGAAA-GGGGAAAAA-GTCATTCTGTTTCAAAA-CAAG 505
+IA52U1B01E5F3D  (594)       534- ATACAGGAGAAAAGGGGAAAAAAGTC-TTCTGTTC-AAAA-CA-G 494
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	417	417	T	C	4	75%
+
+Reads with Difference:
+reference                   399+ A-GG--AAAAA-GCC-TTCTGTTT-AAAA-CA-GAGGATGG-CGT 434
+                                                        **
+IA52U1B01ED5BC  (4)         479+ A-GGG-AAAA--GTC-TTCTGTTC-AAAAACA-GAGGATGGATGT 516
+IA52U1B01DRIW6  (4)         471+ A-GGG-AAAA--GTC-TTCTGTTC-AAAAACA-GAGGATGG-TGT 507
+IA52U1B01E5F3D  (594)       523- AAGGGGAAAAAAGTC-TTCTGTTC-AAAA-CA-GAGGATGG-TGT 484
+                                                        **
+
+Other Reads:
+                                                        **
+IA52U1B01D3159  (769)       475+ A-GGGGAAAAA-GTCATTCTGTTTCAAAA-CAAGAGGATGG-TGT 515
+                                                        **
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	432	432	C	T	4	100%
+
+Reads with Difference:
+reference                   417+ T-AAAA-CA-GAGGATGG-CGTGAA-CA-TGTGCACCCTCATG 453
+                                                    *
+IA52U1B01ED5BC  (4)         497+ C-AAAAACA-GAGGATGGATGTGAAACA-TGTGCACCCTCATG 536
+IA52U1B01DRIW6  (4)         489+ C-AAAAACA-GAGGATGG-TGTGAAACAATGTGCACCCTCATG 528
+IA52U1B01D3159  (769)       496+ TCAAAA-CAAGAGGATGG-TGTGAA-CA-TGTGCACCCTCATG 534
+IA52U1B01E5F3D  (594)       501- C-AAAA-CA-GAGGATGG-TGTGAA-CA-TGTGCACCCTCATG 465
+                                                    *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	456	456	C	T	4	100%
+
+Reads with Difference:
+reference                   435+ GAA-CA-TGTGCACCCTCATGGCCATGGACC-TTGGTGAA-TTG 474
+                                                        *
+IA52U1B01ED5BC  (4)         517+ GAAACA-TGTGCACCCTCATGGCTATGGACC-TTGGTGAAATTG 558
+IA52U1B01DRIW6  (4)         508+ GAAACAATGTGCACCCTCATGGCTATGGACC-TTGGTGAAATTG 550
+IA52U1B01D3159  (769)       516+ GAA-CA-TGTGCACCCTCATGGCTATGGACC-TTGGTGAAATTG 556
+IA52U1B01E5F3D  (594)       483- GAA-CA-TGTGCACCCTCATGGCTATGGACCCTTGGTGAA-TTG 443
+                                                        *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	504	504	C	T	4	100%
+
+Reads with Difference:
+reference                   481+ GA-CACAA-TCACGTACAAGTGTCCCCTTCTCAGGCAGAATGAGCCAGA 527
+                                                          *
+IA52U1B01DRIW6  (4)         558+ GAACACAAATCACGTACAAGTGTCCTCTTCTCAGGCAGAATGAGCCAGA 606
+IA52U1B01D3159  (769)       563+ GA-CACAA-TCACGTACAAGTGTCCTCTTCTCAGGCAGAATGAGCCAGA 609
+IA52U1B01E5F3D  (594)       436- GA-CACAA-TCACGTACAAGTGTCCTCTTCTCAGGCAGAATGAGCCAGA 390
+IA52U1B01ACFXV  (2)         432- GA-CACAA-TCACGTACAAGTGTCCTCTTCTCAGGCAGAATGAGCCAGA 386
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	540	540	C	T	4	100%
+
+Reads with Difference:
+reference                   519+ TGAGCCAGAAGACATAGA-CTGCTGGTGCAACTCCACGTCCACGT 562
+                                                       **
+IA52U1B01DRIW6  (4)         598+ TGAGCCAGAAGACATAGAACTGTTGGTGCAACTCC           632
+IA52U1B01D3159  (769)       601+ TGAGCCAGAAGACATAGA-CTGTTGGTGCAACTCCACGTCCACGT 644
+IA52U1B01E5F3D  (594)       398- TGAGCCAGAAGACATAGA-CTGTTGGTGCAACTCCACGTCCACGT 355
+IA52U1B01ACFXV  (2)         394- TGAGCCAGAAGACATAGA-CTGTTGGTGCAACTCCACGCCCAC-T 352
+                                                       **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	579	579	T	C	3	100%
+
+Reads with Difference:
+reference                   563+ GGG-TAACCTATGGG-A-CTTGTACCACC-ACGGGAGAA 597
+                                                    *
+IA52U1B01D3159  (769)       645+ GGGGTAACCTATGGGGAGCCTGTACCAC-TACGGGAGAA 682
+IA52U1B01E5F3D  (594)       354- GGG-TAACCTATGGG-A-CCTGTACCAC-TACGGGAGAA 320
+IA52U1B01ACFXV  (2)         351- GGG-TAACCTATGGG-A-CCTGTACCAC-TACGGGAGAA 317
+                                                    *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	588	588	C	T	3	100%
+
+Reads with Difference:
+reference                   572+ ATGGG-A-CTTGTACCACC-ACGGGAGAACATAGAAGAG-AAAAA 612
+                                                   **
+IA52U1B01D3159  (769)       655+ ATGGGGAGCCTGTACCAC-TACGGGAGAACATAGGAGAG-AAAAA 697
+IA52U1B01E5F3D  (594)       345- ATGGG-A-CCTGTACCAC-TACGGGAGAACATAGGAGAG-AAAAA 305
+IA52U1B01ACFXV  (2)         342- ATGGG-A-CCTGTACCAC-TACGGGAGAACATAGGAGAGCAAAAA 301
+                                                   **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	603	603	A	G	3	100%
+
+Reads with Difference:
+reference                   583+ ACCACC-ACGGGAGAACATAGAAGAG-AAAAAA-GATCAGTGGCACTCG 628
+                                                      *
+IA52U1B01D3159  (769)       668+ ACCAC-TACGGGAGAACATAGGAGAG-AAAAA                  697
+IA52U1B01E5F3D  (594)       334- ACCAC-TACGGGAGAACATAGGAGAG-AAAAAA-GATCAGTGGCACTCG 289
+IA52U1B01ACFXV  (2)         331- ACCAC-TACGGGAGAACATAGGAGAGCAAAAAAAGATCAGTGGCACTCG 284
+                                                      *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	649	649	T	C	2	100%
+
+Reads with Difference:
+reference                   625+ CTCGTTCCACATGTGGGAATGGGATTGGAGACGCGAACCGAAACATGGATGTCA 678
+                                                         *
+IA52U1B01E5F3D  (594)       292- CTCGTTCCACATGTGGGAATGGGACTGGAGACGCGAACCGAAACATGGATGTCA 239
+IA52U1B01ACFXV  (2)         287- CTCGTTCCACATGTGG-AATGGGACTGGAGACGCGAACCGAAACATGGATGTCA 235
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	796	796	A	G	4	50%
+
+Reads with Difference:
+reference                   777+ GACGACACATTTCCAGAGAACCC-TGA-TTTTCATCCTAC 814
+                                                    *
+IA52U1B01E5F3D  (594)       140- GACGACACATTTCCAGAGAG-TCCTGA-TTTTCATCCTAC 103
+IA52U1B01ACFXV  (2)         136- GACGACACATTTCCAGAGAG-TCCTGAATTTTCATCCTAC 98
+                                                    *
+
+Other Reads:
+                                                    *
+H88UKYY02IH4Z0                1+             C-AGAG---TCCTGA-TTT-CATCCTAC 22
+IA52U1B01ATUN5                1+               AGAGA-CC--TGA-TTTTCATCCTAC 22
+                                                    *
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	796	796	A	-	4	50%
+
+Reads with Difference:
+reference                   777+ GACGACACATTTCCAGAGAACCC-TGA-TTTTCATCCTAC 814
+                                                    *
+H88UKYY02IH4Z0                1+             C-AGAG---TCCTGA-TTT-CATCCTAC 22
+IA52U1B01ATUN5                1+               AGAGA-CC--TGA-TTTTCATCCTAC 22
+                                                    *
+
+Other Reads:
+                                                    *
+IA52U1B01E5F3D  (594)       140- GACGACACATTTCCAGAGAG-TCCTGA-TTTTCATCCTAC 103
+IA52U1B01ACFXV  (2)         136- GACGACACATTTCCAGAGAG-TCCTGAATTTTCATCCTAC 98
+                                                    *
+
+
+Signal Distribution:
+TOTAL: 0
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	797	797	C	T	4	75%
+
+Reads with Difference:
+reference                   778+ ACGACACATTTCCAGAGAACCC-TGA-TTTTCATCCTACTGA 817
+                                                    ****
+IA52U1B01E5F3D  (594)       139- ACGACACATTTCCAGAGAG-TCCTGA-TTTTCATCCTACTGA 100
+IA52U1B01ACFXV  (2)         135- ACGACACATTTCCAGAGAG-TCCTGAATTTTCATCCTACTGA 95
+H88UKYY02IH4Z0                1+            C-AGAG---TCCTGA-TTT-CATCCTACTGA 25
+                                                    ****
+
+Other Reads:
+                                                    ****
+IA52U1B01ATUN5                1+              AGAGA-CC--TGA-TTTTCATCCTACTGA 25
+                                                    ****
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	885	885	C	T	6	100%
+
+Reads with Difference:
+reference                   864+ TAG-AGACTTTGT-AGAAGGGGTCTCAGGAGGAAGCTGGGTTGACA 907
+                                                        **
+IA52U1B01D5174  (3)          51- TAG-AGACTTTGT-AGAAGGGGTTTCAGGAGGAAGTTGGGTTGACA 8
+IA52U1B01E5F3D  (594)        53- TAG-AGACTTTGT-AGAAGGGGTTTCAGGAGGAAGTTGGGTTGACA 10
+IA52U1B01DLTLT               53- TAG-AGACTTTGT-AGAAGGGGTTTCAGGAGGAAGTTGGGTTGACA 10
+IA52U1B01ATUN5               72+ TAG-AGACTTTGT-ANAAGGGGTTTCAGGAGGAAGTTGGGTTGACA 115
+IA52U1B01CJN3G  (605)        72+ TAG-AGACTTTGT-AGAAGGGGTTTCAGGAGGAAGTTGGGTTGACA 115
+IA52U1B01A794S  (2)          75+ TAGGAGACTTTGTCAGAAGGGGTTTCAGGAGGAAGTTGGGTTGACA 120
+                                                        **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	897	897	C	T	6	100%
+
+Reads with Difference:
+reference                   877+ GAAGGGGTCTCAGGAGGAAGCTGGGTTGACATAGTCTTAGAA 918
+                                                     *
+IA52U1B01D5174  (3)          38- GAAGGGGTTTCAGGAGGAAGTTGGGTTGACATAGTCTT     1
+IA52U1B01E5F3D  (594)        40- GAAGGGGTTTCAGGAGGAAGTTGGGTTGACATAGTCTTAG   1
+IA52U1B01DLTLT               40- GAAGGGGTTTCAGGAGGAAGTTGGGTTGACATAGTCTTA    2
+IA52U1B01ATUN5               85+ NAAGGGGTTTCAGGAGGAAGTTGGGTTGACATAGTCTTAG   124
+IA52U1B01CJN3G  (605)        85+ GAAGGGGTTTCAGGAGGAAGTTGGGTTGACATAGTCTTAGAA 126
+IA52U1B01A794S  (2)          90+ GAAGGGGTTTCAGGAGGAAGTTGGGTTGACATAGTCTTAGAA 131
+                                                     *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	969	969	T	C	2	100%
+
+Reads with Difference:
+reference                   950+ ACAAACCAACATTGGATTTTGAACTGATAAAAA-CGGAAGCCAA 992
+                                                    *
+IA52U1B01CJN3G  (605)       158+ ACAAACCAACATTGGATTTCGAACTGATAAAAAACGGAAGCCAA 201
+IA52U1B01A794S  (2)         164+ ACAAACCAACATTGGATTTCGAACTGATAAAAA-CGGAGGCCAA 206
+                                                    *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	1056	1056	T	C	2	100%
+
+Reads with Difference:
+reference                  1028+ CAAAGCTAACCAACACAACAACAGAATCTCGCTGCCCAACACAAGGGGAACCCAG 1082
+                                                             *
+IA52U1B01CJN3G  (605)       237+ CAAAACTAACCAACACAACAACAGAATCCCGTTGCCCAACACAAGGGGAACCCAG 291
+IA52U1B01A794S  (2)         243+ CAAAACTAACCAACACAACAACAGAATCCCGTTGCCCAACACAAGGGGAACCCAG 297
+                                                             *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	1059	1059	C	T	2	100%
+
+Reads with Difference:
+reference                  1033+ CTAACCAACACAACAACAGAATCTCGCTGCCCAACACAAGGGGAACCCAGCCT- 1085
+                                                           *
+IA52U1B01CJN3G  (605)       242+ CTAACCAACACAACAACAGAATCCCGTTGCCCAACACAAGGGGAACCCAGCCT- 294
+IA52U1B01A794S  (2)         248+ CTAACCAACACAACAACAGAATCCCGTTGCCCAACACAAGGGGAACCCAGCCTT 301
+                                                           *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	1101	1101	T	C	2	100%
+
+Reads with Difference:
+reference                  1075+ GAACCCAGCCT-AAAAGAAGAGCAGGATAAGAGGTTCGTCTGCAAACACT 1123
+                                                            *
+IA52U1B01CJN3G  (605)       284+ GAACCCAGCCT-AAAAGAAGAGCAGGACAAGAGGTTCGTCTGCAAACACT 332
+IA52U1B01A794S  (2)         290+ GAACCCAGCCTTAAAAGAAGAGCAGGACAAGAGGTTCGTCTGCAAACACT 339
+                                                            *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	1278	1278	G	A	2	100%
+
+Reads with Difference:
+reference                  1256+ TTGTGGTAACACCTCACTCAGGGGAAGAGCATGCGGTCGGAAATG 1300
+                                                       *
+IA52U1B01CJN3G  (605)       465+ TTGTGGTAACACCTCACTCAGGAGAAGAGCATGCGGTCGGAAATG 509
+IA52U1B01CPTFR  (306)       557- TTGTGGTAACACCTCACTCAGGAGAAGAGCATGCGGTCGGAAATG 513
+                                                       *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	1314	1314	T	C	2	100%
+
+Reads with Difference:
+reference                  1292+ TCGGAAATGACACAGGAAAA-CATGGCAAGGAAATCAAAGTAACACCACAG 1341
+                                                        *
+IA52U1B01CJN3G  (605)       501+ TCGGAAATGACACAGGAAAAACACGGCAAG-AAATCAAAGTAACACCACAG 550
+IA52U1B01CPTFR  (306)       521- TCGGAAATGACACAGGAAAA-CACGGCAAGGAAATCAAAGTAACACCACAG 472
+                                                        *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	1398	1398	T	C	2	100%
+
+Reads with Difference:
+reference                  1374+ TGGCACCGTCACGATGGAGTGCTCTCCGAGAACA-GGCCTCGACTTCAA-TG 1423
+                                                         ***
+IA52U1B01CJN3G  (605)       585+ TGGCACCGTCACGATGGAGTGCTCCCCGAGAACAAGGTCTCGACTTCAAATG 636
+IA52U1B01CPTFR  (306)       439- TGGCACCGTCACGATGGAGTGCTCCCCGAGAACA-GGTCTCGACTTCAA-TG 390
+                                                         ***
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	1410	1410	C	T	2	100%
+
+Reads with Difference:
+reference                  1388+ TGGAGTGCTCTCCGAGAACA-GGCCTCGACTTCAA-TGAGATGGTGTTGC 1435
+                                                        *
+IA52U1B01CJN3G  (605)       599+ TGGAGTGCTCCCCGAGAACAAGGTCTCGACTTCAAATGAGATGGTGTTGC 648
+IA52U1B01CPTFR  (306)       425- TGGAGTGCTCCCCGAGAACA-GGTCTCGACTTCAA-TGAGATGGTGTTGC 378
+                                                        *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	1590	1590	C	T	2	100%
+
+Reads with Difference:
+reference                  1566+ TCCCCATGCGAAGAAACAGGATGTCGTTGTTTTAGGATCCCAAGAA 1611
+                                                         *
+IA52U1B01CPTFR  (306)       248- TCCCCATGCGAAGAAACAGGATGTTGTTGTTTTAGGATCCCAAGAA 203
+IA52U1B01BXX30              290- TCCCCATGCGAAGAAACAGGATGTTGTTGTTTTAGGATCCCAAGAA 245
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	1722	1722	C	T	4	100%
+
+Reads with Difference:
+reference                  1699+ CTGAGAATGGACAAG-CTA-CAGCTCAAAGGAATGTCAT--ACTCTAT 1742
+                                                          *
+IA52U1B01CPTFR  (327)       115- CTGAGAATGGACAAG-CTA-CAGCTTAAAGGAATGTCAT--ACTCTAT 72
+IA52U1B01DLWWQ               33+ CTGAGAATGGACAAG-CTA-CAGCTTAAAGGAATGTCAT--ACTCTAT 76
+IA52U1B01BFGSU  (767)         1+         G-ACAAGGCTAACAGCTTAAAGGAATGTCATCGACTCTAT 39
+IA52U1B01CV05P  (5)           1+           ACAAG-CTA-CAGCTTAAAGGAATGTCAT--ACTCTAT 34
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	1812	1812	A	G	4	100%
+
+Reads with Difference:
+reference                  1793+ GAACGATAGTTATCAGAGTACAATATGAAGGGGACGGCTCTC 1834
+                                                    *
+IA52U1B01DLWWQ              127+ GAACGATAGTTATCAGAGTGCAATATGAAGGGGACGGCTCTC 168
+IA52U1B01BFGSU  (767)        92+ GAACGATAGTTATCAGAGTGCAATATGAAGGGGACGGCTCTC 133
+IA52U1B01CV05P  (5)          85+ GAACGATAGTTATCAGAGTGCAATATGAAGGGGACGGCTCTC 126
+IA52U1B01ESY9J              116+ GAACGATAGTTATCAGAGTGCAATATGAAGGGGACGGCTCTC 157
+                                                    *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	1914	1914	G	A	5	100%
+
+Reads with Difference:
+reference                  1891+ CTGA-TCACAGTCAACCCAATTGTGACAGAAAAA-GATA-G-CCCA-GTC 1935
+                                                         **
+IA52U1B01DLWWQ              225+ CTGA-TCACAGTCAACCCAATTGTAACAGAAAAA-GATA-G-CCCA-GTC 269
+IA52U1B01BFGSU  (767)       190+ CTGAATCACAGTCAACCCAATTGTAACAGAAAAA-GATAAG-CCCA-GTC 236
+IA52U1B01CV05P  (5)         184+ CTGA-TCACAGTCAACCCAATTGTAACAGAAAAA-GATA-G-CCCA-GTC 228
+IA52U1B01ESY9J              215+ CTGA-TCACAGTCAACCCAATTGTAACAGAAAAATGATA-G-CCCAAGTC 261
+IA52U1B01C2DE5  (488)       805- CTGA-TCACAGTCAACCCAATTG-AACAGAAAAA-GATA-GGCCCA-GTC 761
+                                                         **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	1968	1968	C	T	6	100%
+
+Reads with Difference:
+reference                  1946+ -CAGAA-CCTCCATTCGGAGACAGCTACATCATCATAGGAGTAGAGCCGG 1993
+                                                         **
+IA52U1B01DLWWQ              280+ -CAGAA-CCTCCATTCGGAGACAGT-ACATCATCATAGGAGTAGAGCCGG 326
+IA52U1B01BFGSU  (767)       247+ -CAGAA-CCTC-ATTCGGAGACAGTTACATCATCATAGGAGTAGAGCCGG 293
+IA52U1B01CV05P  (5)         239+ -CAGAA-CCTCCATTCGGAGACAGTTACATCATCATAGGAGTAGAGCCGG 286
+IA52U1B01ESY9J              272+ -CAGAA-CCTCCATTCGGAGACAGTTACATCATCATAGGAGTAGAGCCGG 319
+IA52U1B01C2DE5  (488)       750- -CAGAAACCTCCATTCGGAGACAGTTACATCATCATAGGAGTAGAGCCGG 702
+IA52U1B01CYH97              752- GCAGAA-CCTCCATTCGGAGANAGTTACATCATCATAGGAGTAGAGCCGG 704
+                                                         **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2055	2055	A	G	4	100%
+
+Reads with Difference:
+reference                  2036+ GCCAAA-TGTTT-GAGACAACAATGAGGGGGGCGAAGAGAATGG 2077
+                                                      *
+IA52U1B01DLWWQ              369+ GCCAAA-TGTTT-GAGACAACGATGAGAGGGGCGAAGAGAATGG 410
+IA52U1B01BFGSU  (767)       336+ GCCAAA-TGTTT-GAGACAACGATGAGAGGGGCGAAGAGAATGG 377
+IA52U1B01CV05P  (5)         329+ GCCAAAATGTTT-GNGACA-CGATGAGAGGGGCGAA-AGAATGG 369
+IA52U1B01C2DE5  (488)       659- GCCAAA-TGTTTTGAGACAACGATGAGAGGGGCGAAGAGAATGG 617
+                                                      *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2061	2061	G	A	4	100%
+
+Reads with Difference:
+reference                  2043+ GTTT-GAGACAACAATGAGGGGGGCGAAGAGAATGGCCATTTT--- 2084
+                                                    *
+IA52U1B01DLWWQ              376+ GTTT-GAGACAACGATGAGAGGGGCGAAGAGAATGGCCATTTT--- 417
+IA52U1B01BFGSU  (767)       343+ GTTT-GAGACAACGATGAGAGGGGCGAAGAGAATGGCCATTTT--- 384
+IA52U1B01CV05P  (5)         337+ GTTT-GNGACA-CGATGAGAGGGGCGAA-AGAATGGCCATTTT--- 376
+IA52U1B01C2DE5  (488)       652- GTTTTGAGACAACGATGAGAGGGGCGAAGAGAATGGCCATTTTTTT 607
+                                                    *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2088	2088	T	A	4	100%
+
+Reads with Difference:
+reference                  2066+ CGAAGAGAATGGCCATTTT---GGGTGACACAGCCTGGGA-TTT- 2105
+                                                          *
+IA52U1B01DLWWQ              399+ CGAAGAGAATGGCCATTTT---GGGAGACACAGCCTGGGA-CTT- 438
+IA52U1B01BFGSU  (767)       366+ CGAAGAGAATGGCCATTTT---GG-AGACACAGCCTGGGA-CTT- 404
+IA52U1B01CV05P  (5)         359+ CGAA-AGAATGGCCATTTT---GGGANACACAGCCTGGGA-CTTG 398
+IA52U1B01C2DE5  (488)       628- CGAAGAGAATGGCCATTTTTTTGGGAGA-ACAGCCTGGGACTTT- 586
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2103	2103	T	C	4	75%
+
+Reads with Difference:
+reference                  2087+ GTGACACAGCCTGGGA-TTT-CGGATCCTTGGGAGGAG 2122
+                                                  *
+IA52U1B01DLWWQ              420+ GAGACACAGCCTGGGA-CTT-CGGATCCCTGGGA     451
+IA52U1B01BFGSU  (767)       387+ -AGACACAGCCTGGGA-CTT-CGGATCCCTGGGAGGAG 421
+IA52U1B01CV05P  (5)         379+ GANACACAGCCTGGGA-CTTGCGGATCCCTGGGAGGAG 415
+                                                  *
+
+Other Reads:
+                                                  *
+IA52U1B01C2DE5  (488)       604- GAGA-ACAGCCTGGGACTTT-CGGATCCCTGGGAGGAG 569
+                                                  *
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2113	2113	T	C	4	100%
+
+Reads with Difference:
+reference                  2093+ CAGCCTGGGA-TTT-CGGATCCTTGGGAGGAGTGTTT-A 2128
+                                                       *
+IA52U1B01DLWWQ              426+ CAGCCTGGGA-CTT-CGGATCCCTGGGA            451
+IA52U1B01BFGSU  (767)       392+ CAGCCTGGGA-CTT-CGGATCCCTGGGAGGAGTGTTT-A 427
+IA52U1B01CV05P  (5)         385+ CAGCCTGGGA-CTTGCGGATCCCTGGGAGGAGTGTTT-A 421
+IA52U1B01C2DE5  (488)       599- CAGCCTGGGACTTT-CGGATCCCTGGGAGGAGTGTTTTA 562
+                                                       *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2145	2145	C	T	4	100%
+
+Reads with Difference:
+reference                  2128+ ACATCTATAGGAAAA-GCCCTCCACCAA-GTCTTT-GGA 2163
+                                                   *
+IA52U1B01BFGSU  (767)       427+ ACATCTATAGGAAAAAGCTCTCCACCAA-GTCTTT-GGA 463
+IA52U1B01CV05P  (5)         421+ ACATCTATAGGAAAA-GCTCTCCACCAA-GTC        450
+IA52U1B01C2DE5  (488)       562- ACATCTATAGGAAAA-GCTCTCCACCAAAGTCTTT-GGA 526
+IA52U1B01DROOP  (4)         567- ACATCTATAGGAAAA-GCTCTCCACCAA-GTCTTTTGGA 531
+                                                   *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2202	2202	T	C	3	100%
+
+Reads with Difference:
+reference                  2182+ TTCAGTGGGGTTTCATGG-ACTATGAAAA-TCCTCATAGGAG 2221
+                                                      *
+IA52U1B01BFGSU  (767)       482+ TTCAGTGGGGTTTCATGG-ACCATGAAAAATCCTCATAGGAG 522
+IA52U1B01C2DE5  (488)       507- TTCAGTGGGGTTTCATGGGACCATGAAAA-TCCTCATAGGAG 467
+IA52U1B01DROOP  (4)         512- TTCAGTGGGGTTTCATGG-ACCATGAAAA-TCCTCATAGGAG 473
+                                                      *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2281	2281	T	C	5	100%
+
+Reads with Difference:
+reference                  2258+ CCTCACTGTCTGTGTCACTAGTATTGGTGGGAG-TTGTGACA 2298
+                                                        *
+IA52U1B01BFGSU  (767)       560+ CCTCACTGTCTGTGTCACTAGTACTGGTGGGAAATTGTGACA 601
+IA52U1B01C2DE5  (488)       430- CCTCACTGTCTGTGTCACTAGTACTGGTGGGAA-TTGTGACA 390
+IA52U1B01DROOP  (4)         435- CCTCACTGTCTGTGTCACTAGTACTGGTGGGAA-TTGTGACA 395
+IA52U1B01CKEE6              371+ CCTCACTGTCTGTGTCACTAGTACTGGTGGGAA-TTGTGACA 411
+IA52U1B01BVEV4  (2)         426- CCTCACTGTCTGTGTCACTAGTACTGGTGGGAA-TTGTGACA 386
+                                                        *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2290	2290	G	A	5	100%
+
+Reads with Difference:
+reference                  2268+ TGTGTCACTAGTATTGGTGGGAG-TTGTGACACTGTATTT-GGGA 2310
+                                                       **
+IA52U1B01BFGSU  (767)       570+ TGTGTCACTAGTACTGGTGGGAAATTGTGACACTGTATTT-GGGA 613
+IA52U1B01C2DE5  (488)       420- TGTGTCACTAGTACTGGTGGGAA-TTGTGACACTGTATTTTGGGA 377
+IA52U1B01DROOP  (4)         425- TGTGTCACTAGTACTGGTGGGAA-TTGTGACACTGTATTTTGGGA 382
+IA52U1B01CKEE6              381+ TGTGTCACTAGTACTGGTGGGAA-TTGTGACACTGTATTT-GGGA 423
+IA52U1B01BVEV4  (2)         416- TGTGTCACTAGTACTGGTGGGAA-TTGTGACACTGTATTTTGGGA 373
+                                                       **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2325	2325	C	T	5	100%
+
+Reads with Difference:
+reference                  2306+ T-GGGAGTCATGGTGCAGGCCGA-TAGTGGTTGCGTCGTGA 2344
+                                                     *
+IA52U1B01BFGSU  (767)       609+ T-GGGAGTCATGGTGCAGGCTGA-TAGTGGTTGCGTTGTGA 647
+IA52U1B01C2DE5  (488)       382- TTGGGAGTCATGGTGCAGGCTGA-TAGTGGTTGCGTTGTGA 343
+IA52U1B01DROOP  (4)         387- TTGGGAGTCATGGTGCAGGCTGAATAGTGGTTGCGTTGTGA 347
+IA52U1B01CKEE6              419+ T-GGGAGTCATGGTGCAGGCTGA-TAGTGGTTGCGTTGTGA 457
+IA52U1B01BVEV4  (2)         378- TTGGGAGTCATGGTGCAGGCTGA-TAGTGGTTGCGTTGTGA 339
+                                                     *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2340	2340	C	T	5	100%
+
+Reads with Difference:
+reference                  2318+ TGCAGGCCGA-TAGTGGTTGCGTCGTGAGCTGGAAAAA-CA 2356
+                                                        *
+IA52U1B01BFGSU  (767)       621+ TGCAGGCTGA-TAGTGGTTGCGTTGTGAGCTGGAAAAAACA 660
+IA52U1B01C2DE5  (488)       369- TGCAGGCTGA-TAGTGGTTGCGTTGTGAGCTGGAAAAA-CA 331
+IA52U1B01DROOP  (4)         374- TGCAGGCTGAATAGTGGTTGCGTTGTGAGCTGGAAAAA-CA 335
+IA52U1B01CKEE6              431+ TGCAGGCTGA-TAGTGGTTGCGTTGTGAGCTGGAAAAA-C  468
+IA52U1B01BVEV4  (2)         365- TGCAGGCTGA-TAGTGGTTGCGTTGTGAGCTGGAAAAA-CA 327
+                                                        *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2460	2460	C	T	5	100%
+
+Reads with Difference:
+reference                  2437+ TCCCC-TTCAAAAC-TAGCTTCAGCCATCCAAAAAGCTCAAGAAGAGGGAA 2485
+                                                          *
+IA52U1B01C4WX8  (6)         742+ TCCCCCTTCAAAACCTAGCT-CAGCTATCCAGAAAGCTCAAGAAGAGGGAA 791
+IA52U1B01CHASH  (7)         740+ TCCCC-TTCAAAAC-TAGCTTCAGCTATCCAGAAAGCTCAAGAAGAGGGAA 788
+IA52U1B01BFGSU  (3)         744+ TCCCC-TTCAAAAC-TAGCT-CAGCTATCCAGAAAGCTCAAGAAGAGGGAA 791
+IA52U1B01CSMG3  (565)       249- TCCCC-TTCAAAAC-TAGCTTCAGCTATCCAGAAAGCTCAAGAAGAGGGAA 201
+IA52U1B01C2DE5  (2)         249- TCCCC-TTCAAAAC-TAGCTTCAGCTATCCAGAAAGCTCAAGAAGAGGGAA 201
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2466	2466	A	G	5	100%
+
+Reads with Difference:
+reference                  2442+ TTCAAAAC-TAGCTTCAGCCATCCAAAAAGCTCAAGAAGAGGGAATTTGT 2490
+                                                          *
+IA52U1B01C4WX8  (6)         748+ TTCAAAACCTAGCT-CAGCTATCCAGAAAGCTCAAGAAGAGGGAATTTGT 796
+IA52U1B01CHASH  (7)         745+ TTCAAAAC-TAGCTTCAGCTATCCAGAAAGCTCAAGAAGAGGGAATTTGT 793
+IA52U1B01BFGSU  (3)         749+ TTCAAAAC-TAGCT-CAGCTATCCAGAAAGCTCAAGAAGAGGGAATTTGT 796
+IA52U1B01CSMG3  (565)       244- TTCAAAAC-TAGCTTCAGCTATCCAGAAAGCTCAAGAAGAGGGAATTTGT 196
+IA52U1B01C2DE5  (2)         244- TTCAAAAC-TAGCTTCAGCTATCCAGAAAGCTCAAGAAGAGGGAATTTGT 196
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2502	2502	A	G	5	100%
+
+Reads with Difference:
+reference                  2479+ GAGGGAATTTGTGGGATCC-GCTCAGTAACAAGATTGGAGAA-CC-TAA-TGT 2527
+                                                         *
+IA52U1B01C4WX8  (6)         785+ GAGGGAATTTGTGG-ATCCCGCTCGGTAACAAG                     816
+IA52U1B01CHASH  (7)         782+ GAGGGAATTTGTGG-ATCCCGCTCGGTAACAAGA                    814
+IA52U1B01BFGSU  (3)         785+ GAGGGAATTTGTGG-ATCCCGCTCGGTAACAAGATTGGAGAAACCCTAAATGT 836
+IA52U1B01CSMG3  (565)       207- GAGGGAATTTGTGGGATCC-GCTCGGTAACAAGATTGGAGAA-CC-TAA-TGT 159
+IA52U1B01C2DE5  (2)         207- GAGGGAATTTGTGGGATCC-GCTCGGTAACAAGATTGGAGAA-CC-TAA-TGT 159
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2589	2589	T	C	5	100%
+
+Reads with Difference:
+reference                  2568+ AAATGAGGTGAAGTTAACTATTATGACAGGAGACATC-AAAGGAA 2611
+                                                      *
+IA52U1B01CSMG3  (565)       118- AAATGAGGTGAAGTTAACTATCATGACAGGAGACATC-AAAGGAA 75
+IA52U1B01C2DE5  (2)         118- AAATGAGGTGAAGTTAACTATCATGACAGGAGACATC-AAAGGAA 75
+IA52U1B01BKR99               60+ AAATGAGGTGAAGTTAACTATCATGACAGGAGACATC-AAAGGAA 103
+IA52U1B01DDYIW  (136)        58+ AAATGAGGTGAAGTTAACTATCATGACAGGAGACATC-AAAGGAA 101
+IA52U1B01AJ4PV              123- AAATGAGGTGAAGTTAACTATCATGACAGGAGACATCCAAAGGAA 79
+                                                      *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2635	2635	C	T	5	100%
+
+Reads with Difference:
+reference                  2615+ TGCAGGCAGGAAAACGATCTCTGCGGCCTCAGCCCACT 2652
+                                                     **
+IA52U1B01CSMG3  (565)        71- TGCAGGCAGGAAAACGATCTTTGCGGCCTCAGCCCACT 34
+IA52U1B01C2DE5  (2)          71- TGCAGGCAGGAAAACGATCTTTGCGGCCTCAGCCCACT 34
+IA52U1B01BKR99              107+ TGCAGGCAGGAAAACGATCTTTGCGGCCTCAGCCCACT 144
+IA52U1B01DDYIW  (136)       105+ TGCAGGCAGGAAAACGATCTTTGCGGCCTCAGCCCACT 142
+IA52U1B01AJ4PV               75- TGCAGGCAGGAAAACGATCTTTGCGGCCTCAGCCCACT 38
+                                                     **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2682	2682	C	T	5	100%
+
+Reads with Difference:
+reference                  2664+ TTCATGG-AAAACATGGGG-C-AAA-GCAAAAA-TGCTCTCCACAG 2704
+                                                     *
+IA52U1B01C2DE5  (2)          22- TTCATGG-AAAACATGGGG-T-AA--G                    1
+IA52U1B01BKR99              156+ TTCATGG-AAAAC-TGGGGGT-AAA-GCAAAAAATGTTCTCCACAG 197
+IA52U1B01DDYIW  (136)       154+ TTCATGG-AAAACATGGGGGT-AAA-GCAAAAAATGTTCTCCACAG 196
+IA52U1B01AJ4PV               25- TTCATGGGAAAACATGGGG-T-AAA-GC                   1
+IA52U1B01B8C31               40- TTCATGG-AAAACATGGGG-TGAAAAGCAAAA               11
+                                                     *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2695	2695	C	T	2	100%
+
+Reads with Difference:
+reference                  2676+ ATGGGG-CAAAGCAAAAA-TGCTCTCCACAGAGTCTCATAATCAAACCTTT 2724
+                                                      *
+IA52U1B01BKR99              168+ -TGGGGGTAAAGCAAAAAATGTTCTCCACAGAGTCTTATAACCAAACCTTT 217
+IA52U1B01DDYIW  (136)       166+ ATGGGGGTAAAGCAAAAAATGTTCTCCACAGAGTCTTATAACCAAACCTTT 216
+                                                      *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2710	2710	C	T	2	100%
+
+Reads with Difference:
+reference                  2686+ GCAAAAA-TGCTCTCCACAGAGTCTCATAATCAAACCTTTCTCATTGATGGCCCC 2739
+                                                          *
+IA52U1B01BKR99              178+ GCAAAAAATGTTCTCCACAGAGTCTTATAACCAAACCTTTCTCATTGATGGCCCC 232
+IA52U1B01DDYIW  (136)       177+ GCAAAAAATGTTCTCCACAGAGTCTTATAACCAAACCTTTCTCATTGATGGCCCC 231
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2715	2715	T	C	2	100%
+
+Reads with Difference:
+reference                  2689+ AAAA-TGCTCTCCACAGAGTCTCATAATCAAACCTTTCTCATTGATGGCCCCGAGA 2743
+                                                            *
+IA52U1B01BKR99              181+ AAAAATGTTCTCCACAGAGTCTTATAACCAAACCTTTCTCATTGATGGCCCCGAGA 236
+IA52U1B01DDYIW  (136)       180+ AAAAATGTTCTCCACAGAGTCTTATAACCAAACCTTTCTCATTGATGGCCCCGAGA 235
+                                                            *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2745	2745	A	G	2	100%
+
+Reads with Difference:
+reference                  2718+ AACCTTTCTCATTGATGGCCCCGAGACAGCAGAATGCCCCAACACAAATAGAGCTTG 2774
+                                                            *
+IA52U1B01BKR99              211+ AACCTTTCTCATTGATGGCCCCGAGACGGCAGAGTGCCCCAACACAAATAGAGCTTG 267
+IA52U1B01DDYIW  (136)       210+ AACCTTTCTCATTGATGGCCCCGAGACGGCAGAGTGCCCCAACACAAATAGAGCTTG 266
+                                                            *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2751	2751	A	G	2	100%
+
+Reads with Difference:
+reference                  2723+ TTCTCATTGATGGCCCCGAGACAGCAGAATGCCCCAACACAAATAGAGCTTGGAAC 2778
+                                                             *
+IA52U1B01BKR99              216+ TTCTCATTGATGGCCCCGAGACGGCAGAGTGCCCCAACACAAATAGAGCTTGGAA- 270
+IA52U1B01DDYIW  (136)       215+ TTCTCATTGATGGCCCCGAGACGGCAGAGTGCCCCAACACAAATAGAGCTTGGAAC 270
+                                                             *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2967	2967	G	A	2	100%
+
+Reads with Difference:
+reference                  2941+ CTCAATGACACATGGAAGATAGAGAAGGCCTCTTTCATTGAAGT-AAAAAA 2990
+                                                           *
+IA52U1B01DDYIW  (136)       433+ CTCAATGACACATGGAAGATAGAGAAAGCCTCTTTCATTGAAGT-AAAAAA 482
+IA52U1B01ADSUO  (58)        645- CTCGATGACACATGGAAGATAGAGAAAGCCTCTTTCATTGAAGTGAAAAAA 595
+                                                           *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	2991	2991	C	T	2	100%
+
+Reads with Difference:
+reference                  2968+ GCCTCTTTCATTGAAGT-AAAAAACTGCCACTGGCCAAAATCACACACCC 3016
+                                                         *
+IA52U1B01DDYIW  (136)       460+ GCCTCTTTCATTGAAGT-AAAAAATTGCCACTGGCCAAAATCACACACC- 507
+IA52U1B01ADSUO  (58)        618- GCCTCTTTCATTGAAGTGAAAAAATTGCCACTGGCCAAAATCACACACCC 569
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3132	3132	T	C	3	100%
+
+Reads with Difference:
+reference                  3109+ ACAC-AAA-TAGCAGG-ACCATGGCATCTAGGTAAGCTTGAGATGGAC-TTTGA 3158
+                                                           **
+IA52U1B01DDYIW  (136)       603+ ACAC-AAA-TAGCAGG-ACCATGGCACCTAGGTAAGCTTGAGATGGAC-TTTGA 652
+IA52U1B01ADSUO  (58)        473- ACAC-AAA-TAGCAGGGACCATGGCACCTAGGTAAGCTTGAGATGGACATTTGA 422
+IA52U1B01ALTFJ  (4)         477- ACACGAAAATAGCAGGGACCATGGCACCTAGGTAAGCTTGAGATGGAC-TTTGA 425
+                                                           **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3181	3181	G	A	3	100%
+
+Reads with Difference:
+reference                  3154+ TTTGATTTCTGCGATGGAACCACAGTGGTAGTGACTGAGGACTGCGGAAATAG 3206
+                                                            *
+IA52U1B01DDYIW  (136)       648+ TTTGATTTCTGCGATGGAACCACAGTGATAGTGACTGAGGACTGCGGAAATAG 700
+IA52U1B01ADSUO  (58)        426- TTTGATTTCTGCGATGGAACCACAGTGATAGTGACTGAGGACTGCGGAAATAG 374
+IA52U1B01ALTFJ  (4)         429- TTTGATTTCTGCGATGGAACCACAGTGATAGTGACTGAGGACTGCGGAAATAG 377
+                                                            *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3477	3477	G	A	3	100%
+
+Reads with Difference:
+reference                  3458+ GAGTAGGAACGAAACATGCGATACTACTAGTTGCAGTTT-C 3497
+                                                    *
+IA52U1B01ADSUO  (84)        121- GAGTAGGAACGAAACATGCAATACTACTAGTTGCAGT-CTC 82
+IA52U1B01C1XHV  (632)         9+ GAGTAGGAACGAAACATGCAATACTACTAGTTGCAGT-CTC 48
+IA52U1B01BVDC4  (2)           9+ GAGTAGGAACGAAACATGCAATACTACTAGTTGCAGT-CTC 48
+                                                    *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3495	3495	T	C	4	100%
+
+Reads with Difference:
+reference                  3473+ ATGCGATACTACTAGTTGCAGTTT-CTTTTGTGACATTGATCACA 3516
+                                                       ***
+IA52U1B01ADSUO  (84)        106- ATGCAATACTACTAGTTGCAGT-CTCTTTTGTGACATTGATCACA 63
+IA52U1B01C1XHV  (632)        24+ ATGCAATACTACTAGTTGCAGT-CTCTTTTGTGACATTGATCACA 67
+IA52U1B01BVDC4  (2)          24+ ATGCAATACTACTAGTTGCAGT-CTCTTTTGTGACATTGATCACA 67
+IA52U1B01C6JR7  (34)          1+        ACTACTAGTTGCAGT-CTCTTTTGTGACATTGATCACA 37
+                                                       ***
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3531	3531	T	C	4	100%
+
+Reads with Difference:
+reference                  3509+ TGATCACAGGGAACATGTCCTTTAAAGATCTAGGAAGAGTGGTGGTT 3555
+                                                       *
+IA52U1B01ADSUO  (84)         70- TGATCACAGGGAACATGTCCTTCAAAGACCTAGGAAGAGTGGTGGTT 24
+IA52U1B01C1XHV  (632)        60+ TGATCACAGGGAACATGTCCTTCAAAGACCTAGGAAGAGTGGTGGTT 106
+IA52U1B01BVDC4  (2)          60+ TGATCACAGGGAACATGTCCTTCAAAGACCTAGGAAGAGTGGTGGTT 106
+IA52U1B01C6JR7  (34)         30+ TGATCACAGGGAACATGTCCTTCAAAGACCTAGGAAGAGTGGTGGTT 76
+                                                       *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3537	3537	T	C	4	100%
+
+Reads with Difference:
+reference                  3515+ CAGGGAACATGTCCTTTAAAGATCTAGGAAGAGTGGTGGTTATGGTAG 3562
+                                                       *
+IA52U1B01ADSUO  (84)         64- CAGGGAACATGTCCTTCAAAGACCTAGGAAGAGTGGTGGTTATGGTAG 17
+IA52U1B01C1XHV  (632)        66+ CAGGGAACATGTCCTTCAAAGACCTAGGAAGAGTGGTGGTTATGGTAG 113
+IA52U1B01BVDC4  (2)          66+ CAGGGAACATGTCCTTCAAAGACCTAGGAAGAGTGGTGGTTATGGTAG 113
+IA52U1B01C6JR7  (34)         36+ CAGGGAACATGTCCTTCAAAGACCTAGGAAGAGTGGTGGTTATGGTAG 83
+                                                       *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3574	3574	A	G	4	100%
+
+Reads with Difference:
+reference                  3549+ GGTGGTTATGGTAGGCGCCACCATGACGGATGACATAGGTATGGGCGT 3596
+                                                          *
+IA52U1B01ADSUO  (84)         30- GGTGGTTATGGTAGGCGCCACCATGGCGGA                   1
+IA52U1B01C1XHV  (632)       100+ GGTGGTTATGGTAGGCGCCACCATGGCGGATGACATAGGTATGGGCGT 147
+IA52U1B01BVDC4  (2)         100+ GGTGGTTATGGTAGGCGCCACCATGGCGGATGACATAGGTATGGGCGT 147
+IA52U1B01C6JR7  (34)         70+ GGTGGTTATGGTAGGCGCCACCATGGCGGATGACATAGGTATGGGCGT 117
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3597	3597	A	G	3	100%
+
+Reads with Difference:
+reference                  3575+ CGGATGACATAGGTATGGGCGTAACTTATCTTGCCCTACTAGCAGCC 3621
+                                                       *
+IA52U1B01C1XHV  (632)       126+ CGGATGACATAGGTATGGGCGTGACTTATCTTGCCCTACTAGCAGCC 172
+IA52U1B01BVDC4  (2)         126+ CGGATGACATAGGTATGGGCGTGACTTATCTTGCCCTACTAGCAGCC 172
+IA52U1B01C6JR7  (34)         96+ CGGATGACATAGGTATGGGCGTGACTTATCTTGCCCTACTAGCAGCC 142
+                                                       *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3624	3624	C	T	3	100%
+
+Reads with Difference:
+reference                  3598+ ACTTATCTTGCCCTACTAGCAGCCTTCAAAGTCAGACCAACTTTTGCA 3645
+                                                           *
+IA52U1B01C1XHV  (632)       149+ ACTTATCTTGCCCTACTAGCAGCCTTTAAAGTTAGACCAACTTTTGCA 196
+IA52U1B01BVDC4  (2)         149+ ACTTATCTTGCCCTACTAGCAGCCTTTAAAGTTAGACCAACTTTTGCA 196
+IA52U1B01C6JR7  (34)        119+ ACTTATCTTGCCCTACTAGCAGCCTTTAAAGTTAGACCAACTTTTGCA 166
+                                                           *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3630	3630	C	T	4	100%
+
+Reads with Difference:
+reference                  3605+ TTGCCCTACTAGCAGCCTTCAAAGTC-AGACCAACTTTT-GCAGCAGGAC 3652
+                                                          **
+IA52U1B01C1XHV  (632)       156+ TTGCCCTACTAGCAGCCTTTAAAGTT-AGACCAACTTTT-GCAGCTGGAC 203
+IA52U1B01BVDC4  (2)         156+ TTGCCCTACTAGCAGCCTTTAAAGTT-AGACCAACTTTT-GCAGCTGGAC 203
+IA52U1B01C6JR7  (34)        126+ TTGCCCTACTAGCAGCCTTTAAAGTT-AGACCAACTTTT-GCAGCTGGAC 173
+IA52U1B01CKPUH              577-                  TT-AAAGTTTAGACCAACTTTTTGCAGCTGGAC 546
+                                                          **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3648	3648	A	T	4	100%
+
+Reads with Difference:
+reference                  3627+ AGTC-AGACCAACTTTT-GCAGCAGGACTATTCTTGAGAAAGCTGACC 3672
+                                                        *
+IA52U1B01C1XHV  (632)       178+ AGTT-AGACCAACTTTT-GCAGCTGGACTACTCTTGAGAAAGCTGACC 223
+IA52U1B01BVDC4  (2)         178+ AGTT-AGACCAACTTTT-GCAGCTGGACTACTCTTGAGAAAGCTGACC 223
+IA52U1B01C6JR7  (34)        148+ AGTT-AGACCAACTTTT-GCAGCTGGACTACTCTTGAGAAAGCTGACC 193
+IA52U1B01CKPUH              573- AGTTTAGACCAACTTTTTGCAGCTGGACTACTCTTGAGAAAGCTGACC 526
+                                                        *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3655	3655	T	C	4	100%
+
+Reads with Difference:
+reference                  3633+ ACCAACTTTT-GCAGCAGGACTATTCTTGAGAAAGCTGACCTCCAA 3677
+                                                        *
+IA52U1B01C1XHV  (632)       184+ ACCAACTTTT-GCAGCTGGACTACTCTTGAGAAAGCTGACCTCCAA 228
+IA52U1B01BVDC4  (2)         184+ ACCAACTTTT-GCAGCTGGACTACTCTTGAGAAAGCTGACCTCCAA 228
+IA52U1B01C6JR7  (34)        154+ ACCAACTTTT-GCAGCTGGACTACTCTTGAGAAAGCTGACCTCCAA 198
+IA52U1B01CKPUH              566- ACCAACTTTTTGCAGCTGGACTACTCTTGAGAAAGCTGACCTCCAA 521
+                                                        *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3720	3720	G	A	5	100%
+
+Reads with Difference:
+reference                  3699+ A-GG-AATT-GTACTCC-TCTCCCAGAGCACTATACCAGAAA-CCATC 3741
+                                                          **
+IA52U1B01C1XHV  (632)       250+ A-GG-AATT-GTACTCC-TCTCCCAAAGCACTATACCAGAGA-CCGTT 292
+IA52U1B01BVDC4  (2)         250+ A-GG-AATT-GTACTCC-TCTCCCAAAGCACTATACCAGAGA-CCGTT 292
+IA52U1B01C6JR7  (34)        220+ A-GG-AATT-GTACTCC-TCTCCCAAAGCACTATACCAGAGA-CCGTT 262
+IA52U1B01CKPUH              498- AAGG-AATTTGTACTCCCTCTCCCAAAGCACTATACCAGAGA-CCGTT 453
+IA52U1B01C60US  (221)       784- A-GGGAATT-GTACTC--TCTCCCAAAGCACTATACCAGAGAACCGTT 741
+                                                          **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3735	3735	A	G	5	100%
+
+Reads with Difference:
+reference                  3715+ TCCCAGAGCACTATACCAGAAA-CCATCCTTGAA-TTGACTGAT 3756
+                                                     *
+IA52U1B01C1XHV  (632)       266+ TCCCAAAGCACTATACCAGAGA-CCGTTCTTGAA-TTGACTGAT 307
+IA52U1B01BVDC4  (2)         266+ TCCCAAAGCACTATACCAGAGA-CCGTTCTTGAA-TTGACTGAT 307
+IA52U1B01C6JR7  (34)        236+ TCCCAAAGCACTATACCAGAGA-CCGTTCT-GAA-TTGACTGAT 276
+IA52U1B01CKPUH              479- TCCCAAAGCACTATACCAGAGA-CCGTTCTTGAA-TTGACTGAT 438
+IA52U1B01C60US  (221)       768- TCCCAAAGCACTATACCAGAGAACCGTTCTTGAAATTGACTGAT 725
+                                                     *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3739	3739	A	G	5	100%
+
+Reads with Difference:
+reference                  3720+ GAGCACTATACCAGAAA-CCATCCTTGAA-TTGACTGATGCGTTA 3762
+                                                     *
+IA52U1B01C1XHV  (632)       271+ AAGCACTATACCAGAGA-CCGTTCTTGAA-TTGACTGATGCGTTA 313
+IA52U1B01BVDC4  (2)         271+ AAGCACTATACCAGAGA-CCGTTCTTGAA-TTGACTGATGCGTTA 313
+IA52U1B01C6JR7  (34)        241+ AAGCACTATACCAGAGA-CCGTTCT-GAA-TTGACTGATGCGTTA 282
+IA52U1B01CKPUH              474- AAGCACTATACCAGAGA-CCGTTCTTGAA-TTGACTGATGCGTTA 432
+IA52U1B01C60US  (221)       763- AAGCACTATACCAGAGAACCGTTCTTGAAATTGACTGATGCGTTA 719
+                                                     *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3741	3741	C	T	5	100%
+
+Reads with Difference:
+reference                  3721+ AGCACTATACCAGAAA-CCATCCTTGAA-TTGACTGATGCGTTA-G 3763
+                                                      *
+IA52U1B01C1XHV  (632)       272+ AGCACTATACCAGAGA-CCGTTCTTGAA-TTGACTGATGCGTTA-G 314
+IA52U1B01BVDC4  (2)         272+ AGCACTATACCAGAGA-CCGTTCTTGAA-TTGACTGATGCGTTA-G 314
+IA52U1B01C6JR7  (34)        242+ AGCACTATACCAGAGA-CCGTTCT-GAA-TTGACTGATGCGTTA-G 283
+IA52U1B01CKPUH              473- AGCACTATACCAGAGA-CCGTTCTTGAA-TTGACTGATGCGTTAAG 430
+IA52U1B01C60US  (221)       762- AGCACTATACCAGAGAACCGTTCTTGAAATTGACTGATGCGTTA-G 718
+                                                      *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3783	3783	C	T	5	100%
+
+Reads with Difference:
+reference                  3755+ ATGCGTTA-GCCTTAGGCATGATGGTCCTC-AAAA-TGGTAAGAGACATGGAAAA 3806
+                                                              **
+IA52U1B01C1XHV  (632)       306+ ATGCGTTA-GCCTTAGGCATGATGGTCCTT-AAAA-TAGTAAGAAACATGGAAAA 357
+IA52U1B01BVDC4  (2)         306+ ATGCGTTA-GCCTTAGGCATGATGGTCCTT-AAAA-TNGTAAGAAACATGGAAAA 357
+IA52U1B01C6JR7  (34)        275+ ATGCGTTA-GCCTTAGGCATGATGGTCCTT-AAAA-TAGTAAGAAACATGGAAAA 326
+IA52U1B01CKPUH              439- ATGCGTTAAGCCTTAGGCATGATGGTCCTT-AAAAATAGTAAGAAACATGGAAAA 386
+IA52U1B01C60US  (221)       726- ATGCGTTA-GCCTTAGGCATGATGGTCCTTTAAAA-TAGTAAGAAACATGGAAAA 674
+                                                              **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3789	3789	G	A	5	80%
+
+Reads with Difference:
+reference                  3765+ CTTAGGCATGATGGTCCTC-AAAA-TGGTAAGAGACATGGAAAA-GTAT 3810
+                                                           *
+IA52U1B01C1XHV  (632)       316+ CTTAGGCATGATGGTCCTT-AAAA-TAGTAAGAAACATGGAAAAAGTAT 362
+IA52U1B01C6JR7  (34)        285+ CTTAGGCATGATGGTCCTT-AAAA-TAGTAAGAAACATGGAAAA-GTAT 330
+IA52U1B01CKPUH              428- CTTAGGCATGATGGTCCTT-AAAAATAGTAAGAAACATGGAAAA-GTAT 382
+IA52U1B01C60US  (221)       716- CTTAGGCATGATGGTCCTTTAAAA-TAGTAAGAAACATGGAAAA-GTAT 670
+                                                           *
+
+Other Reads:
+                                                           *
+IA52U1B01BVDC4  (2)         316+ CTTAGGCATGATGGTCCTT-AAAA-TNGTAAGAAACATGGAAAA-GTAT 361
+                                                           *
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3796	3796	G	A	5	100%
+
+Reads with Difference:
+reference                  3771+ CATGATGGTCCTC-AAAA-TGGTAAGAGACATGGAAAA-GTATCAATTA 3816
+                                                            **
+IA52U1B01C1XHV  (632)       322+ CATGATGGTCCTT-AAAA-TAGTAAGAAACATGGAAAAAGTATCAATTA 368
+IA52U1B01BVDC4  (2)         322+ CATGATGGTCCTT-AAAA-TNGTAAGAAACATGGAAAA-GTATCAATTA 367
+IA52U1B01C6JR7  (34)        291+ CATGATGGTCCTT-AAAA-TAGTAAGAAACATGGAAAA-GTATCAATTA 336
+IA52U1B01CKPUH              422- CATGATGGTCCTT-AAAAATAGTAAGAAACATGGAAAA-GTATCAATTA 376
+IA52U1B01C60US  (221)       710- CATGATGGTCCTTTAAAA-TAGTAAGAAACATGGAAAA-GTATCAATTA 664
+                                                            **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3825	3825	C	T	5	100%
+
+Reads with Difference:
+reference                  3807+ -GTATCAATTAGCAGTGACCATCATGGCTATCTTGTGCGTCC 3847
+                                                    *
+IA52U1B01C1XHV  (632)       358+ AGTATCAATTAGCAGTGACTATCATGGCTATCTTGTGCGTCC 399
+IA52U1B01BVDC4  (2)         358+ -GTATCAATTAGCAGTGACTATCATGGCTATCTTGTGCGTCC 398
+IA52U1B01C6JR7  (34)        327+ -GTATCAATTAGCAGTGACTATCATGGCTATCTTGTGCGTCC 367
+IA52U1B01CKPUH              385- -GTATCAATTAGCAGTGACTATCATGGCTATCTTGTGCGTCC 345
+IA52U1B01C60US  (221)       673- -GTATCAATTAGCAGTGACTATCATGGCTATCTTGTGCGTCC 633
+                                                    *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3852	3852	T	C	5	100%
+
+Reads with Difference:
+reference                  3831+ GGCTATCTTGTGCGTCCC-AAATGCAGTGATATTACAAAA-T-GCAT 3874
+                                                       *
+IA52U1B01C1XHV  (632)       383+ GGCTATCTTGTGCGTCC--AAACGCAGTGATACTACAAAA-T-GCAT 425
+IA52U1B01BVDC4  (2)         382+ GGCTATCTTGTGCGTCC--AAACGCAGTGATACTACAAAA-TTGCAT 425
+IA52U1B01C6JR7  (34)        351+ GGCTATCTTGTGCGTCCCCAAACGCAGTGATACTACAAAAAT-GCAT 396
+IA52U1B01CKPUH              361- GGCTATCTTGTGCGTCCC-AAACGCAGTGATACTACAAAA-T-GCAT 318
+IA52U1B01C60US  (221)       649- GGCTATCTTGTGCGTCCC-AAACGCAGTGATACTACAAAA-T-GCAT 606
+                                                       *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3862	3862	T	C	5	100%
+
+Reads with Difference:
+reference                  3839+ TGTGCGTCCC-AAATGCAGTGATATTACAAAA-T-GCATGG-AAA-GT 3881
+                                                         *
+IA52U1B01C1XHV  (632)       391+ TGTGCGTCC--AAACGCAGTGATACTACAAAA-T-GCATGG-AAA-GT 432
+IA52U1B01BVDC4  (2)         390+ TGTGCGTCC--AAACGCAGTGATACTACAAAA-TTGCATGGCAAA-GT 433
+IA52U1B01C6JR7  (34)        359+ TGTGCGTCCCCAAACGCAGTGATACTACAAAAAT-GCATGG-AAAAGT 404
+IA52U1B01CKPUH              353- TGTGCGTCCC-AAACGCAGTGATACTACAAAA-T-GCATGG-AAA-GT 311
+IA52U1B01C60US  (221)       641- TGTGCGTCCC-AAACGCAGTGATACTACAAAA-T-GCATGG-AAA-GT 599
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3897	3897	A	G	5	100%
+
+Reads with Difference:
+reference                  3875+ GG-AAA-GTGAGTTGCACAATACTAGCAG-TGGTGTCCGTTTCCC 3916
+                                                         *
+IA52U1B01C1XHV  (632)       426+ GG-AAA-GTGAGTTGCACAATACTGGCAG-TGGTGTCCGTTTCCC 467
+IA52U1B01BVDC4  (2)         426+ GGCAAA-GTGAGTTGCACAATACTGGCAGATGGTGT          460
+IA52U1B01C6JR7  (34)        397+ GG-AAAAGTGAGTTGCACAATACTGGCAG-TGGTGTCCGTTTCCC 439
+IA52U1B01CKPUH              317- GG-AAA-GTGAGTTGCACAATACTGGCAG-TGGTGTCCGTTTCCC 276
+IA52U1B01C60US  (221)       605- GG-AAA-GTGAGTTGCACA-TACTGGCAG-TGGTGTCCGTTTCCC 565
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3951	3951	C	T	5	100%
+
+Reads with Difference:
+reference                  3934+ T-CACAGCAAAAAA--CGGA-CT--GGATACCATT-AGCATTGACA 3972
+                                                      **
+IA52U1B01C1XHV  (632)       484+ T-CACAGCAAAAAA-GCGGA-TT--GGATACCATT-AGCATTGACA 523
+IA52U1B01C6JR7  (34)        456+ T-CACAGCAAAAAAA-CGGAATTTCGGATACCATT-AGCATTGACA 498
+IA52U1B01CKPUH              257- T-CACAGCAAAAA---CGGA-TT--GGATACCATT-AGCATTGACA 220
+IA52U1B01C60US  (221)       547- TACACAGCAAAAAA--CGGA-TT--GGATACCATTTAGCATTGACA 507
+IA52U1B01ATFWM  (9)         550- T-CACAGCAAAAA---CGGA-TT--GGATAC-ATT-AGCATTGACA 514
+                                                      **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	3999	3999	C	T	7	100%
+
+Reads with Difference:
+reference                  3978+ GGG-TCTCAA-TCCAA-CAGCCATCTTT--CTGA--CAA-CCC-TCTCAA-GAACCAA 4025
+                                                         ***
+IA52U1B01C1XHV  (632)       529+ GGG-TCTCAAATCCAA-CAGCCATTTTT--CTAAA-CAA-CCC-TCTCAA-GAACCAA 578
+IA52U1B01C6JR7  (34)        504+ GGG-TCTCAA-TCCAAACAGCCATTTTTT-CTAAAACAAACCC-TCTCAAAGAACCAA 557
+IA52U1B01CKPUH              214- GGG-TCTCAA-TCCAA-CAGCCATTTTT--CTAA--CAA-CCC-TCTCAA-GAACCAA 167
+IA52U1B01C60US  (221)       501- GGG-TCTCAA-TCCAA-CAGCCATTTTT--CTAA--CAA-CCC-TCTCAA-GAACCAA 454
+IA52U1B01ATFWM  (9)         508- GGGGTCTCAA-TCCAA-CAGCCATTTTTTTCTAA--CAA-CCCCTCTCAA-GAACCAA 457
+IA52U1B01B40D8              536+ GGG-TCTCAAATCCAA-CAGCCATTTTT--CTAAA-CAA-CCC-TCTCAA-GAACCAA 585
+IA52U1B01EXDXN              507+ GGG-TCTCAA-TCCAA-CAGCCATTTTT--CTAAA-CAA-CCC-TCTCAA-GAACCAA 555
+                                                         ***
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4005	4005	G	AA	8	75%
+
+Reads with Difference:
+reference                  3984+ CAA--TCCAA-CAGCCATCTTT-CTGA--CAA-CCCTCTCAA-GAACCAA-CAAGA 4030
+                                                          ****
+IA52U1B01DM1D4  (2)         507+ CAA--TCCAA-CAGCCATTTTT-CTAAA-CAA-CCCTCTCAA-GAACCAA       549
+IA52U1B01C58F0  (13)        541+ CAAAATCCAA-CAGCCATTTTTTCTAAA-CAA-CCCTCTCAA-GAACCAA-CAAGA 591
+IA52U1B01C6JR7  (15)        510+ CAA--TCCAAACAGCCATTTTTTCTAAAACAAACCCTCTCAAAGAACCAAACAAGA 563
+IA52U1B01C1XHV  (6)         535+ CAAA-TCCAA-CAGCCATTTTT-CTAAA-CAA-CCCTCTCAA-GAACCAA-CAAGA 583
+IA52U1B01B40D8              542+ CAAA-TCCAA-CAGCCATTTTT-CTAAA-CAA-CCCTCTCAA-GAACCAA-CAAGA 590
+IA52U1B01EXDXN              513+ CAA--TCCAA-CAGCCATTTTT-CTAAA-CAA-CCCTCTCAA-GAACCAA-C     556
+                                                          ****
+
+Other Reads:
+                                                          ****
+IA52U1B01CKPUH              208- CAA--TCCAA-CAGCCATTTTT-CTAA--CAA-CCCTCTCAA-GAACCAA-CAAGA 162
+IA52U1B01C60US  (421)       495- CAA--TCCAA-CAGCCATTTTT-CTAA--CAA-CCCTCTCAA-GAACCAA-CAAGA 449
+                                                          ****
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4005	4005	G	AA	8	100%
+
+Reads with Difference:
+reference                  3984+ CAA--TCCAA-CAGCCATCTTT-CTGA--CAA-CCCTCTCAA-GAACCAA-CAAGA 4030
+                                                          ****
+IA52U1B01DM1D4  (2)         507+ CAA--TCCAA-CAGCCATTTTT-CTAAA-CAA-CCCTCTCAA-GAACCAA       549
+IA52U1B01C58F0  (13)        541+ CAAAATCCAA-CAGCCATTTTTTCTAAA-CAA-CCCTCTCAA-GAACCAA-CAAGA 591
+IA52U1B01C6JR7  (15)        510+ CAA--TCCAAACAGCCATTTTTTCTAAAACAAACCCTCTCAAAGAACCAAACAAGA 563
+IA52U1B01CKPUH              208- CAA--TCCAA-CAGCCATTTTT-CTAA--CAA-CCCTCTCAA-GAACCAA-CAAGA 162
+IA52U1B01C1XHV  (6)         535+ CAAA-TCCAA-CAGCCATTTTT-CTAAA-CAA-CCCTCTCAA-GAACCAA-CAAGA 583
+IA52U1B01C60US  (421)       495- CAA--TCCAA-CAGCCATTTTT-CTAA--CAA-CCCTCTCAA-GAACCAA-CAAGA 449
+IA52U1B01B40D8              542+ CAAA-TCCAA-CAGCCATTTTT-CTAAA-CAA-CCCTCTCAA-GAACCAA-CAAGA 590
+IA52U1B01EXDXN              513+ CAA--TCCAA-CAGCCATTTTT-CTAAA-CAA-CCCTCTCAA-GAACCAA-C     556
+                                                          ****
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4034	4035	GG	AGA	6	50%
+
+Reads with Difference:
+reference                  4007+ -CAA-CCCTCTCAA-GAACCAA-CAAGAAAA-GGAGCT-GGCCA-CTAAA-TGA-GGCTATCA 4060
+                                                                ***
+IA52U1B01C58F0  (13)        568+ -CAA-CCCTCTCAA-GAACCAA-CAAGAAAAAGAAGCT-G-CCA-CTAAAATGA-GG       616
+IA52U1B01C1XHV  (6)         560+ -CAA-CCCTCTCAA-GAACCAA-CAAGAAAAAGAAGCT-GGCCA-CTAAAATGA-GGCTATCA 615
+IA52U1B01B40D8              567+ -CAA-CCCTCTCAA-GAACCAA-CAAGAAAAAGAAGCT-G-CCA-CTAAAATGA-GGCTATCA 621
+                                                                ***
+
+Other Reads:
+                                                                ***
+IA52U1B01C6JR7  (15)        536+ ACAAACCCTCTCAAAGAACCAAACAAGAAAA-GAAGCTTGGCCAACTAAAATGACGGCTATCA 597
+IA52U1B01CKPUH              185- -CAA-CCCTCTCAA-GAACCAA-CAAGAAAA-GAAGCT-GGCCA-CTAAA-TGA-GGCTATCA 132
+IA52U1B01C60US  (421)       472- -CAA-CCCTCTCAA-GAACCAA-CAAGAAAA-GAAGCT-GGCCA-CTAAA-TGA-GGCTATCA 419
+                                                                ***
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4095	4095	T	C	4	100%
+
+Reads with Difference:
+reference                  4071+ AATGGTGAGCATTTTAGCCAGTTCTCTCCTAAAAAA--TGATATTCCC-ATG 4119
+                                                         *
+IA52U1B01CKPUH              121- AATGGTGAGCATTTTAGCCAGTTCCCTCCTAAAAAA--TGATATTCCC-ATG 73
+IA52U1B01C1XHV  (6)         626+ AATGGTGAGCATTTTAGCCAGTTCC-TCCTAAAAAA--TGATATTCCCCATG 674
+IA52U1B01C60US  (421)       408- AATGGTGAGCATTTTAGCCAGTTCCCTCCTAAAAAAA-TGATATTCCC-ATG 359
+IA52U1B01B40D8              632+ AATGGTGAGCATTTTAGCCAGTTCCCTCCTAAAAAA-CTGATATTCCCCATG 682
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4443	4443	T	C	6	100%
+
+Reads with Difference:
+reference                  4422+ ACGGGCCGGAGTATTGTGGGATGTTCCTTCACCCCC--ACCCATGGG 4466
+                                                      *
+IA52U1B01C60US  (421)        55- ACGGGCCGGAGTATTGTGGGACGTTCCTTCACCCCC--ACCCATGGG 11
+IA52U1B01AJVAQ               20+ ACGGGCCGGAGTATTGTGGGACGTTCCTTCACCCCC--ACCCATGGG 64
+IA52U1B01ESBDU               42- ACGGGCCGGAGTATTGTGGGACGTTCCTTCACCCCC--ACCCAT    1
+IA52U1B01C6N5H  (636)        11+ ACGGGCCGGAGTATTGTGGGACGTTCCTTCACCCCC--ACCCATGGG 55
+IA52U1B01EMDDE               11+ ACGGGCCGGAGTATTGTGGGACGTTCCTTCACCCCCG-ACCCATGGG 56
+IA52U1B01BUYLB               50-        GGAGTATTGTGGGACGTTCCTTCACCCCC-CACCCATGGG 12
+                                                      *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4508	4508	G	A	3	100%
+
+Reads with Difference:
+reference                  4480+ GAAGATGGAGCCTACAGAATCAAGCAAAGAGGGA-TTCTTGGATATTCCCAGAT 4532
+                                                             *
+IA52U1B01AJVAQ               78+ GAAGATGGAGCCTACAGAATCAAGCAAAA-GGGAATTCTTGGATATTCTCAGAT 130
+IA52U1B01C6N5H  (636)        69+ GAAGATGGAGCCTACAGAATCAAGCAAAAAGGAA-TTCTTGGATATTCTCAGAT 121
+IA52U1B01EMDDE               70+ GAAGATGGAGCCTACAGA-TCAAGCAAAAAGGAA-TTCTTGGATATTCTCAGAT 121
+                                                             *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4512	4512	G	A	3	67%
+
+Reads with Difference:
+reference                  4486+ GGAGCCTACAGAATCAAGCAAAGAGGGA-TTCTTGGATATTCCCAGATCGGAGC 4538
+                                                           **
+IA52U1B01C6N5H  (636)        75+ GGAGCCTACAGAATCAAGCAAAAAGGAA-TTCTTGGATATTCTCAGATCGGAGC 127
+IA52U1B01EMDDE               76+ GGAGCCTACAGA-TCAAGCAAAAAGGAA-TTCTTGGATATTCTCAGATCGGAGC 127
+                                                           **
+
+Other Reads:
+                                                           **
+IA52U1B01AJVAQ               84+ GGAGCCTACAGAATCAAGCAAAA-GGGAATTCTTGGATATTCTCAGATCGGAGC 136
+                                                           **
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4527	4527	C	T	3	100%
+
+Reads with Difference:
+reference                  4503+ GCAAAGAGGGA-TTCTTGGATATTCCCAGATCGGAGCTGGAGTTTATAAA 4551
+                                                          *
+IA52U1B01AJVAQ              101+ GCAAAA-GGGAATTCTTGGATATTCTCAGATCGGAGCTGGAGTTTA     145
+IA52U1B01C6N5H  (636)        92+ GCAAAAAGGAA-TTCTTGGATATTCTCAGATCGGAGCTGGAGTTTACAAA 140
+IA52U1B01EMDDE               92+ GCAAAAAGGAA-TTCTTGGATATTCTCAGATCGGAGCTGGAGTTTACAAA 140
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4548	4548	T	C	2	100%
+
+Reads with Difference:
+reference                  4524+ TTCCCAGATCGGAGCTGGAGTTTATAAAG-AAGGAACATTCCATACGATG 4572
+                                                         *
+IA52U1B01C6N5H  (636)       113+ TTCTCAGATCGGAGCTGGAGTTTACAAAG-AAGGAACATTTCATACAATG 161
+IA52U1B01EMDDE              113+ TTCTCAGATCGGAGCTGGAGTTTACAAAGTAA                   144
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4601	4601	C	T	2	100%
+
+Reads with Difference:
+reference                  4577+ ATGTCACACGTGGCGCTGTCCTAACGCATAAAGGAAAGAGGATTGAA 4623
+                                                         *
+IA52U1B01C6N5H  (636)       166+ ATGTCACACGTGGCGCTGTTCTAATGCATAAAGGAAAGAGAATTGAA 212
+IA52U1B01B1A00              248-                    C-TAATGCATAAAGGAAAGAGAATTGAA 222
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4617	4617	G	A	2	100%
+
+Reads with Difference:
+reference                  4595+ TCCTAACGCATAAAGGAAAGAGGATTGAACCATCATGGGCGGACG 4639
+                                                       *
+IA52U1B01C6N5H  (636)       184+ TTCTAATGCATAAAGGAAAGAGAATTGAACCTTCATGGGCGGACG 228
+IA52U1B01B1A00              248-  C-TAATGCATAAAGGAAAGAGAATTGAACCTTCATGGGCGGNCG 206
+                                                       *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4626	4626	A	T	2	100%
+
+Reads with Difference:
+reference                  4604+ ATAAAGGAAAGAGGATTGAACCATCATGGGCGGACGTTAAAAAA-G- 4648
+                                                       **
+IA52U1B01C6N5H  (636)       193+ ATAAAGGAAAGAGAATTGAACCTTCATGGGCGGACGTCAAAAAAAGG 239
+IA52U1B01B1A00              241- ATAAAGGAAAGAGAATTGAACCTTCATGGGCGGNCGTCAAAAAA-G- 197
+                                                       **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4641	4641	T	C	2	100%
+
+Reads with Difference:
+reference                  4620+ TGAACCATCATGGGCGGACGTTAAAAAA-G-ATCTAATATCATAT 4662
+                                                      *
+IA52U1B01C6N5H  (636)       209+ TGAACCTTCATGGGCGGACGTCAAAAAAAGG-TCTAATATCATAT 252
+IA52U1B01B1A00              225- TGAACCTTCATGGGCGGNCGTCAAAAAA-G-ATCTAATATCATAT 183
+                                                      *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4890	4890	T	C	2	100%
+
+Reads with Difference:
+reference                  4865+ TGGG--TCTTTATGGTAATGGTGTTGTTACAAGGAGTGGAGCATACGTGAGTGC 4916
+                                                            *
+IA52U1B01C6N5H  (323)       457+ TGGG-GTCTTTATGGTAATGGTGTTGTCACAAGGAGTGGAGCATATGTGAGTGC 509
+IA52U1B01CM6QQ  (648)       538- TGGGC-TTTTTATGGTAATGGTGTTGTCACAAGGAGTGGAGCATATGTGAGTGC 486
+                                                            *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4908	4908	C	T	2	100%
+
+Reads with Difference:
+reference                  4883+ GTGTTGTTACAAGGAGTGGAGCATACGTGAGTGCCATAGCCC-AAA-CTGAAA 4933
+                                                          *
+IA52U1B01C6N5H  (323)       476+ GTGTTGTCACAAGGAGTGGAGCATATGTGAGTGCTATAGCCCCAAAACTGAAA 528
+IA52U1B01CM6QQ  (648)       519- GTGTTGTCACAAGGAGTGGAGCATATGTGAGTGCTATAGCCC-AAA-CTGAAA 469
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4917	4917	C	T	2	100%
+
+Reads with Difference:
+reference                  4891+ ACAAGGAGTGGAGCATACGTGAGTGCCATAGCCC-AAA-CTGAAAAAA-GCATTG 4942
+                                                           *
+IA52U1B01C6N5H  (323)       484+ ACAAGGAGTGGAGCATATGTGAGTGCTATAGCCCCAAAACTGAAAAAAAGCATTG 538
+IA52U1B01CM6QQ  (648)       511- ACAAGGAGTGGAGCATATGTGAGTGCTATAGCCC-AAA-CTGAAAAA--GCATTG 461
+                                                           *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	4965	4965	C	T	2	100%
+
+Reads with Difference:
+reference                  4937+ GCATTGAAGACAACCC-AGACATCGAA-GACGACATTTTCCGAAAGAGAAGACTGACCA 4993
+                                                               *
+IA52U1B01C6N5H  (323)       533+ GCATTGAAGACAACCC-CGAGATCGAAAGATGACATTTTCCGAAAGAGAAGACTGACCA 590
+IA52U1B01CM6QQ  (648)       466- GCATTGAAGACA-CCCGNGA--TCGAA-GATGACATTTTCCGAAAGAGAAGACTGACCA 412
+                                                               *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5040	5040	G	A	2	100%
+
+Reads with Difference:
+reference                  5014+ GCGGGAAA-GACGAAAA--GATACCTTCCGGCCATAGTCAGAGAAGCTATAAAA-C 5065
+                                                              *
+IA52U1B01C6N5H  (323)       611+ GCGGGAAAAGACGAAAAAAGATACCTTCCAGCCATAGTCAGAGAAGCCATAAAAAC 666
+IA52U1B01CM6QQ  (648)       390- GCGGGAAA-GACGAAAA--GATACCTTCCAGCCATAGTCAGAGAAGCCATAAAA-C 339
+                                                              *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5058	5058	T	C	2	100%
+
+Reads with Difference:
+reference                  5030+ GATACCTTCCGGCCATAGTCAGAGAAGCTATAAAA-CGGGG-TTTG-AGAACATTA 5082
+                                                             *
+IA52U1B01C6N5H  (323)       630+ GATACCTTCCAGCCATAGTCAGAGAAGCCATAAAAACGGGGGTTTG-AGAACATTA 684
+IA52U1B01CM6QQ  (648)       374- GATACCTTCCAGCCATAGTCAGAGAAGCCATAAAA-CGGGG-TTTGCAGAACATTA 321
+                                                             *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5097	5097	C	T	2	100%
+
+Reads with Difference:
+reference                  5070+ TTTG-AGAACATTAATCTTGGCCCCCACCAGAGTTGTGGCAGCTGAAA-TGGAGGAAG 5125
+                                                             *
+IA52U1B01C6N5H  (323)       672+ TTTG-AGAACATTAATCTTGGCCCCCACTAGAGTTGTGGCAGCTGAAAATGGAGGAAG 728
+IA52U1B01CM6QQ  (648)       334- TTTGCAGAACATTAATCTTGGCCCCCACTAGAGTTGTGGCAGCTGAAA-TGGAGGAAG 278
+                                                             *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5139	5139	C	T	3	100%
+
+Reads with Difference:
+reference                  5111+ CTGAAA-TGGAGGAAGCTCTCAGAGGACTCCCAATAA-GA-TACCAAACCCC 5159
+                                                              *
+IA52U1B01C6N5H  (323)       713+ CTGAAAATGGAGGAAGCTCTCAGAGGACTTCCAATAA-GA-TACCAAAACCC 762
+IA52U1B01CM6QQ  (648)       292- CTGAAA-TGGAGGAAGCTCTCAGAGGACTTCCAATCAAGACTAC-AA-CCC- 245
+IA52U1B01BZUDG  (22)        287- CTGAAA-TGGAGGAAGCTCTCAGAGGACTTCCAATCAAGA-TACCAAACCCC 238
+                                                              *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5175	5175	G	A	3	100%
+
+Reads with Difference:
+reference                  5150+ ACCAAACCCCAGCCATCAGAG-CTGAGCACACAGGGCGGGAAATTGTGGAT 5199
+                                                           *
+IA52U1B01C6N5H  (323)       753+ ACCAAAACCCAGCCATCAGAG-CTGAACACACTGGGCGGGAAATTGTGGAT 802
+IA52U1B01CM6QQ  (648)       251- AC-AA-CCC-AGCCATCAGAG-CTGAACACACTGGGCGGGAAATTGTGGAT 205
+IA52U1B01BZUDG  (22)        247- ACCAAACCCCAGCCATCAGAGACTGAACACACTGGGCGGGAAATTGTGGAT 197
+                                                           *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5181	5181	A	T	3	100%
+
+Reads with Difference:
+reference                  5157+ CCCAGCCATCAGAG-CTGAGCACACAGGGCGGGAAATTGTGGATCTAATGTG 5207
+                                                          *
+IA52U1B01C6N5H  (323)       760+ CCCAGCCATCAGAG-CTGAACACACTGGGCGGGAAATTGTGGATCTAATGTG 810
+IA52U1B01CM6QQ  (648)       246- CC-AGCCATCAGAG-CTGAACACACTGGGCGGGAAATTGTGGATCTAATGTG 197
+IA52U1B01BZUDG  (22)        240- CCCAGCCATCAGAGACTGAACACACTGGGCGGGAAATTGTGGATCTAATGTG 189
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5262	5263	CC	TT	3	100%
+
+Reads with Difference:
+reference                  5237+ CACC-AGTTAGAGTGCCAAACTACAACCTGATTATCATGGATGAAG-CCCA 5285
+                                                           ***
+IA52U1B01C6N5H  (323)       841+ CACCCAGTTAGAGTGCCAAACTACAATTTGATTATCATGGA           881
+IA52U1B01CM6QQ  (648)       167- CACC-AGTTAGAGTGCCAAACTACAATTTGATTATCATGGACGAAG-CCCA 119
+IA52U1B01BZUDG  (22)        159- CACC-AGTTAGAGTGCCAAACTACAATTTGATTATCATGGACGAAGGCCCA 110
+                                                           ***
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5277	5277	T	C	2	100%
+
+Reads with Difference:
+reference                  5255+ ACTACAACCTGATTATCATGGATGAAG-CCCATTTCACAGACCCAG 5299
+                                                       *
+IA52U1B01CM6QQ  (648)       149- ACTACAATTTGATTATCATGGACGAAG-CCCATTTCACAGACCCAG 105
+IA52U1B01BZUDG  (22)        141- ACTACAATTTGATTATCATGGACGAAGGCCCATTTCACAGACCCAG 96
+                                                       *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5331	5331	T	C	4	100%
+
+Reads with Difference:
+reference                  5312+ CTAGAGGATACATCTCAACTCGAGTGGAGATGGGTGAAGCAGCT 5355
+                                                    **
+IA52U1B01CM6QQ  (648)        92- CTAGAGGATACATCTCAACCCGAGTGGAGATGGGTGAGGCAGCT 49
+IA52U1B01BZUDG  (22)         83- CTAGAGGATACATCTCAACCCGAGTGGAGATGGGTGAGGCAGCT 40
+IA52U1B01C2PY9  (366)        17+ CTAGAGGATACATCTCAACCCGAGTGGAGATGGGTGAGGCAGCT 60
+H88UKYY02IEIWJ               85- CTAGAGGATACATCTCAACCCGAGTGGAGATGG-TGAGGCAGCT 43
+                                                    **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5349	5349	A	G	5	100%
+
+Reads with Difference:
+reference                  5327+ CAACTCGAGTGGAGATGGGTGAAGCAGCTGGG-ATTTTCATGA 5368
+                                                       **
+IA52U1B01CM6QQ  (648)        77- CAACCCGAGTGGAGATGGGTGAGGCAGCTGGG-ATTTTCATGA 36
+IA52U1B01BZUDG  (22)         68- CAACCCGAGTGGAGATGGGTGAGGCAGCTGGG-ATTTTCATGA 27
+IA52U1B01C2PY9  (366)        32+ CAACCCGAGTGGAGATGGGTGAGGCAGCTGGG-ATTTTCATGA 73
+H88UKYY02IEIWJ               70- CAACCCGAGTGGAGATGG-TGAGGCAGCTGG--ATTT-CATGA 32
+IA52U1B01EHX9R               69-             AGATGGGTGAGGCAGCTGGGGATTTTCATGA 39
+                                                       **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5388	5388	C	T	4	100%
+
+Reads with Difference:
+reference                  5370+ AGCCACTCCCCC-GGGAAGCAGAGATCC-ATTT-CCTCAGAGC 5409
+                                                    *
+IA52U1B01CM6QQ  (648)        34- AGCCACTCCCCC-GGGAAGTAGAGATCC-TTTT-CC-C      1
+IA52U1B01BZUDG  (22)         25- AGCTACTCCCC--GGGAAGTAGAGATC                 1
+IA52U1B01C2PY9  (366)        75+ AGCCACTCCCCC-GGGAAGTAGAGATCC-TTTT-CCCCAGAGC 114
+IA52U1B01EHX9R               37- AGCCACTCCCCCCGGGAAGTAGAGATCCGTTTTT          4
+                                                    *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5544	5544	C	T	2	100%
+
+Reads with Difference:
+reference                  5519+ TAAAAGCAGGAAATGATATAGCAGCCTGCCTGAGAAAGAATGGAAAGAAAGTAAT 5573
+                                                          *
+IA52U1B01C2PY9  (366)       224+ TAAAAGCAGGAAATGATATAGCAGCTTGCCTGAGAAAAAATGGAAAGAAAGTAAT 278
+IA52U1B01BQVG6  (2)         804-                  ATAGCAGCTTGCCTGAGGAAAA-TG-AA-GAGAGTAAT 770
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5583	5583	C	T	3	100%
+
+Reads with Difference:
+reference                  5556+ GAATGGAAAGAAAGTAATACAACTTAGCAGGAAGACTTTT-GATTCTGAGTATG 5608
+                                                            *
+IA52U1B01C2PY9  (366)       261+ AAATGGAAAGAAAGTAATACAACTTAGTAGGAAGACTTTT-GATTCTGAGTATG 313
+IA52U1B01BQVG6  (2)         784- AA-TG-AA-GAGAGTAATACAACTTAGTAGGAAGACTTTT-GATTCTGAGTATG 735
+IA52U1B01BUTUH  (2)         795- AA-TGGAAAGAAAGTAATACAACTTAGTAGGAAGACTTTTTGATTCTGAGTATG 743
+                                                            *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5616	5616	T	A	4	100%
+
+Reads with Difference:
+reference                  5591+ CTTTT--GATTCTGAGTATGTCAA-GACTAGAACCAATGATTGGGATTT-CGTGGT 5642
+                                                             **
+IA52U1B01DPUPY  (3)         291+ CTTTT--GATTCTGAGTATGTCAA-GACAAGAACCAACGATTGGGATTTTCGTGGT 343
+IA52U1B01BSVXO  (14)        294+ CTTTTTAGATTCTGAGTATGTCAA-GACAAGAACCAACGATTGGGATTT-CGTGGT 347
+IA52U1B01C2PY9  (251)       296+ CTTTT--GATTCTGAGTATGTCAA-GACAAGAACCAACGATTGGGATTT-CGTGGT 347
+IA52U1B01BQVG6  (230)       752- CTTTT--GATTCTGAGTATGTCAAAGCCAAGAACCAACGATTGGGATTT-CGTGGT 700
+                                                             **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5625	5625	T	C	4	100%
+
+Reads with Difference:
+reference                  5601+ TGAGTATGTCAA-GACTAGAACCAATGATTGGGATTT-CGTGGTTACAACT 5649
+                                                          *
+IA52U1B01DPUPY  (3)         301+ TGAGTATGTCAA-GACAAGAACCAACGATTGGGATTTTCGTGGTTACAACT 350
+IA52U1B01BSVXO  (14)        306+ TGAGTATGTCAA-GACAAGAACCAACGATTGGGATTT-CGTGGTTACAACT 354
+IA52U1B01C2PY9  (251)       306+ TGAGTATGTCAA-GACAAGAACCAACGATTGGGATTT-CGTGGTTACAACT 354
+IA52U1B01BQVG6  (230)       742- TGAGTATGTCAAAGCCAAGAACCAACGATTGGGATTT-CGTGGTTACAACT 693
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5679	5679	G	A	4	100%
+
+Reads with Difference:
+reference                  5652+ CATTTCAGAAATGGGTGCCAA-TTTCAAGGCTGAGAGGGTTATAG-ACCCCAG 5702
+                                                             *
+IA52U1B01DPUPY  (3)         353+ CATTTCAGAAATGGGTGCCAA-TTTCAAAGCTGAGAGGGTTATAG-ACCCCAG 403
+IA52U1B01BSVXO  (14)        357+ CATTTCAGAAATGGGTGCCAA-TTTCAAAGCTGAGAGGGTTATAG-ACCCCAG 407
+IA52U1B01C2PY9  (251)       357+ CATTTCAGAAATGGGTGCCAA-TTTCAAAGCTGAGAGGGTTATAG-ACCCCAG 407
+IA52U1B01BQVG6  (230)       690- CATTTCAGAAATGGGTGCCAAATTTCAAAGCTGAGAGGGTTATAGGACCCCAG 638
+                                                             *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5775	5775	T	CC	4	75%
+
+Reads with Difference:
+reference                  5751+ T-CTGGCAGGACCTATGCCAGTGACTC-ACTCTAGTGCAGCACAAAGAAGAGGG 5802
+                                                         ****
+IA52U1B01DPUPY  (3)         452+ T-CTGGCAGGACCTATGCCAGTGACCCCACTCTAGTGCAGC              491
+IA52U1B01BSVXO  (14)        456+ T-CTGGCAGGACCTATGCCAGTAACCCCACTCTAGTGCAGCACAAAGAAGAGGG 508
+IA52U1B01C2PY9  (251)       456+ T-CTGGCAGGACCTATGCCAGTGACCCCACTCTAGTGCAGCACAAAGAAGAGGG 508
+                                                         ****
+
+Other Reads:
+                                                         ****
+IA52U1B01BQVG6  (230)       589- TTCTGGCAGGACCTATGCCAGTGACCC-ACTCTAGTGCAGCACAAAGAAGAGG- 538
+                                                         ****
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5835	5835	T	C	3	100%
+
+Reads with Difference:
+reference                  5813+ GAAATCCAAAAAATGAAAA-TGATCAGTACATATACATGGGG-GAACCT 5859
+                                                        *
+IA52U1B01BSVXO  (14)        519+ GAAATCCAAAAAATGAAAAATGACCAGTACATATACATGGG-AGAACCT 566
+IA52U1B01C2PY9  (251)       519+ GAAATCCAAAAAATGAAAA-TGACCAGTACATATACATGGG-AGAACCT 565
+IA52U1B01BQVG6  (230)       527- GAAATCCAAAAAATGAAAA-TGACCAGTACATATACATGGG-AGAACCT 481
+                                                        *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5853	5853	G	A	3	100%
+
+Reads with Difference:
+reference                  5826+ TGAAAA-TGATCAGTACATATACATGGGG-GAACCTCTGGAAAA-TGATGAAGA 5876
+                                                             **
+IA52U1B01BSVXO  (14)        532+ TGAAAAATGACCAGTACATATACATGGG-AGAACCTCT                 568
+IA52U1B01C2PY9  (251)       532+ TGAAAA-TGACCAGTACATATACATGGG-AGAACCTCTGGAAAA-TGATGAAGA 582
+IA52U1B01BQVG6  (230)       514- TGAAAA-TGACCAGTACATATACATGGG-AGAACCTCTGGAAAAATGATGAAGA 463
+                                                             **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5898	5898	C	T	2	100%
+
+Reads with Difference:
+reference                  5877+ CTGTGCACACTGGAAA-GAAGCCAAAA-TGCTCCTAGATAACATTAA 5921
+                                                       *
+IA52U1B01C2PY9  (251)       584+ CTGTGCACACTGGAAAAGAAGCTAAAAATGCTCCTAGATAACATTAA 630
+IA52U1B01BQVG6  (230)       462- CTGTGCACACTGGAAA-GAAGCTAAAA-TGCTCCTAGATAACATTAA 418
+                                                       *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5943	5943	C	T	2	100%
+
+Reads with Difference:
+reference                  5917+ ATTAACACACCAGAAGGAATCATTCCCAGTATGTTTGAACCAGAGCGTGAA 5967
+                                                           *
+IA52U1B01C2PY9  (251)       626+ ATTAACACACCAGAAGGAATCATTCCTAGTATGTTTGAACCAGAGCGTGAA 676
+IA52U1B01BQVG6  (230)       422- ATTAACACACCAGAAGGAATCATTCCTAGTATGTTTGAACCAGAGCGTGAA 372
+                                                           *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5976	5976	C	T	2	100%
+
+Reads with Difference:
+reference                  5952+ TGAACCAGAGCGTGAAAAA-GTGGACGCCATTGATGGCGAATACCGCTTGA 6001
+                                                          *
+IA52U1B01C2PY9  (251)       661+ TGAACCAGAGCGTGAAAAAAGTGGATGCCATTGATGGCGAATACCGTT-GA 710
+IA52U1B01BQVG6  (230)       387- TGAACCAGAGCGTGAAAAA-GTGGATGCCATTGATGGCGAATACCGTTTGA 338
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	5997	5997	C	T	2	100%
+
+Reads with Difference:
+reference                  5971+ GTGGACGCCATTGATGGCGAATACCGCTTGAGAGGA-GAAGCAAGG-AAAACC 6021
+                                                           **
+IA52U1B01C2PY9  (251)       681+ GTGGATGCCATTGATGGCGAATACCGTT-GAGAGGAAGAAGCAAGGGAAAACC 732
+IA52U1B01BQVG6  (230)       368- GTGGATGCCATTGATGGCGAATACCGTTTGAGAGGA-GAAGCAAGG-AAAACC 318
+                                                           **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6039	6039	A	G	3	100%
+
+Reads with Difference:
+reference                  6015+ G-AAAACCTTT--GTGGACTTAATGA-GAAGAGGAGACCTACCAGTCTGGTTG 6063
+                                                             *
+IA52U1B01C2PY9  (251)       725+ GGAAAACCTTTTTGTGGACTTAATGAAGGAGAGGAGACTTACCAGTCTGGTTG 777
+IA52U1B01BQVG6  (230)       324- G-AAAACCTTT--GTGGACTTAATGA-GGAGAGGAGACTTACCAGTCTGGTTG 276
+IA52U1B01A6Q3I              313-              GTGGACTTAATGA-GGAGAGGAGACTTACCAGTCTGGTTG 275
+                                                             *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6049	6049	C	T	3	100%
+
+Reads with Difference:
+reference                  6025+ --GTGGACTTAATGA-GAAGAGGAGACCTACCAGTCTGGTTGGCCTACAAA 6072
+                                                            *
+IA52U1B01C2PY9  (251)       736+ TTGTGGACTTAATGAAGGAGAGGAGACTTACCAGTCTGGTTGGCTTACAAA 786
+IA52U1B01BQVG6  (230)       314- --GTGGACTTAATGA-GGAGAGGAGACTTACCAGTCTGGTTGGCTTACAAA 267
+IA52U1B01A6Q3I              313-   GTGGACTTAATGA-GGAGAGGAGACTTACCAGTCTGGTTGGCTTACAAA 266
+                                                            *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6066	6066	C	T	3	100%
+
+Reads with Difference:
+reference                  6043+ GGAGACCTACCAGTCTGGTTGGCCTACAAAGTGGCAGCTGAAGGCATCAA 6092
+                                                        **
+IA52U1B01C2PY9  (251)       757+ GGAGACTTACCAGTCTGGTTGGCTTACAAAGTGGCAGCTGAA         798
+IA52U1B01BQVG6  (230)       296- GGAGACTTACCAGTCTGGTTGGCTTACAAAGTGGCAGCTGAAGGCATCAA 247
+IA52U1B01A6Q3I              295- GGAGACTTACCAGTCTGGTTGGCTTACAAAGTGGCAGCTGAAGGCATCAA 246
+                                                        **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6126	6126	C	T	2	100%
+
+Reads with Difference:
+reference                  6101+ ACAGAAGGTGGTGTTTTGATGGAATCAAGAACAACCAAATCCTGGAAGAGAAT 6153
+                                                          *
+IA52U1B01BQVG6  (230)       238- ACAGAAGGTGGTGTTTTGATGGAATTAAGAACAACCAAATCCTGGAAGAAAAT 186
+IA52U1B01A6Q3I              237- ACAGAAGGTGGTGTTTTGATGGAATTAAGAACAACCAAATCCTGGAGGAAAAT 185
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6150	6150	G	A	2	100%
+
+Reads with Difference:
+reference                  6123+ AATCAAGAACAACCAAATCCTGGAAGAGAATGTGGAAGTTGAAATCTGGACAAAAGAA 6180
+                                                            *
+IA52U1B01BQVG6  (230)       216- AATTAAGAACAACCAAATCCTGGAAGAAAATGTGGAAGTTGAAATCTGGACAAAAGAA 159
+IA52U1B01A6Q3I              215- AATTAAGAACAACCAAATCCTGGAGGAAAATGTGGAAGTTGAAATCTGGACAAAAGAA 158
+                                                            *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6205	6205	C	A	4	100%
+
+Reads with Difference:
+reference                  6182+ GGGAAAGGAAGAAATTGAAACCCCGATGGTTGGATGCTAGGATCTACTC 6230
+                                                        *
+IA52U1B01BQVG6  (230)       157- GGGAAAGGAAGAAATTGAAACCCAGATGGTTGGATGCTAGGATCTACTC 109
+IA52U1B01A6Q3I              156- GGGAAAGGAAGAAATTGAAACCCAGATGGTTGGATGCTAGGATCTACTC 108
+IA52U1B01COVXP  (621)         1+       G-AAGAAATTGAAACCCAGATGGTTGGATGCTAGGATCTACTC 42
+IA52U1B01DUP47  (8)           1+         AAGAAATTGAAACCCAGATGGTTGGATGCTAGGATCTACTC 41
+                                                        *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6300	6300	T	C	4	100%
+
+Reads with Difference:
+reference                  6284+ TGACCCTGAACCTAATTACAGAAATGGGTAGGCTTCCAA 6322
+                                                 *
+IA52U1B01BQVG6  (230)        55- TGACCCTGAACCTAATCACAGAAATGGGTAGGCTTCCAA 17
+IA52U1B01A6Q3I               55- TGACCCTGAACCTAATCACAGAAATGGGTAGGCTTCCAA 17
+IA52U1B01COVXP  (621)        96+ TGACCCTGAACCTAATCACAGAAATGGGTAGGCTTCCAA 134
+IA52U1B01DUP47  (8)          95+ TGACCCTGAACCTAATCACAGAAATGGGTAGGCTTCCAA 133
+                                                 *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6324	6324	G	A	4	100%
+
+Reads with Difference:
+reference                  6302+ CAGAAATGGGTAGGCTTCCAACGTTCATGACCCAGAAGACAAGAGA 6347
+                                                       *
+IA52U1B01BQVG6  (230)        37- CAGAAATGGGTAGGCTTCCAACATTCATGACTCAGAA          1
+IA52U1B01A6Q3I               37- CAGAAATGGGTAGGCTTCCAACATTCATGACTCAGA-G         1
+IA52U1B01COVXP  (621)       114+ CAGAAATGGGTAGGCTTCCAACATTCATGACTCAGAAGACAAGAGA 159
+IA52U1B01DUP47  (8)         113+ CAGAAATGGGTAGGCTTCCAACATTCATGACTCAGAAGACAAGAGA 158
+                                                       *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6333	6333	C	T	4	100%
+
+Reads with Difference:
+reference                  6308+ TGGGTAGGCTTCCAACGTTCATGACCCAGAAGACAAGAGACGCACTGGAT 6357
+                                                          *
+IA52U1B01BQVG6  (230)        31- TGGGTAGGCTTCCAACATTCATGACTCAGAA                    1
+IA52U1B01A6Q3I               31- TGGGTAGGCTTCCAACATTCATGACTCAGA-G                   1
+IA52U1B01COVXP  (621)       120+ TGGGTAGGCTTCCAACATTCATGACTCAGAAGACAAGAGACGCACTGGAC 169
+IA52U1B01DUP47  (8)         119+ TGGGTAGGCTTCCAACATTCATGACTCAGAAGACAAGAGACGCACTGGAC 168
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6357	6357	T	C	2	100%
+
+Reads with Difference:
+reference                  6333+ CCAGAAGACAAGAGACGCACTGGATAACTTAGCAGTGCTGCACACGGCC 6381
+                                                         *
+IA52U1B01COVXP  (621)       145+ TCAGAAGACAAGAGACGCACTGGACAACCTAGCAGTGCTGCACACGGCT 193
+IA52U1B01DUP47  (8)         144+ TCAGAAGACAAGAGACGCACTGGACAACCTAGCAGTGCTGCACACGGCT 192
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6361	6361	T	C	2	100%
+
+Reads with Difference:
+reference                  6337+ AAGACAAGAGACGCACTGGATAACTTAGCAGTGCTGCACACGGCCGAAG 6385
+                                                         *
+IA52U1B01COVXP  (621)       149+ AAGACAAGAGACGCACTGGACAACCTAGCAGTGCTGCACACGGCTGAAG 197
+IA52U1B01DUP47  (8)         148+ AAGACAAGAGACGCACTGGACAACCTAGCAGTGCTGCACACGGCTGAAG 196
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6381	6381	C	T	2	100%
+
+Reads with Difference:
+reference                  6358+ AACTTAGCAGTGCTGCACACGGCCGAAGCAGGTGGAAGGGCGTACAA 6404
+                                                        *
+IA52U1B01COVXP  (621)       170+ AACCTAGCAGTGCTGCACACGGCTGAAGCAGGTGGAAGGGCGTACAA 216
+IA52U1B01DUP47  (8)         169+ AACCTAGCAGTGCTGCACACGGCTGAAGCAGGTGGAAGGGCGTACAA 215
+                                                        *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6435	6435	G	A	5	100%
+
+Reads with Difference:
+reference                  6413+ TCAGTGAACTGCCGGAGACCCTGGAGACACTGCTTTTAC-TGACACTT 6459
+                                                       *
+IA52U1B01DV4HE              221+ TCAGTGAACTGCCGGAGACCCTAGAGACACTGCTTT-AC-TGACACTT 266
+IA52U1B01B0C21              233+ TCAGTGAACTGCCGGAGACCCTAGAGACACTGCTTTTAC-TGACACTT 279
+IA52U1B01BVOXK  (15)        227+ TCAGTGAACTGCCGGAGACCCTAGAGACACTGCTTTTACCTGACACTT 274
+IA52U1B01COVXP  (595)       225+ TCAGTGAACTGCCGGAGACCCTAGAGACACTGCTTTTAC-TGACACTT 271
+IA52U1B01CSPR0  (436)       722- TCAGTGAACTGCCGGAGACCCTAGAGACACTGCTTTTAC-TGACACTT 676
+                                                       *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6465	6465	C	T	5	60%
+
+Reads with Difference:
+reference                  6441+ ACTGCTTTTAC-TGACACTT-CTGGCCACAGTCACGGGAGGG--ATCTTTTT 6488
+                                                           *
+IA52U1B01DV4HE              249+ ACTGCTTT-AC-TGACACTT-CTGGCTACAGTCACAGG               283
+IA52U1B01COVXP  (595)       253+ ACTGCTTTTAC-TGACACTT-CTGGCTACAGTCACAGGAGGG--ATCTTTTT 300
+IA52U1B01CSPR0  (436)       694- ACTGCTTTTAC-TGACACTTTCTGGCTACAGTCACAGGAGGG-GATCTTTTT 645
+                                                           *
+
+Other Reads:
+                                                           *
+IA52U1B01B0C21              261+ ACTGCTTTTAC-TGACACTT-CTGGCAACAGTCACAGGAGGG           300
+IA52U1B01BVOXK  (15)        255+ ACTGCTTTTACCTGACACTT-CTGGCAACAGTCACAGGAGGGC-ATCTTTTT 304
+                                                           *
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6465	6465	C	A	5	40%
+
+Reads with Difference:
+reference                  6441+ ACTGCTTTTAC-TGACACTT-CTGGCCACAGTCACGGGAGGG--ATCTTTTT 6488
+                                                           *
+IA52U1B01B0C21              261+ ACTGCTTTTAC-TGACACTT-CTGGCAACAGTCACAGGAGGG           300
+IA52U1B01BVOXK  (15)        255+ ACTGCTTTTACCTGACACTT-CTGGCAACAGTCACAGGAGGGC-ATCTTTTT 304
+                                                           *
+
+Other Reads:
+                                                           *
+IA52U1B01DV4HE              249+ ACTGCTTT-AC-TGACACTT-CTGGCTACAGTCACAGG               283
+IA52U1B01COVXP  (595)       253+ ACTGCTTTTAC-TGACACTT-CTGGCTACAGTCACAGGAGGG--ATCTTTTT 300
+IA52U1B01CSPR0  (436)       694- ACTGCTTTTAC-TGACACTTTCTGGCTACAGTCACAGGAGGG-GATCTTTTT 645
+                                                           *
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6474	6474	G	A	5	100%
+
+Reads with Difference:
+reference                  6451+ C-TGACACTT-CTGGCCACAGTCACGGGAGGG--AT-CTTTTT--ATTCTTG 6495
+                                                          *
+IA52U1B01B0C21              271+ C-TGACACTT-CTGGCAACAGTCACAGGAGGG                     300
+IA52U1B01BVOXK  (15)        265+ CCTGACACTT-CTGGCAACAGTCACAGGAGGGC-AT-CTTTTT--ATTCTTG 311
+IA52U1B01COVXP  (595)       263+ C-TGACACTT-CTGGCTACAGTCACAGGAGGG--AT-CTTTTT--ATTCTTG 307
+IA52U1B01CSPR0  (436)       684- C-TGACACTTTCTGGCTACAGTCACAGGAGGG-GAT-CTTTTTT-ATTCTTG 637
+IA52U1B01BBC2S              668-                  ACAGTCACAGGAGGG-GATGCTTTTTTTATTCTTG 635
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6501	6501	C	T	4	75%
+
+Reads with Difference:
+reference                  6480+ G--AT-CTTTTT--ATTCTTGATGAGC-GGG-A-GGGG-CATAGGGAAGATGA 6523
+                                                           **
+IA52U1B01BVOXK  (15)        295+ GC-AT-CTTTTT--ATTCTTGATGAGTTGGG-ATGGGG-CATAGGGAAG     337
+IA52U1B01COVXP  (595)       292+ G--AT-CTTTTT--ATTCTTGATGAGT-GGG-A-GGGG-CATAGG-AAGATGA 334
+IA52U1B01CSPR0  (436)       654- G-GAT-CTTTTTT-ATTCTTGATGAGT-GGGGA-GGGGGCATAGGGAAGATGA 607
+                                                           **
+
+Other Reads:
+                                                           **
+IA52U1B01BBC2S              654- G-GATGCTTTTTTTATTCTTGATGAGCTGGGGA-GGGGGCATAGGGAAGATAA 604
+                                                           **
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6528	6528	A	G	3	100%
+
+Reads with Difference:
+reference                  6506+ GGGG-CATAGGGAAGATGA-CCCTAGGAATGTGCTGCATAGTCACGG 6550
+                                                         *
+IA52U1B01COVXP  (595)       318+ GGGG-CATAGG-AAGATGA-CCCTGGGAATGTGCTGCATAATCACGG 361
+IA52U1B01CSPR0  (436)       625- GGGGGCATAGGGAAGATGAACCCTGGGAATGTGCTGCATAATCACGG 579
+IA52U1B01BBC2S              622- GGGGGCATAGGGAAGATAA-CCCTGGGAATGTGCTGCATAATCACGG 577
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6544	6544	G	A	3	100%
+
+Reads with Difference:
+reference                  6523+ A-CCCTAGGAATGTGCTGCATAGTCACGGCTAGCAT-CCTT-CTAT 6565
+                                                       *
+IA52U1B01COVXP  (595)       334+ A-CCCTGGGAATGTGCTGCATAATCACGGCTAGCAT-C-TT-CTAT 375
+IA52U1B01CSPR0  (436)       607- AACCCTGGGAATGTGCTGCATAATCACGGCTAGCATTCCTTTCTAT 562
+IA52U1B01BBC2S              604- A-CCCTGGGAATGTGCTGCATAATCACGGCTAGCATTCCTTTCTAT 560
+                                                       *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6636	6636	C	T	3	100%
+
+Reads with Difference:
+reference                  6614+ AGTTTTTT-CTCATAGTTTT-GCTCATTCCAGAACCAGAAAAACAG 6657
+                                                         *
+IA52U1B01COVXP  (595)       425+ AGTTTTTT-CTCATAGTTTTTGCTTATTCCAGAACCAGAAAAACAG 469
+IA52U1B01CSPR0  (436)       511- AGTTTTTTTCTCATAGTTTT-GCTTATTCCAGAACCAGAAAAACAG 467
+IA52U1B01BBC2S              512- AGTTTTTTTCTCATAGTTTT-GCTTATTCCAGAACCAGAAAAACAG 468
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6687	6687	T	C	3	100%
+
+Reads with Difference:
+reference                  6670+ GACAACCAA-TTGACCTATGTTGTCATAGCCATCCTCACAGTG 6711
+                                                   *
+IA52U1B01COVXP  (595)       483+ GACAACCAAATTGACCTACGTTGTCATAGCCATCCTCACAGTG 525
+IA52U1B01CSPR0  (436)       454- GACAACCAA-TTGACCTACGTTGTCATAGCCATCCTCACAGTG 413
+IA52U1B01BBC2S              455- GACAACCAA-TTGACCTACGTTGTCATAGCCATCCTCACAGTG 414
+                                                   *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6753	6753	G	A	4	100%
+
+Reads with Difference:
+reference                  6725+ TGGCAAA-CGAGATGGGTTTCCTAGAAAAGA--CGAAGAAAGATCTTGGATTAGGAAG 6779
+                                                              ****
+IA52U1B01COVXP  (595)       538+ TGGCAAAACGAGATGGGTTTCCTAGAAAAAAATCGAAGAAAGATCTTGGATTAGGAAG 595
+IA52U1B01CSPR0  (436)       399- TGGCAAA-CGAGATGGGTTTCCTAGAAAAAA--CGAAGAAAGATCTTGGATTAGGAAG 345
+IA52U1B01BBC2S              400- TGGCAAA-CGAGATGGGTTTCCTAGAAAAAA--CGAAGAAAGATCTTGGATTAGGAAG 346
+IA52U1B01C0ZQ7              397-                     CCTAGAAAAAA--CGAAGAAAGATCTTGGATTAGGAAG 362
+                                                              ****
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6795	6795	G	A	4	100%
+
+Reads with Difference:
+reference                  6769+ GGATTAGGAAGCATTGCAA-CCCAGCAGCCCGAGAGCAA-CA-TCCTGGACA 6817
+                                                            *
+IA52U1B01COVXP  (595)       585+ GGATTAGGAAGCATTGCAAACCCAGCAACCCGAGAGCAA-CAATCCTGGACA 635
+IA52U1B01CSPR0  (436)       355- GGATTAGGAAGCATTGCAA-CCCAGCAACCCGAGAGCAA-CA-TCCTGGACA 307
+IA52U1B01BBC2S              356- GGATTAGGAAGCATTGCAA-CCCAGCAACCCGAGAGCAA-CA-TCCTGGACA 308
+IA52U1B01C0ZQ7              372- GGATTAGGAAGCATTGCAA-CCCAGCAACCCGAGAGCAAACA-TCCTGGACA 323
+                                                            *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6828	6828	C	T	4	100%
+
+Reads with Difference:
+reference                  6807+ CA-TCCTGGACATAGATCTACGC-CCCGCATCAGCATGGACGCTGTATGC 6854
+                                                       **
+IA52U1B01COVXP  (595)       624+ CAATCCTGGACATAGATCTACG-TCCCGCATCAGCTTGGACGCTGTATGC 672
+IA52U1B01CSPR0  (436)       317- CA-TCCTGGACATAGATCTACG-TCCCGCATCAGCTTGGACGCTGTATGC 270
+IA52U1B01BBC2S              318- CA-TCCTGGACATAGATCTACG-TCCCGCATCAGCTTGGACGCTGTATGC 271
+IA52U1B01C0ZQ7              333- CA-TCCTGGACATAGATCTACG-TCCCGCATCAGCTTGGACGCTGTATGC 286
+                                                       **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6840	6840	A	T	4	100%
+
+Reads with Difference:
+reference                  6819+ AGATCTACGC-CCCGCATCAGCATGGACGCTGTATGCCGTGGCTACAACATTT 6870
+                                                       *
+IA52U1B01COVXP  (595)       637+ AGATCTACG-TCCCGCATCAGCTTGGACGCTGTATGCCGTGGCTACAACATTC 688
+IA52U1B01CSPR0  (436)       305- AGATCTACG-TCCCGCATCAGCTTGGACGCTGTATGCCGTGGCTACAACATTC 254
+IA52U1B01BBC2S              306- AGATCTACG-TCCCGCATCAGCTTGGACGCTGTATGCCGTGGCTACAACATTC 255
+IA52U1B01C0ZQ7              321- AGATCTACG-TCCCGCATCAGCTTGGACGCTGTATGCCGTGGCTACAACATTC 270
+                                                       *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	6870	6870	T	C	4	100%
+
+Reads with Difference:
+reference                  6841+ TGGACGCTGTATGCCGTGGCTACAACATTTGTTACACC-AATGCTGAGACATA 6892
+                                                              *
+IA52U1B01COVXP  (595)       659+ TGGACGCTGTATGCCGTGGCTACAACATTCGTTACACCCAATGCTGAGACATA 711
+IA52U1B01CSPR0  (436)       283- TGGACGCTGTATGCCGTGGCTACAACATTCGTTACACC-AATGCTGAGACATA 232
+IA52U1B01BBC2S              284- TGGACGCTGTATGCCGTGGCTACAACATTCGTTACACC-AATGCTGAGACATA 233
+IA52U1B01C0ZQ7              299- TGGACGCTGTATGCCGTGGCTACAACATTCGTTACACC-AATGCTGAGACATA 248
+                                                              *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	7001	7001	C	T	6	100%
+
+Reads with Difference:
+reference                  6980+ TGTCAAAGATGGACATCGGAGCTCCCCTTCTCGCCATTGGATGC 7023
+                                                      *
+IA52U1B01CSPR0  (436)       144- TGTCAAAGATGGACATCGGAGTTCCCCTTCTCGCCATTGGATGT 101
+IA52U1B01BBC2S              145- TGTCAAAGATGGACATCGGAGTTCCCCTTCTCGCCATTGGATGT 102
+IA52U1B01C0ZQ7              160- TGTCAAAGATGGACATCGGAGTTCCCCTTCTCGCCATTGGATGT 117
+IA52U1B01CYDXJ  (393)        31+ TGTCAAAGATGGACATCGGAGTTCCCCTTCTCGCCATTGGATGT 74
+IA52U1B01B7ZXT               31+ TGTCAAAGATGGACAT-GGAGTTCCCCTTCTCGCCATTGGATGT 73
+IA52U1B01BVK63              157- TGTCAAAGATGGACATCGGAGTTCCCCTTCTCGCCATTGGATGT 114
+                                                      *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	7023	7023	C	T	6	100%
+
+Reads with Difference:
+reference                  7001+ CTCCCCTTCTCGCCATTGGATGCT-ACTCACAAGTCAATCCCATAA 7045
+                                                       **
+IA52U1B01CSPR0  (436)       123- TTCCCCTTCTCGCCATTGGATGTT-ACTCACAAGTCAATCCCATAA 79
+IA52U1B01BBC2S              124- TTCCCCTTCTCGCCATTGGATGTT-ACTCACAAGTCAATCCCATAA 80
+IA52U1B01C0ZQ7              139- TTCCCCTTCTCGCCATTGGATGTT-ACTCACAAGTCAATCCCATAA 95
+IA52U1B01CYDXJ  (393)        52+ TTCCCCTTCTCGCCATTGGATGTT-ACTCACAAGTCAATCCCATAA 96
+IA52U1B01B7ZXT               51+ TTCCCCTTCTCGCCATTGGATGTT-ACTCACAAGTCAATCCCATAA 95
+IA52U1B01BVK63              136- TTCCCCTTCTCGCCATTGGATGTTTACTCACAAGTCAATCCCATAA 91
+                                                       **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	7089	7089	T	C	5	100%
+
+Reads with Difference:
+reference                  7074+ AGCGCATTATGCCATTATAGGG-CCAGGACTTCAAGC 7109
+                                                *
+IA52U1B01CSPR0  (436)        50- AGCGCATTATGCCATCATAGGG-CCAGGACTTCAAGC 15
+IA52U1B01BBC2S               51- AGCGCATTATGCCATCATAGGG-CCAGGACTTCAAGC 16
+IA52U1B01CYDXJ  (393)       125+ AGCGCATTATGCCATCATAGGG-CCAGGACTTCAAGC 160
+IA52U1B01B7ZXT              124+ AGCGCATTATGCCATCATAGGG-CCAGGACTTCAAGC 159
+IA52U1B01BVK63               62- AGCGCATTATGCCATCATAGGGTCCAGGACTTCAAGC 26
+                                                *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	7248	7248	C	A	2	100%
+
+Reads with Difference:
+reference                  7223+ AAAAGCAGTTGGGACAAGTAATGCTCCTAGTCCTCTGCGTGACTCAA-GT 7271
+                                                          *
+IA52U1B01CYDXJ  (354)       274+ AAAAGCAGTTGGGACAAGTAATGCTACTAATCCTCTGCGTGACTCAAAGT 323
+IA52U1B01CCDSY  (230)       793-              ACAAGTAATGCTACTAATCCTCTGCGTGACTCAA-GT 758
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	7252	7252	G	A	2	100%
+
+Reads with Difference:
+reference                  7226+ AGCAGTTGGGACAAGTAATGCTCCTAGTCCTCTGCGTGACTCAA-GTATTG 7275
+                                                           *
+IA52U1B01CYDXJ  (354)       277+ AGCAGTTGGGACAAGTAATGCTACTAATCCTCTGCGTGACTCAAAGTATTG 327
+IA52U1B01CCDSY  (230)       793-           ACAAGTAATGCTACTAATCCTCTGCGTGACTCAA-GTATTG 754
+                                                           *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	7323	7323	C	A	2	100%
+
+Reads with Difference:
+reference                  7305+ GGCCTT-AACCTT-AGCTACCGGGCCCATCTCCACACT-GTGGGAAGG 7349
+                                                     *
+IA52U1B01CYDXJ  (354)       357+ GGCCTT-AACCTT-AGCTACAGGGCCCATCTCCACACT-GTGGGAAGG 401
+IA52U1B01CCDSY  (230)       725- GGCCTTTAACCTTTAGCTACAGGGCCCATCTCCACACTTGTGGGAAGG 678
+                                                     *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	7465	7465	T	A	2	100%
+
+Reads with Difference:
+reference                  7442+ -CCATTATGAAGAA-CACAACC-AACTCAA-GAA-GGGG-AA-CTGGCAACA 7486
+                                                           *
+IA52U1B01CYDXJ  (354)       496+ -CCATTATGAAGAAACACAACCTAACACAAAGAAAGGGGGAAACTGGCAACA 546
+IA52U1B01CCDSY  (230)       581- TCCATTATGAAGAA-CACAACC-AACACAA-GAA-GGGG-AA-CTGGCAACA 536
+                                                           *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	7551	7551	G	A	2	100%
+
+Reads with Difference:
+reference                  7528+ GCACTGGG-AAAAA-GTGAATTCCAGA-TCTACAA-GAAAAGTGGAAT 7571
+                                                          **
+IA52U1B01CYDXJ  (354)       595+ GCACTGGGGAAAAA-GTGAATTCCAAAGTCTACAAAGAAAAGTGGAAT 641
+IA52U1B01CCDSY  (230)       494- GCACTGGG-AAAAAAGTGAATTCCAAA-TCTACAA-GAAAAGTGGAAT 450
+                                                          **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	7578	7578	G	AA	3	100%
+
+Reads with Difference:
+reference                  7557+ CAA-GAAAAGTGGAATCCAGGAG-GTGGATAGAACCTTAGCAAAAGAA 7602
+                                                      ***
+IA52U1B01CYDXJ  (354)       626+ CAAAGAAAAGTGGAATCCAGGAAAGTGGATAGAACCTTAGCAAAAGAA 673
+IA52U1B01CCDSY  (230)       464- CAA-GAAAAGTGGAATCCAGGAAAGTGGATAGAACCTTAGCAAAAGAA 418
+IA52U1B01CQSC7  (2)         456-           TGGAATCCAGGAAAGTGGATAGAACCTTAGCAAAAGAA 419
+                                                      ***
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	7608	7608	T	C	3	100%
+
+Reads with Difference:
+reference                  7584+ TAGAACCTTAGCAAAAGAAGGCATTAAAA-GAGGAGAAACGGACCATCACG 7633
+                                                         *
+IA52U1B01CYDXJ  (354)       655+ TAGAACCTTAGCAAAAGAAGGCATCAAAAAGAGGAGAAACGGACCATCACG 705
+IA52U1B01CCDSY  (230)       436- TAGAACCTTAGCAAAAGAAGGCATCAAAA-GAGGAGAAACGGACCATCACG 387
+IA52U1B01CQSC7  (2)         437- TAGAACCTTAGCAAAAGAAGGCATCAAAA-GAGGAGAAACGGACCATCACG 388
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	7680	7680	T	C	3	100%
+
+Reads with Difference:
+reference                  7656+ ACTGAGATGGTTCGTTGAGAGAAATATGGTCACACCAGAAGGGAAAG 7702
+                                                         *
+IA52U1B01CYDXJ  (354)       730+ ACTGAGATGGTTCGTTGAGAGAAACATGGTCACACCAGAA        769
+IA52U1B01CCDSY  (230)       364- ACTGAGATGGTTCGTTGAGAGAAACATGGTCACACCAGAAGGGAAAG 318
+IA52U1B01CQSC7  (2)         365- ACTGAGATGGTTCGTTGAGAGAAACATGGTCACACCAGAAGGGAAAG 319
+                                                         *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	7848	7848	C	T	2	100%
+
+Reads with Difference:
+reference                  7823+ CAACATATGGGTGGAATCTAGTGCGCCTTCAAAGTGGAGTTGACGTTTTCT 7873
+                                                          *
+IA52U1B01CCDSY  (230)       197- CAACATATGGGTGGAATCTAGTGCGTCTTCAGAGTGGAGTTGACGTCTTCT 147
+IA52U1B01CQSC7  (2)         199- CAACATATGGGTGGAATCTAGTGCGTCTTCAGAGTGGAGTTGACGTCTTCT 149
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	7854	7854	A	G	2	100%
+
+Reads with Difference:
+reference                  7827+ ATATGGGTGGAATCTAGTGCGCCTTCAAAGTGGAGTTGACGTTTTCTTCATC 7878
+                                                            *
+IA52U1B01CCDSY  (230)       193- ATATGGGTGGAATCTAGTGCGTCTTCAGAGTGGAGTTGACGTCTTCTTCATC 142
+IA52U1B01CQSC7  (2)         195- ATATGGGTGGAATCTAGTGCGTCTTCAGAGTGGAGTTGACGTCTTCTTCATC 144
+                                                            *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	7869	7869	T	C	2	100%
+
+Reads with Difference:
+reference                  7843+ GTGCGCCTTCAAAGTGGAGTTGACGTTTTCTTCATCCCGCCAGAAAAGTG 7892
+                                                           *
+IA52U1B01CCDSY  (230)       177- GTGCGTCTTCAGAGTGGAGTTGACGTCTTCTTCATCCCGCCAGAAAAGTG 128
+IA52U1B01CQSC7  (2)         179- GTGCGTCTTCAGAGTGGAGTTGACGTCTTCTTCATCCCGCCAGAAAAGTG 130
+                                                           *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	7935	7935	T	C	2	100%
+
+Reads with Difference:
+reference                  7908+ TGACATAGGGGAGTCATCACCAAATCCTACAGTGGAAGCAGGACGAACACTCA 7960
+                                                            *
+IA52U1B01CCDSY  (230)       112- TGACATAGGGGAGTCATCACCAAATCCCACAGTGGAAGCAGGACGAACACTCA 60
+IA52U1B01CQSC7  (2)         114- TGACATAGGGGAGTCATCACCAAATCCCACAGTGGAAGCAGGACGAACACTCA 62
+                                                            *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	7974	7974	G	A	2	100%
+
+Reads with Difference:
+reference                  7949+ GACGAACACTCAGAGTCCTTAATTTGGTAGAAAATTGGTTGAACAACAA-CAC 8000
+                                                          *
+IA52U1B01CCDSY  (230)        71- GACGAACACTCAGAGTCCTTAATTTAGTAGAAAATTGGTTGAACAACAA-CAC 20
+IA52U1B01CQSC7  (2)          73- GACGAACACTCAGAGTCCTTAATTTAGTAGAAAATTGGTTGAACAACAAACAC 21
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8136	8136	T	A	6	100%
+
+Reads with Difference:
+reference                  8117+ CACATGAGATGTACTGGGTTTCCAATGCTTCCGGGAA-CATA 8157
+                                                    *
+IA52U1B01EK74C               48+ CACATGAGATGTACTGGGTATCCAATGCTTCTGGGAA-CATA 88
+IA52U1B01ANJ60  (855)       725- CACATGAGATGTACTGGGTATCCAATGCTTCTGGGAAACATA 684
+IA52U1B01CWHLP  (1290)        47+ CACATGAGATGTACTGGGTATCCAATGCTTCTGGGAA-CATA 87
+IA52U1B01AOI8S              745- CACATGAGATGTACTGGGTATCCAATGCTTCTGGGAAACATA 704
+IA52U1B01DDGVE               29+ CACATGAGATGTACTGGGTATCCAATGCTTCTGGGAA-CATA 69
+IA52U1B01D9AYC  (2)           1+             ACTGGGTATCCAATGCTTCTGGGAA-CATA 29
+                                                    *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8148	8148	C	T	6	100%
+
+Reads with Difference:
+reference                  8129+ ACTGGGTTTCCAATGCTTCCGGGAA-CATAGTGTCATCA 8166
+                                                    *
+IA52U1B01EK74C               60+ ACTGGGTATCCAATGCTTCTGGGAA-CATAGTGTCATCA 97
+IA52U1B01ANJ60  (855)       713- ACTGGGTATCCAATGCTTCTGGGAAACATAGTGTCATCA 675
+IA52U1B01CWHLP  (1290)        59+ ACTGGGTATCCAATGCTTCTGGGAA-CATAGTGTCATCA 96
+IA52U1B01AOI8S              733- ACTGGGTATCCAATGCTTCTGGGAAACATAGTGTCATCA 695
+IA52U1B01DDGVE               41+ ACTGGGTATCCAATGCTTCTGGGAA-CATAGTGTCATCA 78
+IA52U1B01D9AYC  (2)           1+ ACTGGGTATCCAATGCTTCTGGGAA-CATAGTGTCATCA 38
+                                                    *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8196	8196	C	T	7	100%
+
+Reads with Difference:
+reference                  8176+ ATTT-CAA-GGATGTTGATCAACAGATTCACAATGA-GACACAA 8216
+                                                       *
+IA52U1B01EK74C              107+ ATTT-CAA-GGATGTTGATCAATAGATTCACAATGA-GACACAA 147
+IA52U1B01ANJ60  (855)       665- ATTT-CAA-GGATGTTGATCAATAGATTCACAATGA-GACACAA 625
+IA52U1B01CWHLP  (1290)       106+ ATTT-CAA-GGATGTTGATCAATAGATTCACAATGA-GACACAA 146
+IA52U1B01AOI8S              684- ATTTTCAAAGGATGTTGATCAATAGATTCACAATGAAGACACAA 641
+IA52U1B01DDGVE               89+ ATTT-CAA-GGATGTTGATCAATAGATTCACAATGA-GACACAA 129
+IA52U1B01D9AYC  (2)          48+ ATTT-CAA-GGATGTTGATCAATAGATTTACAATGA-GACACAA 88
+IA52U1B01EEP5D  (39)        679- ATTT-CAA-GGA-GTTGATCAATAGAT-CACAA-GA-GACACAA 642
+                                                       *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8283	8283	G	A	5	100%
+
+Reads with Difference:
+reference                  8264+ ACATT-GGAA-TTGAAA-GTGAGA-TACCAAATCTAGACATAA 8302
+                                                       ***
+IA52U1B01EK74C              195+ ACATT-GGAA-TTGAAA-GTGAAA-TACCAAACCTAGACAT   231
+IA52U1B01ANJ60  (855)       574- ACATTTGGAAATTGAAA-GTGAAAATACCAAACCTAGACATAA 533
+IA52U1B01CWHLP  (1290)       194+ ACATT-GGAA-TTGAAA-GTGAAA-TACCAAACCTAGACATAA 232
+IA52U1B01D9AYC  (2)         136+ ACATT-GGAA-TTGAAA-GTGAAA-TACCAAACCTAGACATAA 174
+IA52U1B01EEP5D  (39)        594- ACATTTGGAAATTGAAAAGTGAAAATACCAAACCTAGACATAA 552
+                                                       ***
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8292	8292	T	C	5	100%
+
+Reads with Difference:
+reference                  8275+ GAAA-GTGAGA-TACCAAATCTAGACATAATT-GGGAAAA 8311
+                                                    *
+IA52U1B01EK74C              206+ GAAA-GTGAAA-TACCAAACCTAGACAT             231
+IA52U1B01ANJ60  (855)       561- GAAA-GTGAAAATACCAAACCTAGACATAATTTGGGAAAA 523
+IA52U1B01CWHLP  (1290)       205+ GAAA-GTGAAA-TACCAAACCTAGACATAATT-GGGAAAA 241
+IA52U1B01D9AYC  (2)         147+ GAAA-GTGAAA-TACCAAACCTAGACATAATT-GGGAAAA 183
+IA52U1B01EEP5D  (39)        581- GAAAAGTGAAAATACCAAACCTAGACATAATT-GGGAAAA 543
+                                                    *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8373	8373	T	C	5	100%
+
+Reads with Difference:
+reference                  8357+ ACCAAGACCACCCATATAAAACATGGGCAT 8386
+                                                 *
+IA52U1B01ANJ60  (855)       476- ACCAAGACCACCCATACAAAACGTGGGCAT 447
+IA52U1B01CWHLP  (1290)       287+ ACCAAGACCACCCATACAAAACGTGGGCAT 316
+IA52U1B01D9AYC  (2)         229+ ACCAAGACCACCCATACAAAACGTGGGCAT 258
+IA52U1B01EEP5D  (39)        497- ACCAAGACCACCCATACAAAACGTGGGCAT 468
+IA52U1B01CQYT3  (5)         468-           CCCATACAAAACGTGGGCAT 449
+                                                 *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8379	8379	A	G	5	100%
+
+Reads with Difference:
+reference                  8363+ ACCACCCATATAAAACATGGGCATACCATGG 8393
+                                                 *
+IA52U1B01ANJ60  (855)       470- ACCACCCATACAAAACGTGGGCATACCATGG 440
+IA52U1B01CWHLP  (1290)       293+ ACCACCCATACAAAACGTGGGCATACCATGG 323
+IA52U1B01D9AYC  (2)         235+ ACCACCCATACAAAACGTGGGCATACCATGG 265
+IA52U1B01EEP5D  (39)        491- ACCACCCATACAAAACGTGGGCATACCATGG 461
+IA52U1B01CQYT3  (5)         468-     CCCATACAAAACGTGGGCATACCATGG 442
+                                                 *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8394	8394	C	T	5	100%
+
+Reads with Difference:
+reference                  8380+ TGGGCATACCATGGCAGCTATGAAACAAAAC 8410
+                                               *
+IA52U1B01ANJ60  (855)       453- TGGGCATACCATGGTAGCTATGAAACAAAAC 423
+IA52U1B01CWHLP  (1290)       310+ TGGGCATACCATGGTAGCTATGAAACAAAAC 340
+IA52U1B01D9AYC  (2)         252+ TGGGCATACCATGGTAGCTATGAAACAAAAC 282
+IA52U1B01EEP5D  (39)        474- TGGGCATACCATGGTAGCTATGAAACAAAAC 444
+IA52U1B01CQYT3  (5)         455- TGGGCATACCATGGTAGCTATGAAACAAAAC 425
+                                               *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8439	8439	T	C	6	100%
+
+Reads with Difference:
+reference                  8427+ ATCCATGGTCAA-TGGAGTGGTCAGGC 8452
+                                              *
+IA52U1B01ANJ60  (855)       406- ATCCATGGTCAA-CGGAGTGGTCAGGC 381
+IA52U1B01CWHLP  (1290)       357+ ATCCATGGTCAA-CGGAGTGGTCAGGC 382
+IA52U1B01D9AYC  (2)         299+ ATCCATGGTCAA-CGGAGTGGTCAGGC 324
+IA52U1B01EEP5D  (39)        427- ATCCATGGTCAA-CGGAGTGGTCAGGC 402
+IA52U1B01CQYT3  (5)         408- ATCCATGGTCAA-CGGAGTGGTCAGGC 383
+H88UKYY02HRGHW               35+ ATCCATGGTCAAACGGAGTGGTCAGGC 61
+                                              *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8455	8455	T	C	6	100%
+
+Reads with Difference:
+reference                  8441+ GAGTGGTCAGGCTGTTGACAAAA-CCTTGGGA 8471
+                                               *
+IA52U1B01ANJ60  (855)       392- GAGTGGTCAGGCTGCTGACAAAAACCTTGGGA 361
+IA52U1B01CWHLP  (1290)       371+ GAGTGGTCAGGCTGCTGACAAAA-CCTTGGGA 401
+IA52U1B01D9AYC  (2)         313+ GAGTGGTCAGGCTGCTGACAAAA-CCTTGGGA 343
+IA52U1B01EEP5D  (39)        413- GAGTGGTCAGGCTGCTGACAAAAACCTTGGGA 382
+IA52U1B01CQYT3  (5)         394- GAGTGGTCAGGCTGCTGACAAAAACCTTGGGA 363
+H88UKYY02HRGHW               50+ GAGTGGTCAGGCTGCTGACAAAA-CCTTGGGA 80
+                                               *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8484	8484	C	G	6	100%
+
+Reads with Difference:
+reference                  8466+ TTGGGACGTCCTCCCCACCGTGACACAGATGGCA 8499
+                                                   **
+IA52U1B01ANJ60  (855)       366- TTGGGACGTCCTCCCCACGGTGACACAGATGGCA 333
+IA52U1B01CWHLP  (1290)       396+ TTGGGACGTCCTCCC-ACGGTGACACAGATGGCA 428
+IA52U1B01D9AYC  (2)         338+ TTGGGACGTCCTCCC-ACGGTGACACAGATGGCA 370
+IA52U1B01EEP5D  (39)        387- TTGGGACGTCCTCCCCACGGTGACACAGATGGCA 354
+IA52U1B01CQYT3  (5)         368- TTGGGACGTCCTCCCCACGGTGACACAGATGGCA 335
+H88UKYY02HRGHW               75+ TTGGGACGTCCTCCCCACGGTGACACAGATGGCA 108
+                                                   **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8562	8562	T	C	6	100%
+
+Reads with Difference:
+reference                  8547+ AGTGGACACGAGAACTCAAGAACCGAAAGAAGGCA 8581
+                                                **
+IA52U1B01ANJ60  (855)       285- AGTGGACACGAGAACCCAAGAACCGAAAGAAGGCA 251
+IA52U1B01CWHLP  (1290)       476+ AGTGGACACGAGAACCCAAGAACCGAAAGAAGGCA 510
+IA52U1B01D9AYC  (2)         418+ AGTGGACACGAGAACCCAAGAACCGAAAGAAGGC  451
+IA52U1B01EEP5D  (39)        305- AGTGGACACGAGAACCCAAGAACCGAAAGAAGGCA 271
+IA52U1B01CQYT3  (5)         287- AGTGGACACGAGAACCCAAGAACCGAAAGAAGGCA 253
+H88UKYY02HRGHW              154+ -GTGGACACGAGAACCCAAGAACCGAAAGAAGGCA 187
+                                                **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8622	8622	G	A	6	100%
+
+Reads with Difference:
+reference                  8604+ AGCAGAGTGGCTG-TGGAA-GGAATTAGGGAAGAAAAA-GA 8641
+                                                    **
+IA52U1B01ANJ60  (855)       228- AGCAGAGTGGCTG-TGGAA-AGAATTAGGGAAGAAAAA-GA 191
+IA52U1B01CWHLP  (1290)       534+ AGCAGAGTGGCTGATGGAAAAGAATTAGGGAAGAAAAAAGA 574
+IA52U1B01EEP5D  (39)        247- AGCAGAGTGGCTG-TGGAA-AGAATTAGGGAAGAAAAA-GA 210
+IA52U1B01CQYT3  (5)         230- AGCAGAGTGGCTG-TGGAA-AGAATTAGGGAAGAAAAA-GA 193
+H88UKYY02HRGHW              209+ AGCAGAGTG-CTG-TGGAA-AGAATTAGGGAAGAAAAA-GA 245
+IA52U1B01CKEGK              251- AGCAGAGTGGCTG-TGGAA-AGAATTAGGGAAGAAAAA-GA 214
+                                                    **
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8670	8670	T	C	6	100%
+
+Reads with Difference:
+reference                  8652+ GTGCACCAGAGAAGAA-TTTACAAGAAAGGTGAGAAGCA 8689
+                                                    *
+IA52U1B01ANJ60  (855)       180- GTGCACCAGAGAAGAA-TTCACAAGAAAGGTGAGAAGCA 143
+IA52U1B01CWHLP  (1290)       585+ GTGCACCAGAGAAGAAATTCACAAGAAAGGTGAGAAGCA 623
+IA52U1B01EEP5D  (39)        199- GTGCACCAGAGAAGAA-TTCACAAGAAAGGTGAGAAGCA 162
+IA52U1B01CQYT3  (5)         182- GTGCACCAGAGAAGAA-TTCACAAGAAAGGTGAGAAGCA 145
+H88UKYY02HRGHW              256+ GTGCACCAGAGAAGAA-TTCACAAGAAAGG          284
+IA52U1B01CKEGK              203- GTGCACCAGAGAAGAA-TCCACAAGAAAGGTGAGAAGCA 166
+                                                    *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8724	8724	T	C	11	100%
+
+Reads with Difference:
+reference                  8704+ GCCA-T-ATTCACTGATGAGAATAAGTGGAA-GTCGGCA-CG 8741
+                                                       *
+IA52U1B01ANJ60  (855)       128- GCCA-T-ATTCACTGATGAGAACAAGTGGAA-GTCGGCA-CG 91
+IA52U1B01CWHLP  (1290)       637+ GCCA-T-ATTCACTGATGAGAACAAGTGGAAAGTCGGCA-CG 675
+IA52U1B01EEP5D  (39)        147- GCCA-T-ATTCACTGATGAGAACAAGTGGAA-GTCGGCA-CG 110
+IA52U1B01CQYT3  (5)         130- GCCA-T-ATTCACTGATGAGAACAAGTGGAA-GTCGGCA-CG 93
+IA52U1B01CKEGK              151- GCCA-T-ATTCACTGATGAGAACAAGTGGAA-GTCGGCA-CG 114
+H88UKYY02H70BE                9+ GCCAGT-ATTCACTGATGAGAACA-GTGGAA-GTCGGCAACG 47
+IA52U1B01DWI9Y              123- -C-A-T-ATTCACTGATGAGAACAAGTGGAA-GTCGGCA-CG 88
+H88UKYY02FVD2Q                9+ GCCAGT-ATTCACTGATGAGAACA-GTGGAA-GTCGGCAACG 47
+H88UKYY02F0HG2                2+ GCCA-T-ATTCACTGATGAGAACA-GTGGAA-GTCGGCAACG 39
+H88UKYY02HGLO0                9+  C-AGTCATTCACTGATGAGAACAAGTGGAA-GTCGGCAACG 47
+IA52U1B01C05BS  (100)         1+             CTGATGAGAACAAGTGGAA-GTCGGCA-CG 28
+                                                       *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8758	8758	A	G	11	100%
+
+Reads with Difference:
+reference                  8741+ GTGAGGCTGTTGAA-GATAGCAGGTTTTGGGAGCTGGTT-G 8779
+                                                   *
+IA52U1B01ANJ60  (855)        91- GTGAGGCTGTTGAA-GATGGTAGGTTTTGGGAGCTGGTT-G 53
+IA52U1B01CWHLP  (1290)       675+ GTGAGGCTGTTGAAAGATGGTAGGTTTTGGGAGCTGGTTTG 715
+IA52U1B01EEP5D  (39)        110- GTGAGGCTGTTGAA-GATGGTAGGTTTTGGGAGCTGGTT-G 72
+IA52U1B01CQYT3  (5)          93- GTGAGGCTGTTGAA-GATGGTAGGTTTTGGGAGCTGGTT-G 55
+IA52U1B01CKEGK              114- GTGAGGCTGTTGAA-GATGGTAGGTTTTGGGAGCTGGTT-G 76
+H88UKYY02H70BE               47+ GTGAGGCTGTTGAA-GATGGTAGGTTT-GG-AGCTGGTT-G 83
+IA52U1B01DWI9Y               88- GTGAGGCTGTTGAA-GATGGTAGGTTTTGGGAGCTGGTT-G 50
+H88UKYY02FVD2Q               47+ GTGAGGCTGTTGAA-GATGGTAGGTTT-GG-AGCTGGTT-G 83
+H88UKYY02F0HG2               39+ GTGAGGCTGTTGAA-GATGGTAGGTTT-GG-AGCTGGTT-G 75
+H88UKYY02HGLO0               47+ GTGAGGCTGTTGAA-GATGGTAGGTTT-GG-AGCTGGTT-G 83
+IA52U1B01C05BS  (100)        28+ GTGAGGCTGTTGAA-GATGGTAGGTTTTGGGAGCTGGTT-G 66
+                                                   *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8760	8760	C	T	11	100%
+
+Reads with Difference:
+reference                  8742+ TGAGGCTGTTGAA-GATAGCAGGTTTTGGGAGCTGGTT-GA 8780
+                                                    *
+IA52U1B01ANJ60  (855)        90- TGAGGCTGTTGAA-GATGGTAGGTTTTGGGAGCTGGTT-GA 52
+IA52U1B01CWHLP  (1290)       676+ TGAGGCTGTTGAAAGATGGTAGGTTTTGGGAGCTGGTTTGA 716
+IA52U1B01EEP5D  (39)        109- TGAGGCTGTTGAA-GATGGTAGGTTTTGGGAGCTGGTT-GA 71
+IA52U1B01CQYT3  (5)          92- TGAGGCTGTTGAA-GATGGTAGGTTTTGGGAGCTGGTT-GA 54
+IA52U1B01CKEGK              113- TGAGGCTGTTGAA-GATGGTAGGTTTTGGGAGCTGGTT-GA 75
+H88UKYY02H70BE               48+ TGAGGCTGTTGAA-GATGGTAGGTTT-GG-AGCTGGTT-GA 84
+IA52U1B01DWI9Y               87- TGAGGCTGTTGAA-GATGGTAGGTTTTGGGAGCTGGTT-GA 49
+H88UKYY02FVD2Q               48+ TGAGGCTGTTGAA-GATGGTAGGTTT-GG-AGCTGGTT-GA 84
+H88UKYY02F0HG2               40+ TGAGGCTGTTGAA-GATGGTAGGTTT-GG-AGCTGGTT-GA 76
+H88UKYY02HGLO0               48+ TGAGGCTGTTGAA-GATGGTAGGTTT-GG-AGCTGGTT-GA 84
+IA52U1B01C05BS  (100)        29+ TGAGGCTGTTGAA-GATGGTAGGTTTTGGGAGCTGGTT-GA 67
+                                                    *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	8817	8817	A	G	9	100%
+
+Reads with Difference:
+reference                  8801+ TTGAAGGAAAGTGTGAAACATGT-GTGTACAACAT 8834
+                                                 *
+IA52U1B01DWI9Y               28- TTGAAGGAAAGTGTGAGACATGT-GTGTA       1
+IA52U1B01ANJ60  (855)        31- TTGAAGGAAAGTGTGAGACATGT-GTGTACAA    1
+IA52U1B01CQYT3  (5)          33- TTGAAGGAAAGTGTGAGACATGT-GTGTACAACA  1
+IA52U1B01CKEGK               54- TTGAAGGAAAGTGTGAGACATGT-GTGTACAACAT 21
+H88UKYY02F0HG2               96+ TTGAAGGAA-GTGTGAGACATGT-GTGTACAACAT 128
+IA52U1B01EEP5D  (39)         50- TTGAAGGAAAGTGTGAGACATGT-GTGTACAACAT 17
+H88UKYY02HGLO0  (3)         104+ TTGAAGGAA-GTGTGAGACATGT-GTGTACAACAT 136
+IA52U1B01C05BS  (100)        88+ TTGAAGGAAAGTGTGAGACATGT-GTGTACAACAT 121
+H88UKYY02FY1D0               70- TTGAAGGAAAGTGTGAGACATGTTGTGTACA-CAT 37
+                                                 *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	9163	9163	C	T	2	100%
+
+Reads with Difference:
+reference                  9139+ CACATGGAAGGAGAACA-CAAGAAACTAG-CCGAGGCCATTTTCAAA-C 9184
+                                                          *
+IA52U1B01C05BS  (100)       426+ CACATGGAAGGAGAACAACAAGAAATT-GGCCGAGGCTATTTTCAAAAC 473
+IA52U1B01AYI23  (70)        522-          GGAGAACA-CAAGAAATTTGGCCGAGGCTATTTTCAAA-C 485
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	9174	9174	C	T	2	100%
+
+Reads with Difference:
+reference                  9151+ GAACA-CAAGAAACTAG-CCGAGGCCATTTTCAAA-CTAACGTACCAAA 9196
+                                                          *
+IA52U1B01C05BS  (100)       438+ GAACAACAAGAAATT-GGCCGAGGCTATTTTCAAAACTAACGTATCAAA 485
+IA52U1B01AYI23  (70)        519- GAACA-CAAGAAATTTGGCCGAGGCTATTTTCAAA-CTAACGTATCAAA 473
+                                                          *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	9192	9192	C	T	2	100%
+
+Reads with Difference:
+reference                  9170+ AGGCCATTTTCAAA-CTAACGTACCAAAACAAGGTGGTGCGTGTGCAAAG 9218
+                                                        *
+IA52U1B01C05BS  (100)       458+ AGGCTATTTTCAAAACTAACGTATCAAAACAAGGTGGTGCGTGTGCAAAG 507
+IA52U1B01AYI23  (70)        499- AGGCTATTTTCAAA-CTAACGTATCAAAACAAGGTGGTGCGTGTGCAAAG 451
+                                                        *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	9303	9303	C	T	2	100%
+
+Reads with Difference:
+reference                  9280+ -CAA-GTTGG-TACC-TATGGACTCAA-CACTTT--CACCAATATGGAAGCCCAATTA 9330
+                                                             *
+IA52U1B01C05BS  (100)       571+ GCAAAGTTGGGTACCCTATGGACTCAAATACTTT-GCACCAATATGGAAGCCCAATTA 627
+IA52U1B01AYI23  (70)        388- -CAA-GTTGG-TACC-TATGGACTCAA-TACTTTT-CACCAATATGGAAGCCCAATTA 337
+                                                             *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	9357	9357	T	C	2	100%
+
+Reads with Difference:
+reference                  9329+ TAATCAGACAGATGGAGGGAGAAGGAGTTTTTAAAAA-CATTCAGCACCTGACAGTCA 9385
+                                                             *
+IA52U1B01C05BS  (100)       626+ TAATCAGACAGATGGAGGGAGAAGGAGTCTTTAAAAAACATCCAGCACCTGACAGTCN 683
+IA52U1B01AYI23  (70)        338- TAATCAGACAGATGGAGGGAGAAGGAGTCTTTAAAAA-CATCCAGCACCTGACAGTCA 282
+                                                             *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	9369	9369	T	C	2	100%
+
+Reads with Difference:
+reference                  9342+ GGAGGGAGAAGGAGTTTTTAAAAA-CATTCAGCACCTGACAGTCACAGAA-GAAA-TCG 9397
+                                                             *
+IA52U1B01C05BS  (100)       639+ GGAGGGAGAAGGAGTCTTTAAAAAACATCCAGCACCTGACAGTCNCAGAAAGAAAGTCG 697
+IA52U1B01AYI23  (70)        325- GGAGGGAGAAGGAGTCTTTAAAAA-CATCCAGCACCTGACAGTCACAGAA-GAAG-TCG 270
+                                                             *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	9498	9500	GAG	AAA	2	100%
+
+Reads with Difference:
+reference                  9468+ TGTTGTGAAACCTTTAGATGACAGGTTCGCGAGCGCTTTGACAGCTCTAAATGACATGGGAA 9529
+                                                               ***
+IA52U1B01AYI23  (70)        200- TGTTGTGAAACCTTTAGATGACAGGTTCGCAAACGCTTTGACAGCTCTAAATGACATGGGAA 139
+IA52U1B01BB65C  (35)          2+ TGTTGTGAAACCTTTAGATGACAGGTTCGCAAACGCTTTGACAGCTCTAAATGACATGGGAA 63
+                                                               ***
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	9566	9566	G	A	2	100%
+
+Reads with Difference:
+reference                  9538+ AAAGACATACAACAATGGGAACCTTCAAGAGGATGGAACGATTGGACACAAGTGCCCT 9595
+                                                             *
+IA52U1B01AYI23  (70)        130- AAAGACATACAACAATGGGAACCTTCAAAAGGATGGAACGATTGGACACAAGTGCCCT 73
+IA52U1B01BB65C  (35)         72+ AGAGACATACAACAATGGGAACCTTCAAAAGGATGGAACGATTGGGCACAAGTGCCCT 129
+                                                             *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	9618	9618	A	G	2	100%
+
+Reads with Difference:
+reference                  9591+ GCCCTTCTGTTCACACCATTTCCATGAACTAATCATGAAGGATGGTCGTGTACTTGT 9647
+                                                            *
+IA52U1B01AYI23  (70)         77- GCCCTTCTGTTCACACCATTTCCATGAGCTAATCATGAAGGATGGTCGTGTACTTGT 21
+IA52U1B01BB65C  (35)        125+ GCCCTTCTGTTCACACCATTTCCATGAGCTAATCATGAAGGATGGTCGTGTACTTGT 181
+                                                            *
+
+Other Reads:
+
+
+-----------------------------
+
+>Den2/FJ810410_1/Thailand/2001/Den2_1	9657	9657	C	T	2	100%
+
+Reads with Difference:
+reference                  9628+ AAGGATGGTCGTGTACTTGTTGTTCCATGCAGAAACCAAGATGAACTGATTGGCAGAG 9685
+                                                              *
+IA52U1B01AYI23  (70)         40- AAGGATGGTCGTGTACTTGTTGTTCCATGTAGAAACCAAG                   1
+IA52U1B01BB65C  (35)        162+ AAGGATGGTCGTGTACTTGTTGTTCCATGTAGAAACCAAGATGAACTGATTGGCAGAG 219
+                                                              *
+
+Other Reads:
+
+
+-----------------------------
+

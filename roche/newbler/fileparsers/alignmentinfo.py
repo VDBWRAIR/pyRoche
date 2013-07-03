@@ -16,15 +16,15 @@ class AlignmentInfo(object):
     """ Parse 454AlignmentInfo.tsv """
     def __init__( self, filepath ):
         """
-            >>> ai = AlignmentInfo( 'examples/05_11_2012_1_TI-MID10_PR_2357_AH3/mapping/454AlignmentInfo.tsv' )
-            >>> len( ai.seqs )
-            37
-            >>> ai = AlignmentInfo( 'examples/08_06_2012_1_Ti-MID30_D84_140_Dengue3/mapping/454AlignmentInfo.tsv' )
-            >>> len( ai.seqs )
-            2
-            >>> ai = AlignmentInfo( 'examples/08_31_2012_3_RL10_600Yu_10_VOID/assembly/454AlignmentInfo.tsv' )
-            >>> len( ai.seqs )
-            65
+        >>> ai = AlignmentInfo( 'examples/05_11_2012_1_TI-MID10_PR_2357_AH3/mapping/454AlignmentInfo.tsv' )
+        >>> len( ai.seqs )
+        37
+        >>> ai = AlignmentInfo( 'examples/08_06_2012_1_Ti-MID30_D84_140_Dengue3/mapping/454AlignmentInfo.tsv' )
+        >>> len( ai.seqs )
+        2
+        >>> ai = AlignmentInfo( 'examples/08_31_2012_3_RL10_600Yu_10_VOID/assembly/454AlignmentInfo.tsv' )
+        >>> len( ai.seqs )
+        65
         """
         self._seqs = []
         self._refs = {}
@@ -33,6 +33,7 @@ class AlignmentInfo(object):
     def _parse( self, filepath ):
         fh = open( filepath )
         seqalign = None
+        lastPos = 0
         for line in fh:
             line = line.strip()
             if line.startswith( 'Position' ):
@@ -49,7 +50,8 @@ class AlignmentInfo(object):
                 # Line is a base information line
                 seqalign.append( line )
             else:
-                raise BadFormatException( "%s has incorrect format in line %s" % (filepath, line) )
+                raise BadFormatException( "%s has incorrect format in line %s" % 
+                    (filepath, line) )
         # Indicates empty 454AlignmentInfo.tsv if seqalign is None
         if seqalign is not None:
             self.add_seq( SeqAlignment( seqalign ) )
@@ -61,6 +63,17 @@ class AlignmentInfo(object):
 
     def __getitem__( self, key ):
         return self._refs[key]
+
+    def get_last_seq_pos( self, name ):
+        '''
+            Gets last position of the last gt
+            @param name - name field of SeqAlignment to get last pos of
+            @return Last SeqAlignment's lastPosition or 0 if no seqs have been added
+        '''
+        if self.seqs:
+            return self.seqs[-1].lastPos
+        else:
+            return 0
 
     def add_seq( self, seqalign ):
         self.seqs.append( seqalign )
@@ -85,95 +98,45 @@ class AlignmentInfo(object):
                 [regionsforref.append( region ) for region in sa.regions]
 
             regionsforref.sort()
+            # 0 or 1 regions for ref is easy
             if len( regionsforref ) < 2:
                 refregions[ref] = regionsforref
+            # Merge all regions
             else:
                 # Need to ensure sorted order for merging to work
+                # Use a counter so we can modify the list
                 for i in range( len( regionsforref ) - 1 ):
-                    mregions = regionsforref[i].merge( regionsforref[i+1] )
+                    try:
+                        # merge current and next region
+                        mregions = regionsforref[i].merge( regionsforref[i+1] )
+                    except ValueError as e:
+                        raise ValueError( "There was an error trying to merge" + \
+                            " regions for Reference {}. Error was: {}".format( ref, e ) )
                     regionsforref[i+1] = mregions[-1]
                     [mergedregions.append( region ) for region in mregions[:-1]]
                 mergedregions.append( regionsforref[ len( regionsforref ) - 1 ] )
 
                 refregions[ref] = mergedregions
-            #print mergedregions
         return refregions
 
 class SeqAlignment( object ):
     """ Represents a single sequence alignment """
-    def __init__( self, seqalignment ):
-        """
-            >>> seqalign = []
-            >>> try:
-            ...   s = SeqAlignment( seqalign )
-            ... except ValueError:
-            ...   print "Caught"
-            Caught
-            >>> seqalign = [ '>SeqID1\t1' ]
-            >>> s = SeqAlignment( seqalign )
-            >>> seqalign = [ '>SeqID1\t1', '1\tA\tA\t1\t1\t1\t1\t1.1\t1.1' ]
-            >>> s = SeqAlignment( seqalign )
-            >>> s.name
-            'SeqID1'
-            >>> len( s.bases )
-            1
-            >>> print s.regions
-            [CoverageRegion( 1, 1, 'LowCoverage' )]
-            >>> seqalign = [\
-            '>SeqID1\t1',\
-            '1\tA\tA\t1\t1\t1\t1\t1.1\t1.1',\
-            '2\tB\t-\t4\t1\t1\t1\t1.3\t1.3',\
-            '2\tC\t-\t4\t1\t1\t1\t1.3\t1.3',\
-            '3\tD\t-\t4\t1\t1\t1\t1.3\t1.3',\
-            '5\tE\t-\t4\t1\t1\t1\t1.3\t1.3',\
-            '8\tE\t-\t4\t1\t11\t11\t1.3\t1.3',\
-            '9\tE\t-\t4\t1\t11\t11\t1.3\t1.3',\
-            '10\tE\t-\t4\t1\t11\t11\t1.3\t1.3',\
-            '11\tE\t-\t4\t1\t9\t11\t1.3\t1.3',\
-            '12\tE\t-\t4\t1\t8\t11\t1.3\t1.3',\
-            '14\tE\t-\t4\t1\t11\t11\t1.3\t1.3',\
-            '14\tE\t-\t4\t1\t11\t11\t1.3\t1.3',\
-            '15\tE\t-\t4\t1\t11\t11\t1.3\t1.3',\
-            '16\tE\t-\t4\t1\t11\t11\t1.3\t1.3',\
-            ]
-            >>> s = SeqAlignment( seqalign )
-            >>> s.name
-            'SeqID1'
-            >>> len( s.bases )
-            18
-            >>> s.bases[4].pos
-            4
-            >>> s.bases[4].gapType
-            'Gap'
-            >>> len( s.regions )
-            8
-            >>> print s.regions[0]
-            1,3,LowCoverage
-            >>> print s.regions[-1]
-            14,16,Normal
-            >>> seqalign = [\
-            '>SeqID1\t5',\
-            '5\tE\t-\t4\t1\t1\t1\t1.3\t1.3',\
-            '8\tE\t-\t4\t1\t1\t1\t1.3\t1.3',\
-            '9\tE\t-\t4\t1\t1\t1\t1.3\t1.3',\
-            ]
-            >>> s = SeqAlignment( seqalign )
-            >>> len( s.bases )
-            9
-            >>> len( s.regions )
-            4
-            >>> print s.regions[0]
-            1,4,Gap
-        """
+    def __init__( self, seqalignment, lastPos = 0 ):
+        '''
+            @param lastPos - Last position of the previous SeqAlignment
+        '''
         if len( seqalignment ) == 0:
             raise ValueError( "No sequence alignment given" )
         self.bases = []
         # Store the bases at their actual position
         self._actual_bases = {}
         self.regions = []
+        # Splits the id line on all space characters(so if they accidentally
+        # put a spacetab it will cut both of them out FYI)
         self.name, self.astart = seqalignment[0].split()
         self.name = self.name[1:]
         self.astart = int( self.astart )
+        self.lastPos = lastPos + 1
         if len( seqalignment ) > 1:
             self._parse( seqalignment[1:] )
 
@@ -187,49 +150,65 @@ class SeqAlignment( object ):
             self._actual_bases[base.pos] = []
         self._actual_bases[base.pos].append( base )
 
+    def create_coverage_region( self, start, end, rType ):
+        '''
+            Create bases starting at start and ending on end(inclusive) with rtype
+            
+            @param start - Starting base position for coverage region(inclusive)
+            @param end - Ending base position(inclusive)
+            @param rtype - CoverageRegion rType
+        '''
+        [self.add_base( BaseInfo.static_base( i, rType ) ) \
+            for i in range( start, end+1 )]
+        return CoverageRegion( start, end, rType )
+
     def _parse( self, seqalignment ):
-        lastPos = self.astart - 1
         # Create coverage region for beginning
         # and add gap bases
-        if lastPos != 0:
-            for i in range( 1, self.astart ):
-                self.add_base( BaseInfo.gapBase( i ) )
-            self.regions.append( CoverageRegion( 1, lastPos, 'Gap' ) )
+        if self.lastPos != self.astart:
+            # from last position of last seqalign up to but 
+            # not including the start of this seqalign
+            self.regions.append( self.create_coverage_region( 
+                self.lastPos, self.astart-1, 'Gap' ) )
 
         # Start a new region beginning with the first base
         basei = BaseInfo( seqalignment[0] )
+        # Set last seen position as we are parsing the sequence lines now
+        self.lastPos = basei.pos - 1
         self.regions.append( CoverageRegion( basei.pos, basei.pos, basei.gapType ) )
 
+        # Loop through all the alignment lines
         for line in seqalignment:
             basei = BaseInfo( line )
             # Homopolomer or indel
-            if basei.pos == lastPos:
+            if basei.pos == self.lastPos:
                 # Just set last pos so no gap while loop
-                lastPos = basei.pos - 1
+                self.lastPos = basei.pos - 1
             # Insert gap bases
-            if lastPos + 1 != basei.pos:
+            if self.lastPos + 1 != basei.pos:
                 # End old region
-                self.regions[-1].end = lastPos
+                self.regions[-1].end = self.lastPos
                 # Start new gap region
-                self.regions.append( CoverageRegion( lastPos + 1, lastPos + 1, 'Gap' ) )
-                while lastPos + 1 != basei.pos:
-                    lastPos += 1
-                    self.bases.append( BaseInfo.gapBase( lastPos ) )
+                self.regions.append( CoverageRegion( self.lastPos + 1, 
+                    self.lastPos + 1, 'Gap' ) )
+                while self.lastPos + 1 != basei.pos:
+                    self.lastPos += 1
+                    self.bases.append( BaseInfo.gapBase( self.lastPos ) )
                 # End gap region
-                self.regions[-1].end = lastPos
+                self.regions[-1].end = self.lastPos
                 # Start new region
                 self.regions.append( CoverageRegion( basei.pos, basei.pos, basei.gapType ) )
 
             # This base has different region type than current region
             if basei.gapType != self.regions[-1].rtype:
-                self.regions[-1].end = lastPos
+                self.regions[-1].end = self.lastPos
                 self.regions.append( CoverageRegion( basei.pos, basei.pos, basei.gapType ) )
 
             self.add_base( basei )
-            lastPos = basei.pos
+            self.lastPos = basei.pos
 
         # end current region
-        self.regions[-1].end = lastPos
+        self.regions[-1].end = self.lastPos
 
 class CoverageRegion( object ):
     """ Store information about a region """
@@ -260,123 +239,83 @@ class CoverageRegion( object ):
     def merge( self, other ):
         """
             Merge two regions or split into 3 if needed
-
-            # Test to make sure left & right swap
-            >>> CoverageRegion( 4, 6, 'Gap' ).merge( CoverageRegion( 1, 3, 'Gap' ) )
-            (CoverageRegion( 1, 3, 'Gap' ), CoverageRegion( 4, 6, 'Gap' ))
-
-            # Ensure that non-overlapping regions are not modified
-            >>> CoverageRegion( 1, 3, 'Gap' ).merge( CoverageRegion( 4, 6, 'Gap' ) )
-            (CoverageRegion( 1, 3, 'Gap' ), CoverageRegion( 4, 6, 'Gap' ))
-
-            # Test intersections of non sametype regions
-            >>> CoverageRegion( 1, 5, 'Gap' ).merge( CoverageRegion( 3, 7, 'LowCoverage' ) )
-            (CoverageRegion( 1, 2, 'Gap' ), CoverageRegion( 3, 7, 'LowCoverage' ))
-            >>> CoverageRegion( 1, 5, 'Gap' ).merge( CoverageRegion( 3, 7, 'Normal' ) )
-            (CoverageRegion( 1, 2, 'Gap' ), CoverageRegion( 3, 7, 'Normal' ))
-            >>> CoverageRegion( 1, 5, 'LowCoverage' ).merge( CoverageRegion( 3, 7, 'Normal' ) )
-            (CoverageRegion( 1, 2, 'LowCoverage' ), CoverageRegion( 3, 7, 'Normal' ))
-            >>> CoverageRegion( 1, 5, 'LowCoverage' ).merge( CoverageRegion( 3, 7, 'Gap' ) )
-            (CoverageRegion( 1, 5, 'LowCoverage' ), CoverageRegion( 6, 7, 'Gap' ))
-            >>> CoverageRegion( 1, 5, 'Normal' ).merge( CoverageRegion( 3, 7, 'Gap' ) )
-            (CoverageRegion( 1, 5, 'Normal' ), CoverageRegion( 6, 7, 'Gap' ))
-            >>> CoverageRegion( 1, 5, 'Normal' ).merge( CoverageRegion( 3, 7, 'LowCoverage' ) )
-            (CoverageRegion( 1, 5, 'Normal' ), CoverageRegion( 6, 7, 'LowCoverage' ))
-
-            # Test intersection of sametype regions
-            >>> CoverageRegion( 1, 5, 'Gap' ).merge( CoverageRegion( 3, 7, 'Gap' ) )
-            (CoverageRegion( 1, 7, 'Gap' ),)
-
-
-            # Test completely contained regions
-            >>> CoverageRegion( 1, 7, 'LowCoverage' ).merge( CoverageRegion( 2, 5, 'Gap' ) )
-            (CoverageRegion( 1, 7, 'LowCoverage' ),)
-
-            # Test split into 3 parts
-            >>> CoverageRegion( 1, 7, 'Gap' ).merge( CoverageRegion( 2, 5, 'LowCoverage' ) )
-            (CoverageRegion( 1, 1, 'Gap' ), CoverageRegion( 2, 5, 'LowCoverage' ), CoverageRegion( 6, 7, 'Gap' ))
-
-            # Test completely contained same type
-            >>> CoverageRegion( 1, 7, 'Gap' ).merge( CoverageRegion( 2, 5, 'Gap' ) )
-            (CoverageRegion( 1, 7, 'Gap' ),)
-
-
-            # Weird cases
-            >>> CoverageRegion( 1, 1, 'Gap' ).merge( CoverageRegion( 1, 1, 'Gap' ) )
-            (CoverageRegion( 1, 1, 'Gap' ),)
-            >>> CoverageRegion( 1, 1, 'LowCoverage' ).merge( CoverageRegion( 1, 1, 'Gap' ) )
-            (CoverageRegion( 1, 1, 'LowCoverage' ),)
-            >>> CoverageRegion( 1, 2, 'Gap' ).merge( CoverageRegion( 1, 1, 'Gap' ) )
-            (CoverageRegion( 1, 2, 'Gap' ),)
-            >>> CoverageRegion( 1, 2, 'Gap' ).merge( CoverageRegion( 1, 1, 'LowCoverage' ) )
-            (CoverageRegion( 1, 1, 'LowCoverage' ), CoverageRegion( 2, 2, 'Gap' ))
-
-            # This is a case that should just throw an exception as these regions are not
-            # adjacent or intersecting
-            >>> try:
-            ...   CoverageRegion( 1, 2, 'Gap' ).merge( CoverageRegion( 5, 7, 'Gap' ) )
-            ... except ValueError:
-            ...   print "Caught"
-            Caught
-            >>> try:
-            ...   CoverageRegion( 5, 7, 'Gap' ).merge( CoverageRegion( 1, 2, 'Gap' ) )
-            ... except ValueError:
-            ...   print "Caught"
-            Caught
+            This method does in place editing of the regions, so be warned
+            It also returns regions back so they are sorted
         """
-        # Ensure that left is truely the left area
+        # Make sure that left is always a less precedence region type
+        # Ensures that left.start <= right.start
         left = self
         right = other
         if left > right:
             left = right
             right = self
 
-
         # Regions do not intersect
         if left.end < right.start:
             # If the regions are not adjacent throw exception
             if left.end + 1 != right.start:
-                raise ValueError( "Regions do not intersect" )
+                raise ValueError( "Region {} and {} do not intersect nor are they adjacent".format( self, other ) )
             else:
-                return (left, right)
-
-        
-        # Left and right regions intersect only partially(Overhang)
-        # 4, 5, 6, 7
-        if left.end < right.end:
-            # If types are the same then merge regions
-            # 6, 7
-            if left.rtype == right.rtype:
-                # Return new region spanning both regions
-                return (CoverageRegion( left.start, right.end, left.rtype ),)
-            # Need to merge the intersection portion of the regions
-            # by removing that portion from the lower of the two regiontypes
-            # and adding it to the other
-            # 4, 5
-            else:
-                # Give intersection portion to right
-                # 4
-                if left.rtypev < right.rtypev:
-                    left.end = right.start - 1
-                # Give intersection portion to left
-                #5
+                # Not the same type so return both as they were
+                if left.rtype != right.rtype:
+                    return (left, right)
                 else:
-                    right.start = left.end + 1
-                return (left, right)
-        # Left contains right completely
-        # 8, 9, 10, 11
-        else:
-            # If the types are the same or left has larger rtypev return
-            # the bigger of the two which will be left
-            # 8, 9, 10
-            if left.rtypev >= right.rtypev:
-                return (left,)
-            # Need to split left into 2 pieces and place right in between
-            # 11
+                    # Same type so make end engulf right and return only 1 region
+                    left.end = right.end
+                    return (left,)
+
+        # If the types are the same then it should be safe to just
+        # merge them together
+        if left.rtype == right.rtype:
+            left.end = right.end
+            return (left,)
+
+        # If the regions start and end return right as we
+        # ensured that right was a higher precedence above
+        if left.start == right.start and left.end == right.end:
+            return (right,)
+
+        # Starts are aligned
+        if left.start == right.start:
+            # Left engulfs right so cut left where right ends
+            if left.end > right.end:
+                left.start = right.end + 1
+                # Right is now smaller than left
+                return (right, left)
             else:
-                rightright = CoverageRegion( right.end + 1, left.end, left.rtype )
+                # Right engulfs left so just return right
+                return (right,)
+        # Ends are aligned(also means left.start < right.start)
+        elif left.end == right.end:
+            # Cut left where right starts
+            if left.rtypev < right.rtypev:
                 left.end = right.start - 1
-                return ( left, right, rightright )
+                return (left, right)
+            else:
+                # Right is overlapped completely and less presedence so del it
+                return (left,)
+        # Left engulfs right completely
+        elif left.end > right.end:
+            # Cut left and place right in the middle
+            if left.rtypev < right.rtypev:
+                # Creates far right region
+                leftleft = CoverageRegion( left.start, right.start - 1, left.rtype )
+                # Creates far left region out of existing left
+                left.start = right.end + 1
+                return (leftleft, right, left)
+            # right is removed as it is lower precedence
+            else:
+                return (left,)
+        # Left and right intersect near left's end and right's start
+        elif left.end < right.end:
+            # Cut left.end down to right.start-1
+            if left.rtypev < right.rtypev:
+                left.end = right.start - 1
+            else:
+                # Cut right.start to left.end + 1
+                right.start = left.end + 1
+            return (left, right)
+            
 
     def __unicode__( self ):
         return self.__str__()
@@ -389,20 +328,22 @@ class CoverageRegion( object ):
 
     def __cmp__( self, other ):
         """ self < other == -1, self == other == 0, self > other == 1 """
+        # Only equal if all pieces are equal
         if self.start == other.start \
             and self.end == other.end \
             and self.rtype == other.rtype:
             return 0
+        # First compare by start values
         elif self.start < other.start:
             return -1
         elif self.start > other.start:
             return 1
-        elif self.start == other.start \
-            and self.end <= other.end:
-            return -1
-        elif self.start == other.start \
-            and self.end > other.end:
-            return 1
+        # If starts are equal compare types
+        elif self.start == other.start:
+            return self.rtypev.__cmp__( other.rtypev )
+        #elif self.start == other.start \
+        #    and self.end > other.end:
+        #    return 1
 
 class BaseInfo( object ):
     _gapTypes = {'Gap': -1, 'LowCoverage': 0, 'Normal': 1}
@@ -418,6 +359,11 @@ class BaseInfo( object ):
 
     @staticmethod
     def gapBase( pos ):
+        return BaseInfo.static_base( pos, 'Gap' )
+
+    @staticmethod
+    def static_base( pos, gapType ):
+        ''' Returns a static base(usually used as a filler) '''
         bi = BaseInfo( "%s\t-\t-\t64\t1\t1000\t1000\t0.0\t0.0" % pos )
         bi.gapType = 'Gap'
         return bi

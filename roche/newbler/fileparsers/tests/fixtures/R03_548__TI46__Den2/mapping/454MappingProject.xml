@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FourFiveFourProject>
+
+  <ProjectInformation>
+    <ProjectType>Mapping</ProjectType>
+    <ProjectDirectory>/Analysis/PipelineRuns/2013_06_15/Den2/R03_548__TI46__Den2</ProjectDirectory>
+    <dateCreated>Fri Jun 21 14:58:59 2013</dateCreated>
+    <dateModified>Fri Jun 21 14:59:58 2013</dateModified>
+    <SoftwareVersion>2.8 (20120726_1306)</SoftwareVersion>
+  </ProjectInformation>
+
+  <Config>
+    <minimumReadLength>20</minimumReadLength>
+    <overlapSeedStep>12</overlapSeedStep>
+    <overlapSeedLength>16</overlapSeedLength>
+    <overlapMinSeedCount>1</overlapMinSeedCount>
+    <overlapSeedHitLimit>70</overlapSeedHitLimit>
+    <overlapHitPositionLimit>1000000</overlapHitPositionLimit>
+    <overlapMinMatchLength>40</overlapMinMatchLength>
+    <overlapMinMatchIdentity>90</overlapMinMatchIdentity>
+    <overlapMatchIdentScore>2</overlapMatchIdentScore>
+    <overlapMatchDiffScore>-3</overlapMatchDiffScore>
+    <overlapMatchUniqueThresh>12</overlapMatchUniqueThresh>
+    <isogroupThresh>500</isogroupThresh>
+    <isotigThresh>100</isotigThresh>
+    <isotigContigCountThresh>100</isotigContigCountThresh>
+    <isotigContigLengthThresh>3</isotigContigLengthThresh>
+    <isotigDepthSplit>false</isotigDepthSplit>
+    <aceMode>Auto</aceMode>
+    <aceReadMode>Default</aceReadMode>
+    <pairAlignMode>Text</pairAlignMode>
+    <alignInfoMode>Auto</alignInfoMode>
+    <nucleotideFreqTable>false</nucleotideFreqTable>
+    <mapMinContigDepth>1</mapMinContigDepth>
+    <allContigThresh>100</allContigThresh>
+    <largeContigThresh>500</largeContigThresh>
+    <expectedDepth>0</expectedDepth>
+    <cDNAMode>false</cDNAMode>
+    <referenceMode>Auto</referenceMode>
+    <largeGenome>false</largeGenome>
+    <multiplexMode>false</multiplexMode>
+    <ripMode>false</ripMode>
+    <heterozygoteMode>false</heterozygoteMode>
+    <scaffoldLengthThreshold>2000</scaffoldLengthThreshold>
+    <assemblerBatchSize>0</assemblerBatchSize>
+    <numCPU>1</numCPU>
+    <showSingleReadVariations>false</showSingleReadVariations>
+    <nimblegenMappingMode>false</nimblegenMappingMode>
+    <backwardCompatibleContigging>false</backwardCompatibleContigging>
+    <finishMode>false</finishMode>
+    <autoTrimming>true</autoTrimming>
+    <VectorDatabase>/NGSData/RawData/Roche454/2013_06_15/meta/Primer/PrimersConcatted.fna</VectorDatabase>
+    <screeningDatabase/>
+    <haplotypeFile/>
+    <targetedRegionFile/>
+    <annotationFile/>
+    <knownSNPFile/>
+    <accessionRenameFile/>
+    <filterExcludeFile/>
+    <filterIncludeFile/>
+    <UseSerialIO>false</UseSerialIO>
+    <SerialIOMinimizeDisk>false</SerialIOMinimizeDisk>
+    <SerialIOMemLimit>0</SerialIOMemLimit>
+  </Config>
+
+  <ReferenceFiles>
+    <SetRefCount>1</SetRefCount>
+    <File>
+      <Path>/NGSData/RawData/Roche454/2013_06_15/meta/Ref/Den2__Thailand_FJ810410__2001.fasta</Path>
+      <Type>Fasta</Type>
+    </File>
+  </ReferenceFiles>
+
+  <ReadFiles>
+    <SetReadCount>2</SetReadCount>
+    <File>
+      <SFFDirFilename>R03_548__1__TI46__2013_06_15__Den2.sff</SFFDirFilename>
+      <Path>/NGSData/RawData/Roche454/2013_06_15/R_2013_06_15_21_19_39_FLX12070283_Administrator_20130615_Den2/D_2013_06_18_08_46_57_vnode_signalProcessing/demultiplexed/1/R03_548__1__TI46__2013_06_15__Den2.sff</Path>
+      <Type>SFF</Type>
+      <IsPairedEnd>false</IsPairedEnd>
+      <Rescore>false</Rescore>
+      <removeFlag>false</removeFlag>
+    </File>
+    <File>
+      <SFFDirFilename>R03_548__2__RL43__2013_10_05__Den2.sff</SFFDirFilename>
+      <Path>/NGSData/RawData/Roche454/2013_05_10/R_2013_05_10_12_06_24_FLX12070283_Administrator_20130510_Den1AndDen2/D_2013_05_11_08_27_20_vnode_signalProcessing/demultiplexed/R03_548__2__RL43__2013_10_05__Den2.sff</Path>
+      <Type>SFF</Type>
+      <IsPairedEnd>false</IsPairedEnd>
+      <Rescore>false</Rescore>
+      <removeFlag>false</removeFlag>
+    </File>
+  </ReadFiles>
+
+</FourFiveFourProject>

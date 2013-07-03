@@ -1,0 +1,2 @@
+Ref	Ref	Var	Region	Ref	Ref	Var	Region	Total	Var	Deviation	Type
+Accno1	Pos1	Side1	Name1	Accno2	Pos2	Side2	Name2	Depth	Freq	Length
