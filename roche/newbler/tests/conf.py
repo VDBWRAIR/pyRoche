@@ -5,8 +5,8 @@ mapping_projects = [ "05_11_2012_1_TI-MID10_PR_2357_AH3", "05_11_2012_1_TI-MID51
 assembly_projects = ["08_31_2012_3_RL10_600Yu_10_VOID"]
 all_projects = mapping_projects + assembly_projects
 
-fileparsers = ['AlignmentInfo', 'NewblerProgress']
-files = ['454AlignmentInfo.tsv', '454NewblerProgress.txt']
+fileparsers = ['AlignmentInfo', 'NewblerProgress', 'NewblerMetrics']
+files = ['454AlignmentInfo.tsv', '454NewblerProgress.txt', '454NewblerMetrics.txt']
 
 mapping_fp = fileparsers + ['RefStatus','MappingProject','MappingQC']
 mapping_files = files + ['454RefStatus','454MappingProject.xml', '454MappingQC.xls']
