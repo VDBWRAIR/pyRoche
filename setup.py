@@ -4,6 +4,9 @@ from distutils.core import setup
 from fnmatch import fnmatch
 import subprocess
 
+# Version file to store version information in
+ver_file = os.path.join( 'roche', '_version.py' )
+
 # The major.minor version number
 __version__ = 0
 
@@ -16,6 +19,23 @@ def read(fname):
 
 def scripts( ):
     return [os.path.join( 'bin', f ) for f in os.listdir( 'bin' ) if not fnmatch( f, '*.swp' )]
+
+def git_branch():
+    ''' Return the current checked out branch name '''
+    try:
+        output = subprocess.check_output( ['git', 'branch'] ).splitlines()
+    except:
+        print "unable to get git branch"
+        return ""
+
+    # Get the line that the astriks is in
+    branch = [x for x in output if '*' in x][0]
+    branch = branch.replace( '*', '' ).strip()
+    # Only return branches other than master
+    if branch != 'master':
+        return branch
+    else:
+        return ''
 
 def set_version():
     ''' Sets the version using the current tag and revision in the git repo '''
@@ -32,9 +52,15 @@ def set_version():
         print "unable to run git"
         return
 
-    with open( '_version.py', 'w' ) as fh:
+    # Full version string
+    ver = stdout.strip()
+    branch = git_branch()
+    if branch:
+        ver += '.' + git_branch()
+
+    with open( ver_file, 'w' ) as fh:
         global __version__
-        __version__ = stdout.strip()
+        __version__ = ver
         fh.write( "__version__ = '%s'\n" % __version__ )
 
     return True
