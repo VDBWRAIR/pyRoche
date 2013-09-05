@@ -52,10 +52,23 @@ def stats_forproj( proj ):
         @returns dictionary of stats for Jun Hang
     '''
     stats = {}
+    failcount = 0
     for group in ('runMetrics', 'readStatus', 'allContigMetrics'):
-        stats.update( **proj.NewblerMetrics.parse_metrics( group ) )
+        try:
+            stats.update( **proj.NewblerMetrics.parse_metrics( group ) )
+        except ValueError as e:
+            failcount += 1
+            continue
 
-    lcm = proj.NewblerMetrics.parse_metrics( 'largeContigMetrics' )
+    try:
+        lcm = proj.NewblerMetrics.parse_metrics( 'largeContigMetrics' )
+    except ValueError as e:
+        failcount += 1
+
+    # Return empty dictionary if non of the stats were available
+    if failcount == 4:
+        return {}
+        
     stats['numberOfLargeContigs'] = lcm['numberOfContigs']
     stats['numberOfLargeBases'] = lcm['numberOfBases']
     del lcm['numberOfBases']
