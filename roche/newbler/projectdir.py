@@ -64,7 +64,8 @@ class ProjectDirectory( object ):
             n = '454' + name
             return self.files[n]
         except KeyError as e:
-            raise MissingProjectFile( "Project %s does not contain the file %s" % (self.basepath, name) )
+            msg = "Project %s does not contain the file %s" % (self.basepath, name)
+            raise MissingProjectFile( msg )
 
     @property
     def files( self ):
@@ -84,6 +85,10 @@ class ProjectDirectory( object ):
         '''
             Allows dynamic retrieval of file parser objects for files within the project
         '''
+        # I don't know why this needs to be here, but apparently when multiprocessing.Pool.map
+        #  is called it goes into a recursive loop as if the normal class lookup mechanism
+        #  is not being used. So here we force the super class's getattr to be called
+        super( ProjectDirectory, self ).__getattr__( name )
         # Fetch the filepath using the attribute name that was attempted
         try:
             filepath = self.get_file( name )

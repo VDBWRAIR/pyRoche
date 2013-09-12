@@ -35,3 +35,8 @@ class ProjectDirectoryTest( unittest.TestCase ):
             self.tgetattr( d, conf.assembly_fp )
         pd = ProjectDirectory( os.path.join( conf.examples_dir, conf.mapping_projects[0] ) )
         self.assertRaises( MissingProjectFile, getattr, pd, 'missing' )
+
+    def test_recursivelookup( self ):
+        ''' Targets the recursive __getattr__ lookup problem '''
+        projdir = os.path.join( conf.examples_dir, conf.mapping_projects[0] )
+        gsproj = ProjectDirectory( projdir )
