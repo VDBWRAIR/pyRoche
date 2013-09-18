@@ -88,7 +88,10 @@ class ProjectDirectory( object ):
         # I don't know why this needs to be here, but apparently when multiprocessing.Pool.map
         #  is called it goes into a recursive loop as if the normal class lookup mechanism
         #  is not being used. So here we force the super class's getattr to be called
-        super( ProjectDirectory, self ).__getattr__( name )
+        #try:
+        #    return super( ProjectDirectory, self ).__getattrbute__( name )
+        #except AttributeError as e:
+        #    pass
         # Fetch the filepath using the attribute name that was attempted
         try:
             filepath = self.get_file( name )

@@ -1,12 +1,20 @@
-import unittest
+from nose.tools import eq_, raises
 import os
 import os.path
 
 import conf
 
 from ..projectdir import ProjectDirectory, MissingProjectFile
+from ..fileparsers.tests import fixtures
 
-class ProjectDirectoryTest( unittest.TestCase ):
+import multiprocessing
+
+class BaseClass( object ):
+    @classmethod
+    def setUpClass( self ):
+        self.projs = fixtures.GSPROJECTS
+
+class ProjectDirectoryTest( BaseClass ):
     def test_init( self ):
         ''' Just test to make sure nothing goes haywire when importing project '''
         for pd in conf.all_projects:
@@ -37,6 +45,9 @@ class ProjectDirectoryTest( unittest.TestCase ):
         self.assertRaises( MissingProjectFile, getattr, pd, 'missing' )
 
     def test_recursivelookup( self ):
-        ''' Targets the recursive __getattr__ lookup problem '''
-        projdir = os.path.join( conf.examples_dir, conf.mapping_projects[0] )
-        gsproj = ProjectDirectory( projdir )
+        '''
+            Targets the recursive __getattr__ lookup problem
+            I don't know how to test it though because it has something to do
+            with multiprocessing.Pool.map
+        '''
+        pass
