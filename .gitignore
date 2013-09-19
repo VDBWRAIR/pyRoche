@@ -6,3 +6,5 @@ build*
 *examples*
 _version.py
 requirements.txt
+tests/fixtures/assembly/MjBr6/
+tests/fixtures/mapping/00047_06__TI1__Den4/
