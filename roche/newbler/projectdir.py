@@ -1,15 +1,3 @@
-#!/usr/bin/env python
-
-##########################################################################
-##                       454projectdir
-##	Author: Tyghe Vallard						                        
-##	Date: 6/5/2012							                            
-##	Version: 1.0							                            
-##	Description:							                            
-##      Defines how to parse a Project directory path into different parts
-##      
-#########################################################################
-
 import sys
 import re
 import os
@@ -41,7 +29,7 @@ class ProjectDirectory( object ):
 
     def get_file( self, name ):
         '''
-            Retrieve a file path in the project by just it's name(with or without extension
+            Retrieve a file path in the project by just it's name(with or without extension)
         '''
         # If it has period try splitting it and searching on that name
         if '.' in name:
@@ -84,6 +72,9 @@ class ProjectDirectory( object ):
     def __getattr__( self, name ):
         '''
             Allows dynamic retrieval of file parser objects for files within the project
+            That is you can do something like this:
+                pd = ProjectDirectory( <project path> )
+                pd.MappingProject which will yield an instance of fileparsers.mappingproject.MappingProject
         '''
         # I don't know why this needs to be here, but apparently when multiprocessing.Pool.map
         #  is called it goes into a recursive loop as if the normal class lookup mechanism

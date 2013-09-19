@@ -1,0 +1,20 @@
+How to make a new fixture
+-------------------------
+
+Find an already mapped/assembly project(This is the easiest way)
+In the below instructions you can replace mapping with assembly in any of
+ the instructions
+
+1. Setup a new fixture directory
+   #> mkdir -p mapping/fixtureN/{primers,sff}
+2. Grab accession id's from the 454TrimStatus.txt file
+   #> grep -v 'accno' <projpath>/*/454TrimStatus.txt > accno.lst
+3. Extract only those reads from the sff files to create the fixture sff file
+   #> sfffile -o 454Reads.sff -i accno.lst <projpath>/sff/* && rm accno.lst
+4. Pull out random reads from the sff file
+   #> sfffile -o fixtureN/sff/454Reads1.sff -pickr 1000 454Reads.sff && rm 454Reads.sff
+5. Copy primer listed in <projpath>/*/454*Project.xml to the file primers.fna under fixture's primers directory
+   edit <projpath>/*/454*Project.xml and look for the VectorDatabase section and just copy
+   the file listed in there to mapping/fixtureN/primers/primers.fna
+6. If you are setting up a mapping then repeat step 5 but copy all files listed under
+   ReferenceFiles to the mapping/fixtureN/refs folder
