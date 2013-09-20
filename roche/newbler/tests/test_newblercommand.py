@@ -15,7 +15,7 @@ import subprocess
 class CommandBase( object ):
     @classmethod
     def setUpClass( self ):
-        self.tempdir = tempfile.mkdtemp()
+        pass
 
     @contextmanager
     def tempdir( self ):
@@ -32,6 +32,14 @@ class CommandBase( object ):
 
 class FakeNS( object ):
     pass
+
+class NewblerCommandCheckOutput( newblercommand.NewblerCommand ):
+    ''' Just implement simple check_output '''
+    def check_output( self, stdout, stderr ):
+        return "O:{}--E:{}".format(stdout,stderr)
+
+    def set_args( self ):
+        pass
 
 class TestNewblerCommand( CommandBase ):
     def setUp( self ):
@@ -89,19 +97,22 @@ class TestNewblerCommand( CommandBase ):
         eq_( expected, self.nc.get_arguments_inorder( ns ) )
 
     def test_runvalidcommand( self ):
-        with self.tempfile() as exe:
-            os.chmod( exe, stat.S_IRWXU )
-            self.nc.executable = exe
+        with self.tempdir() as tdir:
+            exe = join( tdir, 'testexe' )
             with open( exe, 'w' ) as fh:
-                fh.write( "#!/bin/bash\necho 1" )
-            output = self.nc.run()
-            eq_( '1', output )
+                fh.write( '#!/bin/bash\necho 1\necho 1 1>&2' )
+            os.chmod( exe, stat.S_IRWXU )
+            nc = NewblerCommandCheckOutput('test')
+            nc.executable = exe
+            output = nc.run()
+            eq_( 'O:1\n--E:1\n', output )
 
     @raises(subprocess.CalledProcessError)
     def test_runcommandnonzero( self ):
-        with self.tempfile() as exe:
-            os.chmod( exe, stat.S_IRWXU )
-            self.nc.executable = exe
+        with self.tempdir() as tdir:
+            exe = join( tdir, 'testexe' )
             with open( exe, 'w' ) as fh:
                 fh.write( "#!/bin/bash\nexit 1" )
+            os.chmod( exe, stat.S_IRWXU )
+            self.nc.executable = exe
             self.nc.run()

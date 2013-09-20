@@ -2,6 +2,7 @@ import subprocess
 import logging
 import argparse
 import os
+import tempfile
 
 logger = logging.getLogger( __name__ )
 
@@ -78,7 +79,7 @@ class NewblerCommand( object ):
         '''
             Set up the arguments for the command
 
-            Should add arguments to self.parser
+            Should add arguments to self.parser using self.add_argument
         '''
         raise NotImplementedError( "Needs to be implemented in a subclass" )
 
@@ -122,6 +123,11 @@ class NewblerCommand( object ):
                 if the command failed to run
         '''
         cmd = [self.executable] + self.parse_args( args )
+        logger.info( "Running command: {}".format(cmd) )
+        stderr = tempfile.SpooledTemporaryFile()
+        stdout = subprocess.check_output( cmd, stderr=stderr )
+        stderr.seek(0)
+        return self.check_output( stdout, stderr.read() )
 
 class AddRun( NewblerCommand ):
     pass
