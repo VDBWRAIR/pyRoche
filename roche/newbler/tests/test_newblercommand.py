@@ -83,6 +83,26 @@ class TestNewblerCommand( CommandBase ):
                     if len(a.option_strings)]
         eq_( expected, found )
 
+    def test_addargumenttomegroup( self ):
+        ''' Adding argument to Mutually Exclusive Group '''
+        meg = self.nc.parser.add_mutually_exclusive_group()
+        self.nc.add_argument( '-t1' )
+        self.nc.add_argument( '-me1', group=meg )
+        self.nc.add_argument( '-me2', group=meg )
+        sysv = '-t1 t1 -me1 me1'
+        args = self.nc.parse_args( sysv )
+        eq_( sysv.split() + ['-me2',None], args )
+
+    def test_addargumenttomgroup( self ):
+        ''' Adding argument to Mutually Exclusive Group '''
+        agroup = self.nc.parser.add_argument_group()
+        self.nc.add_argument( '-t1' )
+        self.nc.add_argument( '-me1', group=agroup )
+        self.nc.add_argument( '-me2', group=agroup )
+        sysv = '-t1 t1 -me1 me1'
+        args = self.nc.parse_args( sysv )
+        eq_( sysv.split() + ['-me2',None], args )
+
     def test_getargumentsinorder( self ):
         self.nc.add_argument( '-t1', dest='testone' )
         self.nc.add_argument( '-a' )

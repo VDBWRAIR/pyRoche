@@ -68,11 +68,18 @@ class NewblerCommand( object ):
             Just stores the _store_action for each added argument to keep track
              of the order in which they were added. Newbler commands are very picky
              about the order sometimes
+            Supports adding to groups(arg group & Mutually Exclusive) as well by supplying the group option
         
             @param args - List of args for ArgumentParser.add_argument
-            @param args - List of kwargs for ArgumentParser.add_argument
+            @param kwargs - List of kwargs for ArgumentParser.add_argument
+            @param group - Mutually exclusive group to add the argument too
         '''
-        sa = self.parser.add_argument( *args, **kwargs )
+        if 'group' in kwargs:
+            group = kwargs['group']
+            del kwargs['group']
+            sa = group.add_argument( *args , **kwargs )
+        else:
+            sa = self.parser.add_argument( *args, **kwargs )
         self.args.append( sa )
 
     def set_args( self ):
