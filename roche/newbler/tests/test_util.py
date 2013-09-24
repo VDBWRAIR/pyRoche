@@ -3,6 +3,7 @@ from os.path import join, basename, dirname, splitext
 from nose.tools import eq_, raises
 
 from ..util import *
+from .. import util
 import fixtures
 
 class TestRefFileForIdent( fixtures.FixtureMapBase ):
@@ -36,3 +37,11 @@ class TestRefFileForIdent( fixtures.FixtureMapBase ):
             # Ensure partial identifier name works
             rf = reference_file_for_identifier( 'doesnotexist', mproj )
             eq_( None, rf )
+
+class TestFindInPath( object ):
+    def test_find_valid( self ):
+        # I think find is on windows too?
+        assert util.find_in_path( 'find' ) is not None
+
+    def test_find_missing( self ):
+        assert util.find_in_path( 'sskkyi' ) is None
