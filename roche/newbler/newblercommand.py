@@ -235,8 +235,6 @@ class AddRun( NewblerCommand ):
         )
 
     def check_output( self, cmd, stdout=None, stderr=None ):
-        '''
-        '''
         # Flag to tell if errors were detected in output
         err = False
         if stderr.startswith( 'Error:' ):
@@ -278,3 +276,67 @@ class AddRun( NewblerCommand ):
         else:
             logger.info( "Sucessfully added reads to project" )
             return stdout
+
+class SetRef(NewblerCommand):
+    def __init__( self, *args, **kwargs ):
+        '''
+            @param exepath - Optional path to executable for addRun[Default is just addRun]
+        '''
+        super( AddRun, self ).__init__( "Command to add references to an existing project" )
+        if 'exepath' in kwargs:
+            self.executable = kwargs['exepath']
+        else:
+            self.executable = 'setRef'
+
+        self.set_args()
+
+    def set_args( self ):
+        '''
+            Usage:  setRef [projectDir] [fastafile | directory | genomename]...
+            Options:
+               -cref   - For cDNA projects, treat the reference as a transcriptome
+               -gref   - For cDNA projects, treat the reference as a genome
+               -random - For a GoldenPath database, include the *_random.fa
+                             and *_hap_*.fa files in what is used as the reference
+
+            This command resets the reference sequence for a mapping project.
+            It takes one or more FASTA files, directories (where all of the FASTA
+            files in the directories will be used) or GoldenPath genome names (if
+            the GOLDENPATH environment variable has been set to the location of
+            downloaded GoldenPath genome directory trees.
+
+            Running this command will result in a recomputation of the mapping
+            alignments the next time runProject is executed.  (All existing
+            results will be removed).
+
+
+            (The full documentation for "setRef" command can be found in the user manual).
+        '''
+        gcref = self.parser.add_mutually_exclusive_group()
+        self.add_argument(
+            '-cref',
+            help='For cDNA projects, treat the reference as a genome',
+            group=gcref
+        )
+        self.add_argument(
+            '-gref',
+            help='For cDNA projects, treat the reference as a transcriptome',
+            group=gcref
+        )
+        self.add_argument(
+            '-random',
+            help='Used for a GoldenPath database'
+        )
+        self.add_argument(
+            dest='projDir',
+            help='Project path to set references for'
+        )
+        self.add_argument(
+            dest='refereces',
+            action=ConcatStrAction,
+            nargs='+',
+            help='Directory or fastafile'
+        )
+
+    def check_output( self, cmd, stdout=None, stderr=None ):
+        pass

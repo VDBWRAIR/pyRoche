@@ -52,6 +52,22 @@ class CommandBase( object ):
             print subprocess.check_output( cmd )
             yield join( td, os.listdir( '.' )[0] )
 
+class TestSetRef( CommandBase ):
+    def __init__( self ):
+        self.ar = newblercommand.SetRef()
+        self.files = fixtures.files_for_fixture(
+            fixtures.mapping_fixtures[0]
+        )
+        self.refs = [
+            join( 
+                fixtures.mapping_fixtures[0],
+                'refs',
+                ref
+            )
+            for ref in self.files['refs']
+        ]
+        self.ref = self.refs[0]
+
 class TestAddRun( CommandBase ):
     def __init__( self ):
         self.ar = newblercommand.AddRun()
@@ -158,7 +174,7 @@ class FakeNS( object ):
 
 class NewblerCommandCheckOutput( newblercommand.NewblerCommand ):
     ''' Just implement simple check_output '''
-    def check_output( self, stdout, stderr ):
+    def check_output( self, cmd, stdout, stderr ):
         return "O:{}--E:{}".format(stdout,stderr)
 
     def set_args( self ):
