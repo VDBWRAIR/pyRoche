@@ -17,19 +17,32 @@ class NewblerCommand( object ):
             the status of the command
 
         Subclasses need to do the following:
-            Set self.executable to Path/Name of executable
-            Define self.set_args by setting all of the arguments(ArgumentParser objects)
-            Define self.check_output by defining how to parse the stdout & stderr of the
+            Define __init__ and call super and pass the description and exepath to
+                the constructor
+            Define set_args by setting all of the arguments(ArgumentParser objects)
+            Define check_output by defining how to parse the stdout & stderr of the
                 command that will be ran to check for errors. Not all commands simply
                 return 1 on an error which will raise a subprocess.CalledProcessError
     '''
-    def __init__( self, description ):
+    def __init__( self, description, exepath=None ):
+        '''
+            Sets up the argument parser instance and executable
+
+            @param description - The description of the command that is being wrapped
+            @param exepath - The path to the executable
+        '''
         # The argument parser object
         self.parser = argparse.ArgumentParser( description=description )
         # The executable to run
         self._executable = ''
         # Arguments added in order will be kept here
         self.args = []
+
+        if exepath is not None:
+            self.executable = exepath
+
+        # Set Up the args
+        self.set_args()
 
     def expected_files( self, cmd ): 
         '''
@@ -291,13 +304,10 @@ class AddRun( AddFilesBase ):
         '''
             @param exepath - Optional path to executable for addRun[Default is just addRun]
         '''
-        super( AddRun, self ).__init__( "Command to add Read Data to an existing project" )
-        if 'exepath' in kwargs:
-            self.executable = kwargs['exepath']
-        else:
-            self.executable = 'addRun'
-
-        self.set_args()
+        super( AddRun, self ).__init__(
+            description="Command to add Read Data to an existing project",
+            exepath=kwargs.get( 'exepath', 'addRun' )
+        )
 
     def set_args( self ):
         ''' Sets all the ArgumentParser args for this command '''
@@ -339,16 +349,10 @@ class AddRun( AddFilesBase ):
 
 class SetRef(AddFilesBase):
     def __init__( self, *args, **kwargs ):
-        '''
-            @param exepath - Optional path to executable for addRun[Default is just addRun]
-        '''
-        super( SetRef, self ).__init__( "Command to add references to an existing project" )
-        if 'exepath' in kwargs:
-            self.executable = kwargs['exepath']
-        else:
-            self.executable = 'setRef'
-
-        self.set_args()
+        super( SetRef, self ).__init__(
+            description="Command to add references to an existing project",
+            exepath=kwargs.get( 'exepath', 'setRef' )
+        )
 
     def set_args( self ):
         '''
@@ -398,7 +402,11 @@ class SetRef(AddFilesBase):
         )
 
 class NewMapping(NewblerCommand):
-    pass
+    def __init__( self, *args, **kwargs ):
+        super( NewMapping, self ).__init__(
+            description='Initializes a new mapping project',
+            exepath=kwargs.get( 'exepath', 'newMapping' )
+        )
 
 class NewAssembly(NewblerCommand):
     pass

@@ -53,7 +53,7 @@ class CommandBase( object ):
             yield join( td, os.listdir( '.' )[0] )
 
 class TestSetRef( CommandBase ):
-    def __init__( self ):
+    def setUp( self ):
         self.sr = newblercommand.SetRef()
         self.files = fixtures.files_for_fixture(
             fixtures.mapping_fixtures[1]
@@ -127,7 +127,7 @@ class TestSetRef( CommandBase ):
         ))
 
 class TestAddRun( CommandBase ):
-    def __init__( self ):
+    def setUp( self ):
         self.ar = newblercommand.AddRun()
         # Just grab first fixture's files for this
         self.files = fixtures.files_for_fixture(
@@ -222,10 +222,16 @@ if so.'''
         )
 
 class FakeNS( object ):
+    ''' Fake Namespace object '''
     pass
 
 class NewblerCommandCheckOutput( newblercommand.NewblerCommand ):
     ''' Just implement simple check_output '''
+    def __init__( self, *args, **kwargs ):
+        super( NewblerCommandCheckOutput, self ).__init__(
+            description='Test Command',
+            exepath='test'
+        )
     def check_output( self, cmd, stdout, stderr ):
         return "O:{}--E:{}".format(stdout,stderr)
 
@@ -234,7 +240,7 @@ class NewblerCommandCheckOutput( newblercommand.NewblerCommand ):
 
 class TestNewblerCommand( CommandBase ):
     def setUp( self ):
-        self.nc = newblercommand.NewblerCommand( "Test Command" )
+        self.nc = NewblerCommandCheckOutput( )
         self.readfiles = ['my.sff','my.fastq','my.fa','my.fasta','my.fna']
         self.basecmd = ['command','arg1','arg2']
 
