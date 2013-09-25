@@ -11,9 +11,9 @@ from Bio import SeqIO
 FIXTURE_PATH = join( dirname( __file__ ), 'fixtures' )
 
 # All available mapping fixtures
-mapping_fixtures = glob( join( FIXTURE_PATH, 'mapping', 'fixture*' ) )
+mapping_fixtures = sorted( glob( join( FIXTURE_PATH, 'mapping', 'fixture*' ) ) )
 # All available assembly fixtures
-assembly_fixtures = glob( join( FIXTURE_PATH, 'assembly', 'fixture*' ) )
+assembly_fixtures = sorted( glob( join( FIXTURE_PATH, 'assembly', 'fixture*' ) ) )
 # All available fileparsers that have been developed
 pys = glob( join( '..',__file__,'fileparsers','*.py') )
 fileparsers = [basename(py) for py in pys if py != '__init__.py']

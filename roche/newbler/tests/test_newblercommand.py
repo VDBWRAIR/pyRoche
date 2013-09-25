@@ -54,19 +54,77 @@ class CommandBase( object ):
 
 class TestSetRef( CommandBase ):
     def __init__( self ):
-        self.ar = newblercommand.SetRef()
+        self.sr = newblercommand.SetRef()
         self.files = fixtures.files_for_fixture(
-            fixtures.mapping_fixtures[0]
+            fixtures.mapping_fixtures[1]
         )
         self.refs = [
             join( 
-                fixtures.mapping_fixtures[0],
+                fixtures.mapping_fixtures[1],
                 'refs',
                 ref
             )
             for ref in self.files['refs']
         ]
         self.ref = self.refs[0]
+        self.refdir = join(
+            fixtures.mapping_fixtures[1],
+            'refs'
+        )
+        self.refs_str = "\n    ".join(
+                [basename(ref) for ref in self.refs]
+            )
+
+    def test_singlerefvalid( self ):
+        with self.create_project() as p:
+            output = self.sr.run( "{} {}".format(
+                p, self.ref
+            ))
+            eq_(
+                '1 reference files successfully added.\n    {}\n'.format(
+                    basename(self.ref)
+                ),
+                output
+            )
+
+    def test_multiplerefvalid( self ):
+        with self.create_project() as p:
+            output = self.sr.run( "{} {}".format( p, " ".join(self.refs) ) )
+            eq_(
+                str(len(self.refs)) + \
+                    ' reference files successfully added.\n    ' + \
+                    self.refs_str + '\n',
+                output
+            )
+
+    def test_refdirectory( self ):
+        with self.create_project() as p:
+            output = self.sr.run( "{} {}".format(
+                p, self.refdir
+            ))
+            eq_(
+                str(len(self.refs)) + \
+                    ' reference files successfully added.\n    ' + \
+                    self.refs_str + '\n',
+                output
+            )
+
+    @raises(subprocess.CalledProcessError)
+    def test_missingprojdir( self ):
+        self.sr.run( "{}".format(
+            self.ref
+        ))
+
+    @raises(subprocess.CalledProcessError)
+    def test_missingreadfile( self ):
+        with self.create_project() as p:
+            self.sr.run( "{}".format( p ) )
+
+    @raises(subprocess.CalledProcessError)
+    def test_invalidprojdir( self ):
+        self.sr.run( "{} {}".format(
+            'dne', self.ref
+        ))
 
 class TestAddRun( CommandBase ):
     def __init__( self ):
@@ -87,7 +145,6 @@ class TestAddRun( CommandBase ):
 
     def test_singlesffvalid( self ):
         with self.create_project() as p:
-            self.ar.parser.print_usage()
             output = self.ar.run( '{} {}'.format( p, self.sff ) )
             eq_(
                 '1 read file successfully added.\n    454Reads1.sff\n',
@@ -96,7 +153,6 @@ class TestAddRun( CommandBase ):
 
     def test_multiplesffvalid( self ):
         with self.create_project() as p:
-            self.ar.parser.print_usage()
             output = self.ar.run( '{} {}'.format( p, " ".join(self.sffs) ) )
             eq_(
                 '2 read files successfully added.\n    454Reads1.sff\n    454Reads2.sff\n',
@@ -127,10 +183,6 @@ class TestAddRun( CommandBase ):
     def test_usage( self ):
         with self.create_project() as p:
             self.ar.run( )
-
-    def test_multiplereads( self ):
-        with self.create_project() as p:
-            self.ar.run( '{} {}'.format( p, " ".join(self.sffs) ) )
 
     @raises(subprocess.CalledProcessError)
     def test_invalidproj_validsff( self ):
@@ -183,6 +235,124 @@ class NewblerCommandCheckOutput( newblercommand.NewblerCommand ):
 class TestNewblerCommand( CommandBase ):
     def setUp( self ):
         self.nc = newblercommand.NewblerCommand( "Test Command" )
+        self.readfiles = ['my.sff','my.fastq','my.fa','my.fasta','my.fna']
+        self.basecmd = ['command','arg1','arg2']
+
+
+    def test_expectedfiles_single( self ):
+        for readfile in self.readfiles:
+            # Test each file separately
+            eq_(
+                [readfile],
+                self.nc.expected_files(
+                    self.basecmd + [readfile]
+                )
+            )
+            # Ensure abs path works too
+            eq_(
+                [readfile],
+                self.nc.expected_files(
+                    self.basecmd + ['/some/path/'+readfile]
+                )
+            )
+
+    def test_expectedfiles_multiple( self ):
+        eq_(
+            self.readfiles,
+            self.nc.expected_files(
+                self.basecmd + [" ".join(self.readfiles)]
+            )
+        )
+
+    def test_expectedfiles_nonread( self ):
+        self.basecmd + ['notaread']
+        eq_(
+            [],
+            self.nc.expected_files(
+                self.basecmd
+            )
+        )
+
+    def test_expectedfiles_dir( self ):
+        files = fixtures.files_for_fixture(
+            fixtures.mapping_fixtures[1]
+        )
+        refs = [
+            join( 
+                fixtures.mapping_fixtures[1],
+                'refs',
+                ref
+            )
+            for ref in files['refs']
+        ]
+        ref = refs[0]
+        refdir = join(
+            fixtures.mapping_fixtures[1],
+            'refs'
+        )
+        refs_str = "\n    ".join(
+                [basename(ref) for ref in refs]
+            )
+        cmd = self.basecmd + [refdir]
+        eq_(
+            files['refs'],
+            self.nc.expected_files( cmd )
+        )
+    
+    def test_foundfiles_single( self ):
+        outputs = [
+            ('1 read file successfully added.\n    {}\n','454Reads.sff'),
+            ('1 reference files successfully added.\n    {}\n','ref.fna')
+        ]
+        for output in outputs:
+            eq_(
+                [output[1]],
+                self.nc.found_files( output[0].format(output[1]) )
+            )
+
+    def test_foundfiles_multiple( self ):
+        outputs = [
+            (
+                '2 read files successfully added.\n    ',
+                ['454Reads1.sff','454Reads2.sff']
+            ),
+            (
+                '2 reference files successfully added.\n    ',
+                ['ref1.fna','ref2.fna']
+            )
+        ]
+        for output in outputs:
+            o = output[0] + "\n    ".join(output[1]) + '\n'
+            eq_(
+                output[1],
+                self.nc.found_files( o )
+            )
+
+    @raises(ValueError)
+    def test_foundfiles_erroutput( self ):
+        self.nc.found_files(
+            'Error:  Reference file/directory does not exist:  bob'
+        )
+
+    @raises(ValueError)
+    def test_foundfiles_usageoutput( self ):
+        self.nc.found_files( '''Usage:  setRef [projectDir] [fastafile | directory | genomename]...
+Options:
+   -cref   - For cDNA projects, treat the reference as a transcriptome
+   -gref   - For cDNA projects, treat the reference as a genome
+   -random - For a GoldenPath database, include the *_random.fa
+                 and *_hap_*.fa files in what is used as the reference
+
+This command resets the reference sequence for a mapping project.
+It takes one or more FASTA files, directories (where all of the FASTA
+files in the directories will be used) or GoldenPath genome names (if
+the GOLDENPATH environment variable has been set to the location of
+downloaded GoldenPath genome directory trees.
+
+Running this command will result in a recomputation of the mapping
+alignments the next time runProject is executed.  (All existing
+results will be removed).''' )
+
 
     def test_setvalidexecutable( self ):
         with self.tempfile() as exe:
@@ -271,6 +441,21 @@ class TestNewblerCommand( CommandBase ):
         ns.last = 'test3'
         expected = ['-t1','test1','-on','test3']
         eq_( expected, self.nc.get_arguments_inorder( ns ) )
+
+    def test_runargwithspace( self ):
+        with self.tempdir() as tdir:
+            exe = join( tdir, 'testexe' )
+            with open( exe, 'w' ) as fh:
+                fh.write( "#!/bin/bash\necho 0" )
+            os.chmod( exe, stat.S_IRWXU )
+            nc = NewblerCommandCheckOutput( 'test' )
+            nc.add_argument(
+                dest='args',
+                action=newblercommand.ConcatStrAction,
+                nargs='+'
+            )
+            nc.executable = exe
+            output = nc.run( 'arg1 arg2' )
 
     def test_runvalidcommand( self ):
         with self.tempdir() as tdir:

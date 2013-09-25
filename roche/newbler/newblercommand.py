@@ -4,7 +4,7 @@ import argparse
 import os
 import tempfile
 import re
-from os.path import basename
+from os.path import basename,splitext
 
 import util
 
@@ -30,6 +30,70 @@ class NewblerCommand( object ):
         self._executable = ''
         # Arguments added in order will be kept here
         self.args = []
+
+    def expected_files( self, cmd ): 
+        '''
+            Parses a command list into expected files. Useful for parsing addRun and setRef output.
+            Detects the following file formats:
+                .fasta
+                .fna
+                .sff
+                .fastq
+                .fa
+
+            Typically the reads are in a single huge string because of the use of the ConcatStrAction
+             when parsing the arguments.
+
+            @param cmd - List of command parameters from parse_args
+
+            @returns a list of expected files that should be found in output
+        '''
+        valid_extensions = ('.sff','.fasta','.fastq','.fna','.fa')
+        files = []
+        # If the last argument is a directory
+        if os.path.isdir( cmd[-1] ):
+            return os.listdir( cmd[-1] )
+
+        # Otherwise parse all the cmds and pull out the reads
+        for arg in cmd:
+            foundext = False
+            for ext in valid_extensions:
+                if ext in arg:
+                    foundext = True
+            if foundext:
+                files += [basename(f) for f in arg.split()]
+        return files
+
+    def found_files( self, output ):
+        '''
+            Parses command output to get a list of all the files that were added by the command.
+            Useful for parsing addRun and setRef output
+
+            @param output - A string of output. Probably stdout from setRef or addRun.
+            @raises ValueError if usage or error output is given or no reads can be parsed out
+
+            @returns a list of files that were listed in the output
+
+            Note: It this does not check that the read files that were added are valid read files.
+                It is assumed that all added files by newbler commands are valid
+        '''
+        patt = '(\d+) \w+ file[s]* successfully added.\n((^    .*?\n)+)'
+        m = re.search( patt, output, re.M )
+        if not m:
+            logger.debug( "Could not parse {} into found files".format(output) )
+            raise ValueError( "Output does indicate successfully adding any files" )
+
+        numfiles = m.group( 1 )
+        files = m.group( 2 ).split()
+        # Check to see if newbler command gives incorrect amount of files it added
+        if int( numfiles ) != len( files ):
+            # I'm not sure that this could even happen, but why not be safe
+            logger.critical( "Output indicates that {} files should have " \
+                "been added but {} were added".format(numfiles,files)
+            )
+            raise ValueError( "Something very wrong just happened" )
+
+        return files
 
     @property
     def executable( self ):
@@ -124,7 +188,7 @@ class NewblerCommand( object ):
         ns = self.parser.parse_args( args )
         return self.get_arguments_inorder( ns )
 
-    def check_output( self, stdout=None, stderr=None ):
+    def check_output( self, cmd, stdout=None, stderr=None ):
         '''
             Checks the output of the command after it has been run
             
@@ -158,6 +222,17 @@ class NewblerCommand( object ):
                 returncode = 1,
                 output = e.message
             )
+
+        # flatten the cmd list
+        ccmd = []
+        for c in cmd:
+            if isinstance( c, list ):
+                ccmd += c
+            else:
+                ccmd.append( c )
+        cmd = ccmd
+
+        logger.debug( "Args: {}".format( ccmd ) )
         logger.info( "Running command: {}".format(" ".join(cmd)) )
         stderr = tempfile.SpooledTemporaryFile()
         try:
@@ -182,7 +257,36 @@ class ConcatStrAction( argparse.Action ):
         val += " ".join( [str(s) for s in values] )
         setattr( namespace, self.dest, val )
 
-class AddRun( NewblerCommand ):
+class AddFilesBase( NewblerCommand ):
+    def check_output( self, cmd, stdout=None, stderr=None ):
+        # Flag to tell if errors were detected in output
+        err = False
+        if stderr.startswith( 'Error:' ):
+            err = True
+        else:
+            expected_files = sorted( self.expected_files( cmd ) )
+            try:
+                found_files = sorted( self.found_files( stdout ) )
+            except ValueError as e:
+                err = True
+
+            if found_files != expected_files:
+                logger.warning( "Expecting reads {} to be added but added {}".format(
+                    ",".join(expected_files), ",".join(found_files)
+                ))
+                err = True
+
+        if err:
+            raise subprocess.CalledProcessError(
+                cmd = cmd,
+                returncode = 0,
+                output = stdout + stderr
+            )
+        else:
+            logger.info( "Sucessfully added files to project" )
+            return stdout
+
+class AddRun( AddFilesBase ):
     def __init__( self, *args, **kwargs ):
         '''
             @param exepath - Optional path to executable for addRun[Default is just addRun]
@@ -229,60 +333,16 @@ class AddRun( NewblerCommand ):
         )
         self.add_argument(
             dest='filedesc',
-            action=ConcatStrAction,
             nargs='+',
             help='You can read about filedesc in the Roche Software Manual'
         )
 
-    def check_output( self, cmd, stdout=None, stderr=None ):
-        # Flag to tell if errors were detected in output
-        err = False
-        if stderr.startswith( 'Error:' ):
-            err = True
-        else:
-            outlines = stdout.splitlines()
-            readargs = [readfile for readfile in cmd \
-                 if '.sff' in readfile or '.fastq' in readfile or '.fna' in readfile]
-            readfiles = [basename(read) for readarg in readargs \
-                                for read in readarg.split()]
-            logger.debug( "Expecting addRun to add {}".format(",".join(readfiles)) )
-            foundreadfiles = []
-            if not re.match( '\d read file[s]* successfully added.', outlines[0] ):
-                logger.warning( "addRun did not successfully add reads" )
-                err = True
-            for addedread in outlines[1:]:
-                m = re.match( '    (.*)', addedread )
-                if not m:
-                    err = True
-                    logger.warning( "output from addRun did not indicate that it added a read: {}".format(
-                        addedread
-                    ))
-                    break
-                else:
-                    foundreadfiles.append( m.group(1) )
-            foundreadfiles.sort()
-            if foundreadfiles != readfiles:
-                logger.warning( "Expecting reads {} to be added but only added {}".format(
-                    ",".join(readfiles), ",".join(foundreadfiles)
-                ))
-                err = True
-
-        if err:
-            raise subprocess.CalledProcessError(
-                cmd = cmd,
-                returncode = 0,
-                output = stdout + stderr
-            )
-        else:
-            logger.info( "Sucessfully added reads to project" )
-            return stdout
-
-class SetRef(NewblerCommand):
+class SetRef(AddFilesBase):
     def __init__( self, *args, **kwargs ):
         '''
             @param exepath - Optional path to executable for addRun[Default is just addRun]
         '''
-        super( AddRun, self ).__init__( "Command to add references to an existing project" )
+        super( SetRef, self ).__init__( "Command to add references to an existing project" )
         if 'exepath' in kwargs:
             self.executable = kwargs['exepath']
         else:
@@ -332,11 +392,13 @@ class SetRef(NewblerCommand):
             help='Project path to set references for'
         )
         self.add_argument(
-            dest='refereces',
-            action=ConcatStrAction,
+            dest='references',
             nargs='+',
             help='Directory or fastafile'
         )
 
-    def check_output( self, cmd, stdout=None, stderr=None ):
-        pass
+class NewMapping(NewblerCommand):
+    pass
+
+class NewAssembly(NewblerCommand):
+    pass
