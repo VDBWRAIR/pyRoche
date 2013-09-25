@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 
-from roche.newbler.newblercommand import AddRun
+from roche.newbler.newblercommand import NewAssembly
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
 try:
-    ar = AddRun().run()
+    NewAssembly().run()
 except:
     pass
+
+

@@ -5,6 +5,7 @@ import os
 import tempfile
 import re
 from os.path import basename,splitext
+import sys
 
 import util
 
@@ -228,7 +229,7 @@ class NewblerCommand( object ):
         '''
         raise NotImplementedError( "Needs to be implemented in a subclass" )
 
-    def run( self, args='' ):
+    def run( self, args=" ".join( sys.argv[1:] ) ):
         '''
             Runs the newbler command in a subprocess
             Should more or less simply add the options from self.parse_args onto

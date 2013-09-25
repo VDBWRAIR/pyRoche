@@ -563,7 +563,7 @@ results will be removed).''' )
             os.chmod( exe, stat.S_IRWXU )
             nc = NewblerCommandCheckOutput('test')
             nc.executable = exe
-            output = nc.run()
+            output = nc.run( '' )
             eq_( 'O:1\n--E:1\n', output )
 
     @raises(subprocess.CalledProcessError)

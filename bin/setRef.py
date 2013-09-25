@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-from roche.newbler.newblercommand import AddRun
+from roche.newbler.newblercommand import SetRef
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
 try:
-    ar = AddRun().run()
+    SetRef().run()
 except:
     pass
