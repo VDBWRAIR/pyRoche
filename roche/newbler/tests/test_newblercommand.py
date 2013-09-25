@@ -52,6 +52,97 @@ class CommandBase( object ):
             print subprocess.check_output( cmd )
             yield join( td, os.listdir( '.' )[0] )
 
+class TestNewMapping( CommandBase ):
+    def setUp( self ):
+        self.nm = newblercommand.NewMapping()
+
+    def test_checkoutput_newproj( self ):
+        # Check that check_output works for this command
+        with self.tempdir() as td:
+            os.chdir( td )
+            self.nm.run( 'testproj' )
+            self.nm.run( '-force testproj' )
+
+    @raises( subprocess.CalledProcessError )
+    def test_checkoutput_error( self ):
+        with self.tempdir() as td:
+            os.chdir( td )
+            self.nm.run( '-badarg testproj' )
+
+class TestNewAssembly( CommandBase ):
+    def setUp( self ):
+        self.na = newblercommand.NewAssembly()
+
+    def test_checkoutput_newproj( self ):
+        with self.tempdir() as td:
+            os.chdir( td )
+            self.na.run( 'testproj' )
+            self.na.run( '-force testproj' )
+
+    @raises( subprocess.CalledProcessError )
+    def test_checkoutput_error( self ):
+        with self.tempdir() as td:
+            os.chdir( td )
+            self.na.run( '-badarg testproj' )
+
+class CreateProjectTestClass( newblercommand.CreateProject ):
+    def set_args( self ):
+        pass
+
+class TestCreateProject( CommandBase ):
+    def setUp( self ):
+        self.cp = CreateProjectTestClass(
+            'test', ''
+        )
+
+    def test_checkoutput_valid( self ):
+        output = '{} {} project directory {}'
+        tests = (
+            ('Created','mapping','testproj1'),
+            ('Initialized','mapping','testproj2'),
+            ('Created','assembly','testproj3'),
+            ('Initialized','assembly','testproj4'),
+        )
+        for test in tests:
+            with self.tempdir() as td:
+                os.chdir( td )
+                o = output.format(*test)
+                print o
+                ro = self.cp.check_output(
+                    ['test',test[2]],
+                    o,
+                    ''
+                )
+                eq_( o, ro )
+
+    @raises(subprocess.CalledProcessError)
+    def test_checkoutput_error( self ):
+        output = '''Error:  Invalid option: -bob.
+Usage:  newMapping/newAssembly [projectDirectory]
+
+These two commands create a new mapping or assembly project, and initialize
+the project files/sub-directories.  If the directory does not exist, it will
+be created.  If no directory is given on the command line, a new directory
+named "P_date_time_runMapping" or "P_date_time_runAssembly" (where "date"
+and "time" are the current date and time) will be created in the current
+working directory.'''
+        self.cp.check_output( ['test','proj'], output, '' )
+    
+    @raises(subprocess.CalledProcessError)
+    def test_checkoutput_usage( self ):
+        output = '''Usage:  newMapping/newAssembly [projectDirectory]
+
+These two commands create a new mapping or assembly project, and initialize
+the project files/sub-directories.  If the directory does not exist, it will
+be created.  If no directory is given on the command line, a new directory
+named "P_date_time_runMapping" or "P_date_time_runAssembly" (where "date"
+and "time" are the current date and time) will be created in the current
+working directory.
+
+
+(The full documentation for "createProject" command can be found in the user manual).'''
+        self.cp.check_output( ['test','proj'], output, '' )
+
 class TestSetRef( CommandBase ):
     def setUp( self ):
         self.sr = newblercommand.SetRef()
@@ -465,6 +556,7 @@ results will be removed).''' )
 
     def test_runvalidcommand( self ):
         with self.tempdir() as tdir:
+            os.chdir(tdir)
             exe = join( tdir, 'testexe' )
             with open( exe, 'w' ) as fh:
                 fh.write( '#!/bin/bash\necho 1\necho 1 1>&2' )

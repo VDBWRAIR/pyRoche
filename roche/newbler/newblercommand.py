@@ -18,7 +18,7 @@ class NewblerCommand( object ):
 
         Subclasses need to do the following:
             Define __init__ and call super and pass the description and exepath to
-                the constructor
+                the constructor.
             Define set_args by setting all of the arguments(ArgumentParser objects)
             Define check_output by defining how to parse the stdout & stderr of the
                 command that will be ran to check for errors. Not all commands simply
@@ -187,6 +187,18 @@ class NewblerCommand( object ):
         '''
         raise NotImplementedError( "Needs to be implemented in a subclass" )
 
+    def projdir_arg( self ):
+        '''
+            Convienience function to simply add project directory arg
+            It is a bit goofy that Roche decided that projDir could be an optional
+            argument considering it is a positional argument.
+            For now in pyRoche projDir is required no matter what
+        '''
+        self.add_argument(
+            dest='projDir',
+            help='Project directory'
+        )
+
     def parse_args( self, args ):
         '''
             Runs self.parser.parse_args()
@@ -230,10 +242,14 @@ class NewblerCommand( object ):
         try:
             cmd = [self.executable] + self.parse_args( args )
         except SystemExit as e:
+            errormsg = "Incorrect arguments {} given to command {}".format(
+                args, self.executable
+            )
+            logger.warning( errormsg )
             raise subprocess.CalledProcessError(
                 cmd = self.executable + ' ' + args,
                 returncode = 1,
-                output = e.message
+                output = errormsg
             )
 
         # flatten the cmd list
@@ -337,10 +353,7 @@ class AddRun( AddFilesBase ):
             help='Specify a custom mid group',
             group=mcfc
         )
-        self.add_argument(
-            dest='projDir',
-            help='Project Directory to add runs too'
-        )
+        self.projdir_arg()
         self.add_argument(
             dest='filedesc',
             nargs='+',
@@ -391,22 +404,80 @@ class SetRef(AddFilesBase):
             '-random',
             help='Used for a GoldenPath database'
         )
-        self.add_argument(
-            dest='projDir',
-            help='Project path to set references for'
-        )
+        self.projdir_arg()
         self.add_argument(
             dest='references',
             nargs='+',
             help='Directory or fastafile'
         )
 
-class NewMapping(NewblerCommand):
+class CreateProject(NewblerCommand):
+    def set_args( self ):
+        self.add_argument(
+            '-force',
+            action='store_true',
+            help='Force overwrite of an already existing project'
+        )
+        self.add_argument(
+            '-cdna',
+            action='store_true',
+            help='Flag for transcriptome projects'
+        )
+        self.add_argument(
+            '-multi',
+            action='store_true',
+            help='Flag to specify creation of a multiplex project'
+        )
+
+    def check_output( self, cmd, stdout, stderr ):
+        validout = '(Created|Initialized) (mapping|assembly) project directory {}'.format(
+            cmd[-1]
+        )
+        if re.match( validout, stdout ):
+            return stdout
+        else:
+            logger.warning( "Output of running {} did not indicate " \
+                " that a new project was created".format(
+                    " ".join(cmd)
+                )
+            )
+            raise subprocess.CalledProcessError(
+                cmd = cmd,
+                returncode = 1,
+                output = stdout + stderr
+            )
+
+class NewMapping(CreateProject):
     def __init__( self, *args, **kwargs ):
         super( NewMapping, self ).__init__(
             description='Initializes a new mapping project',
             exepath=kwargs.get( 'exepath', 'newMapping' )
         )
 
-class NewAssembly(NewblerCommand):
-    pass
+    def set_args( self ):
+        super( NewMapping, self ).set_args()
+        cgref = self.parser.add_mutually_exclusive_group()
+        self.add_argument(
+            '-cref',
+            action='store_true',
+            help='Flag for cDNA reference sequence',
+            group=cgref
+        )              
+        self.add_argument(
+            '-gref',
+            action='store_true',
+            help='Flag for genomic reference sequence',
+            group=cgref
+        )
+        self.projdir_arg( )
+
+class NewAssembly(CreateProject):
+    def __init__( self, *args, **kwargs ):
+        super( NewAssembly, self ).__init__(
+            description='Initializes a new assembly project',
+            exepath=kwargs.get( 'exepath', 'newAssembly' )
+        )
+
+    def set_args( self ):
+        super( NewAssembly, self ).set_args()
+        self.projdir_arg()
