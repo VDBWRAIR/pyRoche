@@ -268,7 +268,9 @@ class NewblerCommand( object ):
         try:
             stdout = subprocess.check_output( cmd, stderr=stderr )
             stderr.seek(0)
-            return self.check_output( cmd, stdout, stderr.read() )
+            o = self.check_output( cmd, stdout, stderr.read() )
+            logger.info( "Successfully ran {}".format(cmd) )
+            return o
         except subprocess.CalledProcessError as e:
             stderr.seek(0)
             logger.warning( "{} generated an error STDOUT:{} STDERR:{}".format(
@@ -669,7 +671,7 @@ class RunProject(NewblerCommand):
         )
         self.add_argument(
             '-ml',
-            help='Minimum overlap length. Percentage of read length(Put % ' \
+            help='Minimum overlap length. Percentage of read length(Put %% ' \
                 'immediately after number) or integer'
         )
         self.add_argument(
@@ -926,58 +928,7 @@ class RunProject(NewblerCommand):
         )
         self.projdir_arg()
 
-        '''
-            Checks output from an mapping project for successful running
-
-            @returns stdout or raises subprocess.CalledProcessError
-
-            Mapping computation starting at: Thu Sep 26 10:27:31 2013  (v2.8 (20120726_1306))
-            Computing signals...
-              -> 10595 of 10595...                
-            Generating output...
-              -> 11369 of 11369...                
-            Mapping computation succeeded at: Thu Sep 26 10:27:32 2013
-
-            Assembly computation starting at: Thu Sep 26 10:28:53 2013  (v2.8 (20120726_1306))
-            Indexing 454Reads.sff...
-              -> 1000 reads, 470026 bases.
-            Setting up long overlap detection...
-              -> 1000 of 1000, 899 reads to align
-            Building a tree for 9536 seeds...
-            Computing long overlap alignments...
-              -> 985 of 985
-            Setting up overlap detection...
-              -> 1000 of 1000, 985 reads to align
-            Starting seed building...
-              -> 1000 of 1000
-            Building a tree for 38113 seeds...
-            Computing alignments...
-              -> 985 of 985
-            Checkpointing...
-            Detangling alignments...
-               -> Level 4, Phase 9, Round 1...
-            Checkpointing...
-            Building contigs/scaffolds...
-               -> 0 large contigs, 0 all contigs
-            Computing signals...
-              -> 0 of 0...
-            Checkpointing...
-            Generating output...
-              -> 0 of 0...
-            Assembly computation succeeded at: Thu Sep 26 10:28:55 2013
-        '''
-
     def check_output( self, cmd, stdout, stderr ):
-        '''
-        STDERR:
-        Error: Option "-het" is not valid for mapping projects.
-        Usage:  runProject [projectDirectory]
-
-        STDOUT:
-        Assembly computation starting at: Thu Sep 26 10:25:20 2013  (v2.8 (20120726_1306))
-        Error:  At least one read file must be present in the project
-        in order to proceed with mapping or assembly.
-        '''
         err = False
         if 'Error:' in stdout or 'Error:' in stderr:
             errmsg = 'Detected an error in output:'

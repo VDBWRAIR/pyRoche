@@ -131,6 +131,11 @@ class TestRunProject( CommandBase ):
             self.na.run( p )
             self.rp.run( p )
 
+    
+    @raises( subprocess.CalledProcessError )
+    def test_help( self ):
+        self.rp.run( '--help' )
+
 class TestNewMapping( CommandBase ):
     def setUp( self ):
         self.nm = newblercommand.NewMapping()
@@ -148,6 +153,10 @@ class TestNewMapping( CommandBase ):
             os.chdir( td )
             self.nm.run( '-badarg testproj' )
 
+    @raises( subprocess.CalledProcessError )
+    def test_help( self ):
+        self.nm.run( '--help' )
+
 class TestNewAssembly( CommandBase ):
     def setUp( self ):
         self.na = newblercommand.NewAssembly()
@@ -164,6 +173,10 @@ class TestNewAssembly( CommandBase ):
             os.chdir( td )
             self.na.run( '-badarg testproj' )
 
+    @raises( subprocess.CalledProcessError )
+    def test_help( self ):
+        self.na.run( '--help' )
+
 class CreateProjectTestClass( newblercommand.CreateProject ):
     def set_args( self ):
         pass
@@ -173,6 +186,10 @@ class TestCreateProject( CommandBase ):
         self.cp = CreateProjectTestClass(
             'test', ''
         )
+
+    @raises( subprocess.CalledProcessError )
+    def test_help( self ):
+        self.cp.run( '--help' )
 
     def test_checkoutput_valid( self ):
         output = '{} {} project directory {}'
@@ -245,6 +262,10 @@ class TestSetRef( CommandBase ):
                 [basename(ref) for ref in self.refs]
             )
 
+    @raises( subprocess.CalledProcessError )
+    def test_help( self ):
+        self.sr.run( '--help' )
+
     def test_singlerefvalid( self ):
         with self.create_project() as p:
             output = self.sr.run( "{} {}".format(
@@ -312,6 +333,10 @@ class TestAddRun( CommandBase ):
             for sff in self.files['sff']
         ]
         self.sff = self.sffs[0]
+
+    @raises( subprocess.CalledProcessError )
+    def test_help( self ):
+        self.ar.run( '--help' )
 
     def test_singlesffvalid( self ):
         with self.create_project() as p:
@@ -414,6 +439,9 @@ class TestNewblerCommand( CommandBase ):
         self.readfiles = ['my.sff','my.fastq','my.fa','my.fasta','my.fna']
         self.basecmd = ['command','arg1','arg2']
 
+    @raises( subprocess.CalledProcessError )
+    def test_help( self ):
+        self.nc.run( '--help' )
 
     def test_expectedfiles_single( self ):
         for readfile in self.readfiles:
