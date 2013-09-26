@@ -52,6 +52,85 @@ class CommandBase( object ):
             print subprocess.check_output( cmd )
             yield join( td, os.listdir( '.' )[0] )
 
+class TestRunProject( CommandBase ):
+    def setUp( self ):
+        self.files = fixtures.files_for_fixture(
+            fixtures.mapping_fixtures[1]
+        )
+        self.refs = [
+            join( 
+                fixtures.mapping_fixtures[1],
+                'refs',
+                ref
+            )
+            for ref in self.files['refs']
+        ]
+        self.ref = self.refs[0]
+        self.refdir = join(
+            fixtures.mapping_fixtures[1],
+            'refs'
+        )
+        self.sffs = [
+            join(
+                fixtures.mapping_fixtures[1],
+                'sff',
+                sff
+            )
+            for sff in self.files['sff']
+        ]
+        self.sff = self.sffs[0]
+        self.rp = newblercommand.RunProject()
+        self.ar = newblercommand.AddRun()
+        self.sr = newblercommand.SetRef()
+        self.nm = newblercommand.NewMapping()
+        self.na = newblercommand.NewAssembly()
+
+    def test_runs( self ):
+        # Make sure it runs
+        with self.create_project() as p:
+            self.ar.run( "{} {}".format(
+                    p, self.sff
+                )
+            )
+            self.sr.run( "{} {}".format(
+                    p, self.ref
+                )
+            )
+            self.rp.run( p )
+
+    @raises( subprocess.CalledProcessError )
+    def test_assemblyoptionformappingproj( self ):
+        with self.tempdir() as tdir:
+            os.chdir( tdir )
+            p = 'mappingproj'
+            self.nm.run( p )
+            self.sr.run( "{} {}".format(p,self.ref) )
+            self.rp.run( "-het {}".format(p) )
+
+    @raises( subprocess.CalledProcessError )
+    def test_mappingoptionforassemblyproj( self ):
+        with self.tempdir() as tdir:
+            os.chdir( tdir )
+            p = 'assemblyproj'
+            self.na.run( p )
+            self.rp.run( "-sveg {}".format(p) )
+
+    @raises( subprocess.CalledProcessError )
+    def test_noreadsinprojmapping( self ):
+        with self.tempdir() as tdir:
+            os.chdir( tdir )
+            p = 'mapproj'
+            self.nm.run( p )
+            self.rp.run( p )
+
+    @raises( subprocess.CalledProcessError )
+    def test_noreadsinprojmapping( self ):
+        with self.tempdir() as tdir:
+            os.chdir( tdir )
+            p = 'assemproj'
+            self.na.run( p )
+            self.rp.run( p )
+
 class TestNewMapping( CommandBase ):
     def setUp( self ):
         self.nm = newblercommand.NewMapping()

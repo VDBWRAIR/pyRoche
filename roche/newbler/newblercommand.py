@@ -482,3 +482,522 @@ class NewAssembly(CreateProject):
     def set_args( self ):
         super( NewAssembly, self ).set_args()
         self.projdir_arg()
+
+class RunProject(NewblerCommand):
+    def __init__( self, *args, **kwargs ):
+        super( RunProject, self ).__init__(
+            description='Runs an already created mapping/assembly project',
+            exepath=kwargs.get( 'exepath', 'runProject' )
+        )
+
+    def set_args( self ):
+        self.add_argument(
+            '--version',
+            action='store_true',
+            help='Display command version'
+        )
+        self.add_argument(
+            '-a',
+            help='Flag to specify minimum length of multiple alignments of contigs' \
+                ' to include in 454AllContigs.fna.'
+        )
+        self.add_argument(
+            '-accno',
+            action='store_true',
+            help='Flag to specify an accno renaming file. Mapping Only.'
+        )
+        self.add_argument(
+            '-ace',
+            action='store_true',
+            help='Flag to specify single ace file generation'
+        )
+        self.add_argument(
+            '-acedir',
+            help='Flag to generate ace file subdirectory with an ace file for each contig'
+        )
+        self.add_argument(
+            '-ad',
+            action='store_true',
+            help='Flag to output default reads in ACE or consed folder'
+        )
+        self.add_argument(
+            '-ads',
+            action='store_true',
+            help='Flag to set the alignment difference score parameter'
+        )
+        self.add_argument(
+            '-ais',
+            action='store_true',
+            help='Flag to sed the alignment identity score parameter'
+        )
+        self.add_argument(
+            '-annot',
+            help='File with gene-coding/region annotation for ref sequence.' \
+                'Mapping only.'
+        )
+        self.add_argument(
+            '-ar',
+            action='store_true',
+            help='Flag to output full raw read sequences in ace or consed folder'
+        )
+        self.add_argument(
+            '-at',
+            action='store_true',
+            help='Flag to output only trimmed sequence reads in ace or consed folder'
+        )
+        self.add_argument(
+            '-bam',
+            action='store_true',
+            help='Flag to generate bam file containing the multiple alignments for the contigs.' \
+                ' Mapping only'
+        )
+        self.add_argument(
+            '-bamsub',
+            action='store_true',
+            help='Flag to specify bam adjacent indel substitution'
+        )
+        self.add_argument(
+            '-batchsize',
+            help='Flag to specify the number of sample projects to be computed in parallel'
+        )
+        self.add_argument(
+            '-consed',
+            action='store_true',
+            help='Flag to generate a consed file subdirectory'
+        )
+        self.add_argument(
+            '-consed16',
+            action='store_true',
+            help='Flag to generate output compatible with version of consed older than V17.0'
+        )
+        self.add_argument(
+            '-cpu',
+            help='How many CPU\'s to use for each project'
+        )
+        self.add_argument(
+            '-d',
+            help='Flag to set the minimum contig depth. Mapping Only'
+        )
+        self.add_argument(
+            '-e',
+            help='Flag to specify expected depth of data'
+        )
+        self.add_argument(
+            '-fd',
+            help='Specify full variant file'
+        )
+        self.add_argument(
+            '-fe',
+            help='Exclude filter file'
+        )
+        self.add_argument(
+            '-fi',
+            help='Include filter file'
+        )
+        self.add_argument(
+            '-het',
+            action='store_true',
+            help='Enable heterozygotic mode. Assembly only'
+        )
+        self.add_argument(
+            '-hsl',
+            help='Hit-per-seed limit. Mapping only'
+        )
+        self.add_argument(
+            '-icc',
+            help='Maximum number of contigs in an isotig. Assembly only'
+        )
+        self.add_argument(
+            '-icl',
+            help='Minimum length of contig to be included in isotig. Assembly only'
+        )
+        self.add_argument(
+            '-ig',
+            help='Maximum number of contigs in an isogroup. Assembly only'
+        )
+        self.add_argument(
+            '-info',
+            action='store_true',
+            help='Output 454AlignmentInfo.tsv file'
+        )
+        self.add_argument(
+            '-infoall',
+            action='store_true',
+            help='Output 454AlignmentInfo.tsv including 0-coverage positions'
+        )
+        self.add_argument(
+            '-isplit',
+            action='store_true',
+            help='Initiate isotig traversal when depth spikes in alignments are found' \
+                'Assembly only'
+        )
+        self.add_argument(
+            '-it',
+            help='Maximum number of isotigs in an isogroup. Assembly only'
+        )
+        self.add_argument(
+            '-l',
+            help='Minimum length for contig to appear in 454LargeContigs.fna'
+        )
+        self.add_argument(
+            '-large',
+            action='store_true',
+            help='Enable large genome assembly mode. Assembly only'
+        )
+        self.add_argument(
+            '-m',
+            action='store_true',
+            help='Keep sequence data in memory to speed up cpu time'
+        )
+        self.add_argument(
+            '-maxsvf',
+            help='Control the maximum variant frequency values in variant frequency reports' \
+                'Mapping only'
+        )
+        self.add_argument(
+            '-mi',
+            help='Minimum overlap identity'
+        )
+        self.add_argument(
+            '-minlen',
+            help='Minimum length of paired end reads used in computations'
+        )
+        self.add_argument(
+            '-minsvf',
+            help='Minimum variant frequency values in variant frequency reports' \
+                'Mapping only'
+        )
+        self.add_argument(
+            '-ml',
+            help='Minimum overlap length. Percentage of read length(Put % ' \
+                'immediately after number) or integer'
+        )
+        self.add_argument(
+            '-mrerun',
+            help='Re-compute a multiplex project'
+        )
+        self.add_argument(
+            '-notrim',
+            action='store_true',
+            help='Turn off default quality and primer trimming of reads'
+        )
+        self.add_argument(
+            '-nft',
+            action='store_true',
+            help='Append a column to 454AlignmentInfo.tsv that reports the' \
+                ' counts of bases and gaps'
+        )
+        self.add_argument(
+            '-nimblegen',
+            action='store_true',
+            help='Specify reads should be primer-trimmed using the early ' \
+                'NimbleGen Sequence Capture primer sequence. ' \
+                'Mapping only'
+        )
+        self.add_argument(
+            '-no',
+            action='store_true',
+            help='Specify no output of most files'
+        )
+        self.add_argument(
+            '-noaccno',
+            action='store_true',
+            help='Deactivate use of an accno renaming file. Mapping only'
+        )
+        self.add_argument(
+            '-noace',
+            action='store_true',
+            help='No ace file generation'
+        )
+        self.add_argument(
+            '-noannot',
+            action='store_true',
+            help='Disable automatic reading of annotation file. Mapping only'
+        )
+        self.add_argument(
+            '-nobam',
+            action='store_true',
+            help='Suppress bam file generation. Mapping only'
+        )
+        self.add_argument(
+            '-nobig',
+            action='store_true',
+            help='Skip output of large files'
+        )
+        self.add_argument(
+            '-nofe',
+            action='store_true',
+            help='Disable use of exclude filter file'
+        )
+        self.add_argument(
+            '-nofi',
+            action='store_true',
+            help='Disable use of include filter file'
+        )
+        self.add_argument(
+            '-nohet',
+            action='store_true',
+            help='Disable heterozygotic mode. Assembly only'
+        )
+        self.add_argument(
+            '-noinfo',
+            action='store_true',
+            help='Suppress output of 454AlignmentInfo.tsv'
+        )
+        self.add_argument(
+            '-noisplit',
+            help='Do not initiate isotig traversal. Assembly only.'
+        )
+        self.add_argument(
+            '-nolarge',
+            action='store_true',
+            help='Disable large genome assembly mode. Assembly only'
+        )
+        self.add_argument(
+            '-non',
+            '-nonimblegen',
+            action='store_true',
+            help='Turn off NimbleGen mapping mode. Mapping only'
+        )
+        self.add_argument(
+            '-nop',
+            action='store_true',
+            help='Turn off generation of 454PairAlign.txt'
+        )
+        self.add_argument(
+            '-nor',
+            action='store_true',
+            help='Turn off automatic rescore function for read quality scores'
+        )
+        self.add_argument(
+            '-noreg',
+            action='store_true',
+            help='Turn off sequence region based generation of output. Mapping only'
+        )
+        self.add_argument(
+            '-norip',
+            action='store_true',
+            help='Turn off output of each read in a single contig. Assembly only'
+        )
+        self.add_argument(
+            '-nosnp',
+            action='store_true',
+            help='Disable the automatic reading of known SNP files. Mapping only'
+        )
+        self.add_argument(
+            '-nosrv',
+            action='store_true',
+            help='Disable single read variant output. Mapping only'
+        )
+        self.add_argument(
+            '-nosv',
+            action='store_true',
+            help='Disable structural variant detection. Mapping only'
+        )
+        self.add_argument(
+            '-novs',
+            action='store_true',
+            help='Turn off a vector screening database used in earlier part of the computation.'
+        )
+        self.add_argument(
+            '-nov',
+            '-novt',
+            action='store_true',
+            help='Turn off vector trimming database FASTA file.'
+        )
+        self.add_argument(
+            '-numn',
+            help='Threshold for number of Ns in a read. Reads with > this will be rejected'
+        )
+        self.add_argument(
+            '-pair',
+            help='Output pairwise ovrlaps in txt file'
+        )
+        self.add_argument(
+            '-pt',
+            '-pairt',
+            help='Output pairwise overlaps in tsv file'
+        )
+        self.add_argument(
+            '-qo',
+            action='store_true',
+            help='Generate quick output for mapping and assembly'
+        )
+        self.add_argument(
+            '-r',
+            action='store_true',
+            help='Restart the computation'
+        )
+        self.add_argument(
+            '-reg',
+            help='Only output specified sequence retion of reference and aligned reads ' \
+                'Mapping only'
+        )
+        self.add_argument(
+            '-rescore',
+            action='store_true',
+            help='Rescore an SFF file using quality score lookup table'
+        )
+        self.add_argument(
+            '-rip',
+            action='store_true',
+            help='Output each read in only one contig. Assembly only'
+        )
+        self.add_argument(
+            '-rst',
+            help='Set the repeat score threshold. Mapping only'
+        )
+        self.add_argument(
+            '-s',
+            help='Minimum scaffold size. Assembly only'
+        )
+        self.add_argument(
+            '-sc',
+            help='Seed count'
+        )
+        self.add_argument(
+            '-scaffold',
+            action='store_true',
+            help='Enable gap-filling when low-quality portions of reads ' \
+                'at the endso f scaffolding contigs indicate an overlap ' \
+                ' Assembly only'
+        )
+        self.add_argument(
+            '-short',
+            action='store_true',
+            help='Reads shorter than 50bp are used if paired end data is used'
+        )
+        self.add_argument(
+            '-sio',
+            action='store_true',
+            help='Use Serial I/O. Use in projects with > 4 million reads'
+        )
+        self.add_argument(
+            '-sl',
+            help='Seed length'
+        )
+        self.add_argument(
+            '-snp',
+            help='File with known SNP information. Mapping only'
+        )
+        self.add_argument(
+            '-ss',
+            help='Seed step'
+        )
+        self.add_argument(
+            '-srv',
+            action='store_true',
+            help='Single read variant output. Mapping only'
+        )
+        self.add_argument(
+            '-sveg',
+            help='Structural variation excluded genes file. Mapping only'
+        )
+        self.add_argument(
+            '-tr',
+            action='store_true',
+            help='Output 454TrimmedReads.{fna,qual} files'
+        )
+        self.add_argument(
+            '-trim',
+            action='store_true',
+            help='Turn on default quality and primer trimming of reads'
+        )
+        self.add_argument(
+            '-ud',
+            action='store_true',
+            help='Treat each read separately with no grouping into duplicates'
+        )
+        self.add_argument(
+            '-urt',
+            action='store_true',
+            help='Extend contigs using the ends of single reads. Assembly only'
+        )
+        self.add_argument(
+            '-vs',
+            help='Vector screening database fasta file. Reads must match exactly ' \
+                'to be excluded'
+        )
+        self.add_argument(
+            '-v',
+            '-vt',
+            help='Vector trimming database fasta file for primers, vectors, adaptors ' \
+                'and other end sequences'
+        )
+        self.projdir_arg()
+
+        '''
+            Checks output from an mapping project for successful running
+
+            @returns stdout or raises subprocess.CalledProcessError
+
+            Mapping computation starting at: Thu Sep 26 10:27:31 2013  (v2.8 (20120726_1306))
+            Computing signals...
+              -> 10595 of 10595...                
+            Generating output...
+              -> 11369 of 11369...                
+            Mapping computation succeeded at: Thu Sep 26 10:27:32 2013
+
+            Assembly computation starting at: Thu Sep 26 10:28:53 2013  (v2.8 (20120726_1306))
+            Indexing 454Reads.sff...
+              -> 1000 reads, 470026 bases.
+            Setting up long overlap detection...
+              -> 1000 of 1000, 899 reads to align
+            Building a tree for 9536 seeds...
+            Computing long overlap alignments...
+              -> 985 of 985
+            Setting up overlap detection...
+              -> 1000 of 1000, 985 reads to align
+            Starting seed building...
+              -> 1000 of 1000
+            Building a tree for 38113 seeds...
+            Computing alignments...
+              -> 985 of 985
+            Checkpointing...
+            Detangling alignments...
+               -> Level 4, Phase 9, Round 1...
+            Checkpointing...
+            Building contigs/scaffolds...
+               -> 0 large contigs, 0 all contigs
+            Computing signals...
+              -> 0 of 0...
+            Checkpointing...
+            Generating output...
+              -> 0 of 0...
+            Assembly computation succeeded at: Thu Sep 26 10:28:55 2013
+        '''
+
+    def check_output( self, cmd, stdout, stderr ):
+        '''
+        STDERR:
+        Error: Option "-het" is not valid for mapping projects.
+        Usage:  runProject [projectDirectory]
+
+        STDOUT:
+        Assembly computation starting at: Thu Sep 26 10:25:20 2013  (v2.8 (20120726_1306))
+        Error:  At least one read file must be present in the project
+        in order to proceed with mapping or assembly.
+        '''
+        err = False
+        if 'Error:' in stdout or 'Error:' in stderr:
+            errmsg = 'Detected an error in output:'
+            err = True
+        else:
+            startre = '\w+ computation starting at: \w+ \w+ \d+ \d+:\d+:\d+ \d+  \(v2.8 \(\w+\)\)'
+            endre = '\w+ computation succeeded at: \w+ \w+ \d+ \d+:\d+:\d+ \d+'
+            stdoutlines = stdout.splitlines()
+            if not re.search( startre, stdoutlines[0] ):
+                print stdoutlines[0]
+                errmsg = 'Did not successfully start the computation:'
+                err = True
+            elif not re.search( endre, stdoutlines[-1] ):
+                print stdoutlines[-1]
+                errmsg = 'Computation did not successfully finish:'
+                err = True
+
+        if err:
+            raise subprocess.CalledProcessError(
+                cmd = cmd,
+                returncode = 1,
+                output = errmsg + '\n' + stdout + stderr
+            )
