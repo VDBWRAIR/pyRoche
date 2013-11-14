@@ -332,6 +332,7 @@ class TestAddRun( CommandBase ):
             )
             for sff in self.files['sff']
         ]
+        self.sffs.sort()
         self.sff = self.sffs[0]
 
     @raises( subprocess.CalledProcessError )
